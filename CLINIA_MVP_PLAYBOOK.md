@@ -71,13 +71,13 @@ Você, Claude Code, está atuando como **engenheiro sênior e par técnico** da 
 
 | # | Decisão | Status |
 |---|---|---|
-| ⚠️ | **Proposta pendente (equipe de 2):** MVP roda só em Python (planilha → planilha); D1, D3 e D4 **adiados para pós-MVP**, não descartados. Ver seção 5 de `CLINIA_DIVISAO_TAREFAS.md`. Claude Code: confirme com o Paulo antes de criar qualquer coisa em Node, Postgres ou React. | `[A CONFIRMAR]` |
+| D13 | **MVP roda só em Python** (planilha → planilha). D1, D3 e D4 **adiados para pós-MVP**, não descartados. Não criar nada em Node, Postgres ou React sem nova decisão. Ver `docs/DECISOES.md`. | `[FATO]` confirmado por Paulo e Mateus em 16/10/2026 |
 | D1 | Back-end em **Node.js (Express)** | `[FATO]` decidido |
 | D2 | Serviço separado de IA/dados em **Python (Pandas + scikit-learn)**, chamado via HTTP | `[FATO]` decidido |
 | D3 | Banco **PostgreSQL**, rodando via **docker-compose** (já existe) | `[FATO]` decidido |
 | D4 | Front-end em **React** | `[FATO]` decidido |
 | D5 | Java foi descartado em favor de Node.js | `[FATO]` decidido |
-| D6 | Tabela `protocolo` com **colunas fixas** espelhando os campos do paciente: `idade_min`, `idade_max`, `hba1c_max`, `creatinina_max`, `glicemia_jejum_max`, `imc_max`, `permite_neoplasia_ativa`, `permite_gestacao`, `exige_metformina`, `diagnostico_exigido` (NULL = critério não usado). **Não** usar modelo EAV/uma-linha-por-critério. | `[FATO]` decidido |
+| D6 | Tabela `protocolo` com **colunas fixas** espelhando os campos do paciente: `idade_min`, `idade_max`, `hba1c_min` *(incluída em 16/10)*, `hba1c_max`, `imc_min` *(incluída em 16/10)*, `creatinina_max`, `glicemia_jejum_max`, `imc_max`, `permite_neoplasia_ativa`, `permite_gestacao`, `exige_metformina`, `diagnostico_exigido` (NULL = critério não usado). **Não** usar modelo EAV/uma-linha-por-critério. | `[FATO]` decidido |
 | D7 | **Camada 1 (regras fixas)** decide a elegibilidade binária `elegibilidade_calculada` comparando paciente × colunas do protocolo. | `[FATO]` decidido |
 | D8 | **Camada 2 (Random Forest)**, treinada nos casos rotulados, gera `probabilidade_elegibilidade`, usada **apenas para ordenar** pacientes dentro de cada resultado binário. **O RF nunca sobrescreve a regra.** | `[FATO]` decidido |
 | D9 | Todo paciente real tem texto livre (`anotacao_medica`) — portanto a **extração por LLM não é opcional**: todo registro passa por ela. | `[FATO]` confirmado em campo no HC-UFPE |

@@ -22,8 +22,9 @@
 - código Node/Express, CRUD;
 - `docker-compose`, Postgres, tabela `protocolo`, seed SQL (a D3 diz que o docker-compose "já existe": `[A VALIDAR]` onde está);
 - pastas `ia/`, `contratos/`, `prompts/`;
-- `requirements.txt`, `.env.example`;
-- Python instalado na máquina do Paulo (só o atalho da Microsoft Store).
+- `requirements.txt`, `.env.example`.
+
+> **Correção (16/10):** o Python 3.14.7 **está instalado** na máquina do Paulo. O comando `python` caía no atalho da Microsoft Store; o correto é `py`. Há também um PostgreSQL 18 instalado localmente (fora do Docker), irrelevante enquanto o MVP for só Python.
 
 ## 3. A planilha de pacientes fictícios
 
@@ -96,7 +97,6 @@ A base cumpre bem o objetivo de construir e testar o pipeline. Os pontos abaixo 
 
 | Risco | Mitigação proposta |
 |---|---|
-| Python não instalado | Instalar Python 3.12 antes da Fase 1 |
 | Métricas infladas pela base (seção 5) | `[SUGESTÃO]` 15 anotações difíceis num arquivo separado (S2); deixar claro na apresentação o que foi medido com quê |
 | LLM sem papel real, já que as colunas existem | `[SUGESTÃO]` Esconder `neoplasia_ativa`, `gestacao` e `medicamentos` do pipeline; a LLM extrai do texto e as colunas viram gabarito automático da extração |
 | D6 sem `hba1c_min` / `imc_min` | `[SUGESTÃO]` Incluir as duas colunas |

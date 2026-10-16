@@ -163,17 +163,20 @@ Diferencie o que é fato (medido) do que é plano futuro.
 
 ## 6. Git: duas pessoas, dois Claude Code
 
-- `main` sempre funcionando. Nada de commit direto.
-- Branches com o nome da pessoa: `paulo/extracao-llm`, `mateus/camada-regras`.
+> **Atualizado em 16/10/2026** (ver `docs/DECISOES.md`): o repositório já tinha `develop`, então o fluxo usa as duas branches.
+
+- `main` = versão estável. Só recebe merge de `develop` na sexta, depois de rodarem juntos. Nada de commit direto.
+- `develop` = integração do dia a dia. Todo PR vai para `develop`. Nada de commit direto.
+- Branches com o nome da pessoa, saindo de `develop`: `paulo/extracao-llm`, `mateus/camada-regras`.
 - Rotina diária:
 
 ```bash
-git checkout main && git pull
-git checkout -b nome/tarefa        # ou entrar na branch e: git merge main
+git checkout develop && git pull
+git checkout -b nome/tarefa        # ou entrar na branch e: git merge develop
 # ... trabalha com o Claude Code ...
 git add . && git commit -m "extracao: adiciona verificação de evidência"
 git push -u origin nome/tarefa
-# abre Pull Request e marca o outro para revisar
+# abre Pull Request para develop e marca o outro para revisar
 ```
 
 - **Revisão cruzada:** o Paulo revisa o Mateus e vice-versa. Isso também faz cada um entender a parte do outro antes da banca.
