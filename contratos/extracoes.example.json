@@ -1,0 +1,114 @@
+[
+  {
+    "id_paciente": "PAC-001",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Em uso de Metformina 1.000 mg 2x/dia",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [],
+    "observacoes_relevantes": null,
+    "evidencia_verificada": true,
+    "modelo_llm": "regras-v1",
+    "versao_prompt": "regras-v1",
+    "hash_texto": "62890de7ff12729bf4844d54ec40a057861d8f0f4355e17af52f86bb271ea386",
+    "extraido_em": "2026-10-16T15:32:13"
+  },
+  {
+    "id_paciente": "PAC-104",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": false,
+        "status": "negado",
+        "evidencia": "Não há metformina entre as medicações em uso",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": null,
+    "evidencia_verificada": true,
+    "modelo_llm": "regras-v1",
+    "versao_prompt": "regras-v1",
+    "hash_texto": "8e568d46174e06f8b0a8b086196c1f6bc19f4638972ef01d5874973a1ee35d09",
+    "extraido_em": "2026-10-16T15:32:13"
+  },
+  {
+    "id_paciente": "PAC-172",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Em uso de Metformina 500 mg 2x/dia",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": null,
+    "evidencia_verificada": true,
+    "modelo_llm": "regras-v1",
+    "versao_prompt": "regras-v1",
+    "hash_texto": "5d69dac842d898b1181b9cbce68c253d2d0ba70bf2f4742f631d73f3f41bd7a0",
+    "extraido_em": "2026-10-16T15:32:13"
+  }
+]

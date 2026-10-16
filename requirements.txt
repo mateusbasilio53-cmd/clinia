@@ -1,3 +1,11 @@
-# Fase 1 — leitura e validação da planilha
+# Entrada: leitura e validação da planilha
 pandas==3.0.6
 openpyxl==3.1.5
+
+# Extração por LLM
+anthropic==1.15.0
+pydantic==2.14.1
+python-dotenv==1.2.4
+
+# Testes
+pytest==9.1.1

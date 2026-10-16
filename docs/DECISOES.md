@@ -55,6 +55,27 @@
 - **Motivo:** Paulo e Mateus rodam exatamente as mesmas versões.
 - **Impacto:** o Mateus precisa de Python 3.14 (`[A VALIDAR]` a versão que ele usa).
 
+## D19 — Sem `temperature = 0`; repetibilidade pelo cache
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Claude Code (ajuste técnico, a validar pelo Paulo)
+- **Decisão:** o extrator não envia `temperature`. A repetibilidade vem de: saída estruturada obrigatória (schema), cache por hash do texto + modelo + versão do prompt, e verificação da evidência pelo código.
+- **Motivo:** nos modelos Claude atuais o parâmetro `temperature` foi removido; enviá-lo dá erro 400. O playbook (seção 6.3) foi escrito antes disso.
+- **Impacto:** com o cache, rodar duas vezes o mesmo texto devolve exatamente a mesma extração (e não paga de novo).
+
+## D20 — Provedor de regras (regex) como linha de base e mock
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Claude Code (Paulo delegou)
+- **Decisão:** além da LLM, o extrator tem um provedor `regras` (regex, grátis, sem chave), no mesmo formato do contrato.
+- **Motivo:** (1) o Mateus trabalha já com `contratos/extracoes.mock_200.json`, no formato real; (2) é a "checagem auxiliar" da seção 6.2 e a linha de base do experimento: a LLM precisa ganhar dela nos casos difíceis para se justificar.
+- **Impacto:** o regex acertou 100% nos 200 da planilha e nos 15 casos de teste. Isso **não** prova que o regex é bom: a planilha é fácil (seção 5 da auditoria) e os 15 casos e as regras foram escritos juntos. Para uma comparação justa, os casos precisam vir de alguém que não viu as regras (`[A VALIDAR]` equipe da Bárbara).
+
+## D21 — Provedor da LLM: Claude, modelo configurável
+
+- **Data:** 16/10/2026 · **Status:** `[A VALIDAR]` com o Paulo
+- **Proposta:** Claude via API, modelo em `CLINIA_MODELO` (padrão `claude-opus-5-5`). No experimento da Fase 3, comparar com `claude-haiku-5-5` (rápido e barato).
+- **Motivo:** saída estruturada com schema garantido pela API; troca de modelo sem mexer no código. Trocar de provedor = escrever outra classe em `ia/extracao/provedores.py`.
+- **Impacto:** o extrator nunca faz chamada paga sem `--confirmar`, e antes disso mostra quantas chamadas vai fazer.
+
 ---
 
 ## Pendentes

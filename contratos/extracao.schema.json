@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "extracoes.json — contrato entre extração (Paulo) e regras/RF (Mateus)",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "description": "Um item de extracoes.json: a passagem do Paulo para o Mateus.",
+    "properties": {
+      "id_paciente": {
+        "type": "string"
+      },
+      "campos": {
+        "additionalProperties": false,
+        "properties": {
+          "neoplasia_ativa": {
+            "additionalProperties": false,
+            "description": "Campo depois da verificação pelo código (evidência literal e coerência).",
+            "properties": {
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "status": {
+                "enum": [
+                  "afirmado",
+                  "negado",
+                  "nao_mencionado",
+                  "incerto"
+                ],
+                "type": "string"
+              },
+              "evidencia": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "confianca": {
+                "enum": [
+                  "alta",
+                  "media",
+                  "baixa"
+                ],
+                "type": "string"
+              },
+              "evidencia_verificada": {
+                "type": "boolean"
+              },
+              "problemas": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "valor",
+              "status",
+              "evidencia",
+              "confianca",
+              "evidencia_verificada",
+              "problemas"
+            ],
+            "type": "object"
+          },
+          "gestacao": {
+            "additionalProperties": false,
+            "description": "Campo depois da verificação pelo código (evidência literal e coerência).",
+            "properties": {
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "status": {
+                "enum": [
+                  "afirmado",
+                  "negado",
+                  "nao_mencionado",
+                  "incerto"
+                ],
+                "type": "string"
+              },
+              "evidencia": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "confianca": {
+                "enum": [
+                  "alta",
+                  "media",
+                  "baixa"
+                ],
+                "type": "string"
+              },
+              "evidencia_verificada": {
+                "type": "boolean"
+              },
+              "problemas": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "valor",
+              "status",
+              "evidencia",
+              "confianca",
+              "evidencia_verificada",
+              "problemas"
+            ],
+            "type": "object"
+          },
+          "uso_metformina": {
+            "additionalProperties": false,
+            "description": "Campo depois da verificação pelo código (evidência literal e coerência).",
+            "properties": {
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "status": {
+                "enum": [
+                  "afirmado",
+                  "negado",
+                  "nao_mencionado",
+                  "incerto"
+                ],
+                "type": "string"
+              },
+              "evidencia": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "confianca": {
+                "enum": [
+                  "alta",
+                  "media",
+                  "baixa"
+                ],
+                "type": "string"
+              },
+              "evidencia_verificada": {
+                "type": "boolean"
+              },
+              "problemas": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "valor",
+              "status",
+              "evidencia",
+              "confianca",
+              "evidencia_verificada",
+              "problemas"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "neoplasia_ativa",
+          "gestacao",
+          "uso_metformina"
+        ],
+        "type": "object"
+      },
+      "diagnosticos_mencionados": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "observacoes_relevantes": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "evidencia_verificada": {
+        "type": "boolean"
+      },
+      "modelo_llm": {
+        "type": "string"
+      },
+      "versao_prompt": {
+        "type": "string"
+      },
+      "hash_texto": {
+        "type": "string"
+      },
+      "extraido_em": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "id_paciente",
+      "campos",
+      "diagnosticos_mencionados",
+      "observacoes_relevantes",
+      "evidencia_verificada",
+      "modelo_llm",
+      "versao_prompt",
+      "hash_texto",
+      "extraido_em"
+    ],
+    "type": "object"
+  }
+}
