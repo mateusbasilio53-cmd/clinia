@@ -164,7 +164,8 @@ def main(argv: list[str] | None = None) -> int:
     else:
         padrao = PROMPT_PADRAO_OLLAMA if args.provedor == "ollama" else PROMPT_PADRAO
         prompt, versao = carregar_prompt(args.prompt or padrao)
-        cache = CacheExtracoes()
+        # CLINIA_CACHE permite usar outra pasta (ex.: medir a velocidade sem as respostas prontas)
+        cache = CacheExtracoes(Path(os.getenv("CLINIA_CACHE", "cache/extracoes")))
         if args.provedor == "ollama":
             modelo = args.modelo or os.getenv("CLINIA_MODELO_OLLAMA", OLLAMA_MODELO_PADRAO)
             provedor = ProvedorOllama(modelo, prompt, os.getenv("OLLAMA_URL", "http://localhost:11434"))

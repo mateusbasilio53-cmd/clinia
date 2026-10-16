@@ -63,11 +63,14 @@ class RelatorioValidacao:
         return not self.erros
 
 
+PLANILHA_PADRAO = Path("dados/Base_ficticia_DM2_CLINIA.xlsx")
+
+
 def caminho_planilha(caminho: str | None = None) -> Path:
-    """Resolve o caminho da planilha: argumento ou variável CLINIA_PLANILHA do .env."""
-    valor = caminho or os.getenv("CLINIA_PLANILHA")
+    """Resolve o caminho da planilha: argumento, CLINIA_PLANILHA do .env, ou dados/ do repositório."""
+    valor = caminho or os.getenv("CLINIA_PLANILHA") or (PLANILHA_PADRAO if PLANILHA_PADRAO.exists() else None)
     if not valor:
-        raise SystemExit("Informe --planilha ou defina CLINIA_PLANILHA no .env")
+        raise SystemExit("Informe --planilha, defina CLINIA_PLANILHA no .env ou coloque a planilha em dados/")
     p = Path(valor)
     if not p.exists():
         raise SystemExit(f"Planilha não encontrada: {p}")

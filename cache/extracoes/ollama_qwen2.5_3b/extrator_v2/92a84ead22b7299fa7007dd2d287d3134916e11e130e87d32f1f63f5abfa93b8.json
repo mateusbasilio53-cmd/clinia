@@ -1,0 +1,24 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Gestação confirmada no atendimento atual",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Em uso de Metformina XR 1.000 mg à noite",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2"
+  ],
+  "observacoes_relevantes": "Gestação atual."
+}

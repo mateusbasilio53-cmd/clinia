@@ -6,6 +6,7 @@ Triagem inteligente de pacientes para pesquisa clínica. MVP previsto para 04/12
 - Quem faz o quê: [CLINIA_DIVISAO_TAREFAS.md](CLINIA_DIVISAO_TAREFAS.md)
 - Decisões: [docs/DECISOES.md](docs/DECISOES.md)
 - Estado atual: [docs/AUDITORIA.md](docs/AUDITORIA.md)
+- **Instalar e rodar no seu computador (inclui a IA local):** [docs/GUIA_INSTALACAO.md](docs/GUIA_INSTALACAO.md)
 
 ## Como preparar o ambiente (Windows)
 
