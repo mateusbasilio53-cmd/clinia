@@ -1,4 +1,4 @@
-# ia/regras — camada 1: a decisão (elegível / não elegível / revisar)
+# ia/regras — Pandas, parte 2: aplicar os critérios do estudo (elegível / não elegível / revisar)
 
 **Dono:** Mateus Basílio · **Decisões:** D6, D7, D15 · **Fase do playbook:** 2
 

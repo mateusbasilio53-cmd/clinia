@@ -57,11 +57,20 @@
  extracoes.json  ←── O CONTRATO: a passagem do Paulo para o Mateus
         │
         ▼
- (E) JUNTA OS DADOS (Pandas)                                                 [Mateus]
- (F) REGRAS DO PROTOCOLO → ELEGÍVEL / NÃO ELEGÍVEL / REVISAR + motivos       [Mateus]
+ ┌─ PANDAS ──────────────────────────────────────────────────────────────┐  [Mateus]
+ │ (E) junta as fichas numa tabela: 1 linha por paciente                 │
+ │ (F) aplica os critérios do estudo a cada linha                        │
+ │     → ELEGÍVEL / NÃO ELEGÍVEL / REVISAR + o motivo                    │
+ └───────────────────────────────────────────────────────────────────────┘
+        │
+        ▼
  (G) RANDOM FOREST → probabilidade, só para ORDENAR a lista                   [Mateus]
- (H) PLANILHA FINAL RANQUEADA, com evidências                                [Mateus]
+        │
+        ▼
+ (H) PLANILHA DE ELEGIBILIDADE, ranqueada, com motivos e evidências          [Mateus]
 ```
+
+**Em uma frase:** a IA **estrutura** o texto (A–D), o **Pandas** organiza e aplica os critérios (E–F), o **Random Forest** ordena (G), e sai a **planilha de elegibilidade** (H).
 
 No exemplo acima, a IA errou ("QT para Ca de pulmão" virou "não tem câncer"), mas as regras discordaram e o paciente foi para **revisão humana**. É exatamente para isso que a dupla checagem existe. Para ver ao vivo: `python -m ia.demo --texto "..."`.
 
@@ -124,11 +133,33 @@ Toda resposta da IA fica guardada em `cache/`, identificada pelo texto, pelo mod
 - rodar de novo **não repete o trabalho** (os 300 pacientes saem em menos de 1 segundo);
 - o **modo `--offline`** funciona **sem Ollama e sem internet**, usando o que já foi lido. É o plano B da demo.
 
-### Regras do protocolo (camada 1, Mateus)
-Comparam a ficha do paciente com os critérios do estudo (idade 30–70, HbA1c 7,0–10,5, etc.) e decidem: **ELEGÍVEL**, **NÃO ELEGÍVEL** ou **REVISAR**, com o motivo em português ("HbA1c 10,8% acima do máximo de 10,5%"). São regras fixas: sempre dão o mesmo resultado e mostram o porquê.
+### Pandas: a tabela e os critérios do estudo (Mateus)
+O **Pandas** é a biblioteca do Python para trabalhar com tabelas, como um Excel que se programa. Uma tabela no Pandas se chama **DataFrame**. Ele faz duas coisas na CLINIA:
 
-### Random Forest (camada 2, Mateus)
-Um modelo de *machine learning* que aprende com exemplos rotulados e dá uma **probabilidade**. Na CLINIA ele **só ordena** a lista dentro de cada grupo. **Nunca muda a decisão das regras.** O Random Forest é a única parte que é treinada de verdade com os nossos dados.
+1. **Juntar.** Pega a ficha que a IA estruturou (`extracoes.json`) e monta uma tabela com **uma linha por paciente** e uma coluna por informação (idade, HbA1c, neoplasia ativa…), juntando pelo `id_paciente`.
+2. **Aplicar os critérios do estudo** (a "camada de regras", decisão D7). Para cada linha, compara com o protocolo e decide **ELEGÍVEL**, **NÃO ELEGÍVEL** ou **REVISAR**, com o motivo em português:
+
+| Critério do estudo | Paciente | Resultado |
+|---|---|---|
+| idade 30 a 70 | 63 | ✔ |
+| HbA1c 7,0 a 10,5 | 8,4 | ✔ |
+| IMC 25 a 45 | 30,1 | ✔ |
+| creatinina até 1,5 | 1,0 | ✔ |
+| usa metformina | NÃO | ✘ "não usa metformina" |
+| sem neoplasia ativa | INCERTO | ? "neoplasia: leitura incerta" |
+| **decisão** | | **NÃO ELEGÍVEL** (metformina) e neoplasia para revisar |
+
+No Pandas isso vira comparações em colunas, por exemplo `df["idade"].between(30, 70)`. São **regras fixas**: sempre dão o mesmo resultado e mostram o porquê, e é isso que faz o coordenador confiar.
+
+> "Regras" aparece em dois lugares e são coisas diferentes: a **regex** da etapa de estruturação (Paulo), que **lê** o texto, e os **critérios do estudo** no Pandas (Mateus), que **decidem** a elegibilidade.
+
+### Random Forest (Mateus)
+Um modelo de *machine learning* (da biblioteca **scikit-learn**) que aprende com exemplos rotulados e dá uma **probabilidade** de o paciente ser elegível. Ele recebe a tabela que saiu do Pandas.
+
+Na CLINIA ele **só ordena** a lista dentro de cada grupo: entre os ELEGÍVEIS, quem tem 0,92 aparece antes de quem tem 0,61. **Nunca muda a decisão dos critérios.** O Random Forest é a única parte que é treinada de verdade com os nossos dados.
+
+### Planilha de elegibilidade (Mateus)
+A saída final, gerada pelo Pandas em Excel: posição, id do paciente, resultado (ELEGÍVEL / NÃO ELEGÍVEL / REVISAR), probabilidade, critérios atendidos, critérios que barraram, os **trechos do texto** que justificam e o motivo de cada REVISAR.
 
 ### Gabarito, prova e estudo
 - **Gabarito:** a resposta certa de cada paciente, para medir a CLINIA.
@@ -159,10 +190,10 @@ clinica/
 │   ├── verificar_pc.py          qual modelo de IA o PC aguenta
 │   ├── entrada/        [Paulo]  ler e validar a planilha
 │   ├── extracao/       [Paulo]  IA, regras, verificação, cache, avaliação, relatório
-│   ├── dados/          [Mateus] juntar planilha + extração (Pandas)
-│   ├── regras/         [Mateus] decisão elegível / não / revisar
-│   ├── modelo/         [Mateus] Random Forest
-│   └── saida/          [Mateus] planilha final ranqueada
+│   ├── dados/          [Mateus] Pandas: juntar as fichas numa tabela
+│   ├── regras/         [Mateus] Pandas: aplicar os critérios do estudo
+│   ├── modelo/         [Mateus] Random Forest (ordenar)
+│   └── saida/          [Mateus] planilha de elegibilidade
 │
 ├── tests/                       testes automáticos (python -m pytest)
 └── docs/                        este documento, decisões, resultados, guias

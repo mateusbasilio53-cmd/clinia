@@ -1,4 +1,4 @@
-# ia/dados — juntar a planilha com a leitura da CLINIA
+# ia/dados — Pandas, parte 1: juntar as fichas numa tabela
 
 **Dono:** Mateus Basílio · **Fase do playbook:** 2
 

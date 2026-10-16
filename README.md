@@ -57,20 +57,44 @@ Aqui a IA errou sozinha, as regras discordaram, e a CLINIA chamou o humano. **É
 
 ## Como funciona
 
+São **4 etapas**. As duas primeiras são do Paulo, as duas últimas do Mateus:
+
 ```mermaid
 flowchart LR
-    T["📄 Texto corrido<br/>do prontuário"] --> N["🔢 Números<br/>(regras)"]
-    T --> IA["🤖 IA local<br/>(qwen2.5)"]
-    T --> R["📏 Regras<br/>(regex)"]
-    IA --> D{"Dupla<br/>checagem"}
-    R --> D
-    N --> J["extracoes.json"]
-    D -->|concordam| J
-    D -->|discordam| REV["👤 Revisão humana"]
-    J --> P["Regras do protocolo<br/>ELEGÍVEL · NÃO · REVISAR"]
-    P --> RF["Random Forest<br/>(só ordena)"]
-    RF --> S["📊 Planilha final<br/>ranqueada + evidências"]
+    T["📄 Texto corrido<br/>do prontuário"] --> E
+
+    subgraph E["① Estruturação — IA + regras (Paulo)"]
+        direction TB
+        IA["🤖 IA local lê o texto<br/>(neoplasia, gestação, metformina)"]
+        N["🔢 regras leem os números<br/>(idade, HbA1c, IMC…)"]
+        DC{"dupla checagem<br/>IA x regras"}
+        IA --> DC
+    end
+
+    E --> J["extracoes.json<br/>ficha estruturada<br/>de cada paciente"]
+
+    subgraph P["② Pandas (Mateus)"]
+        direction TB
+        P1["junta tudo numa tabela<br/>(1 linha por paciente)"]
+        P2["aplica os critérios do estudo<br/>→ ELEGÍVEL · NÃO · REVISAR"]
+        P1 --> P2
+    end
+
+    J --> P
+    P --> RF["③ Random Forest (Mateus)<br/>probabilidade para<br/>ORDENAR a lista"]
+    RF --> S["④ 📊 Planilha de elegibilidade<br/>ranqueada + motivos + evidências"]
 ```
+
+| Etapa | Ferramenta | O que acontece | Exemplo |
+|---|---|---|---|
+| **① Estruturação** | IA local (Ollama) + regex | O texto corrido vira uma **ficha estruturada**, com o trecho que justifica cada campo | "Masc, 63a… Em QT para Ca de pulmão" → idade 63, sexo M, neoplasia ativa: SIM |
+| **② Pandas** | Pandas (tabelas em Python) | **Junta** as fichas numa tabela e **aplica os critérios do estudo** a cada paciente | idade 63 ✔ (30–70) · HbA1c 8,4 ✔ (7–10,5) · neoplasia ativa ✘ → **NÃO ELEGÍVEL**, motivo: "neoplasia ativa" |
+| **③ Random Forest** | scikit-learn | Dá uma **probabilidade** para cada paciente, usada só para **ordenar** quem aparece primeiro. Não muda o resultado da etapa ② | entre os ELEGÍVEIS, quem tem 0,92 aparece antes de quem tem 0,61 |
+| **④ Planilha** | Pandas → Excel | Gera a **planilha de elegibilidade**: posição, resultado, probabilidade, critérios atendidos, critérios que barraram e os trechos do texto | `planilha_resultado.xlsx` |
+
+> **Por que os critérios ficam no Pandas e não na IA?** Porque regra fixa sempre dá o mesmo resultado e mostra o porquê ("HbA1c 10,8% acima do máximo de 10,5%"). É isso que faz o coordenador confiar. A IA só **lê**; quem **decide** é a regra, e a decisão final é sempre humana.
+
+**Situação hoje:** ① pronta e testada · ②, ③ e ④ em construção (Mateus).
 
 Explicação completa, peça por peça: **[docs/COMO_FUNCIONA.md](docs/COMO_FUNCIONA.md)**.
 
@@ -120,8 +144,10 @@ Para a IA ler textos novos, instale o [Ollama](https://ollama.com) e rode `ollam
 | Pasta | O que tem | Dono |
 |---|---|---|
 | `ia/entrada/` | ler e validar a planilha | Paulo |
-| `ia/extracao/` | IA, regras, dupla checagem, verificação, cache, avaliação | Paulo |
-| `ia/dados/` · `ia/regras/` · `ia/modelo/` · `ia/saida/` | Pandas, decisão, Random Forest, planilha final | Mateus |
+| `ia/extracao/` | ① estruturação: IA, regex, dupla checagem, verificação, cache, avaliação | Paulo |
+| `ia/dados/` · `ia/regras/` | ② Pandas: juntar a tabela e aplicar os critérios do estudo | Mateus |
+| `ia/modelo/` | ③ Random Forest | Mateus |
+| `ia/saida/` | ④ planilha de elegibilidade | Mateus |
 | `dados/` | planilhas de pacientes **fictícios** | os dois (só leitura) |
 | `prompts/` | instruções da IA (versionadas) e casos difíceis | Paulo |
 | `contratos/` | formato do `extracoes.json` (Paulo ↔ Mateus) | os dois |
@@ -147,7 +173,7 @@ Para a IA ler textos novos, instale o [Ollama](https://ollama.com) e rode `ollam
 | | Papel |
 |---|---|
 | **Paulo Francisco de Moura Neto** | cofundador, líder técnico · entrada e IA |
-| **Mateus Basílio** | dados, regras, Random Forest e saída |
+| **Mateus Basílio** | Pandas (tabela e critérios), Random Forest e planilha de elegibilidade |
 | **Pedro** e **Matheus Andrade** | apresentação do MVP |
 | Equipe de pesquisa clínica da **Bárbara** | validação clínica |
 
