@@ -1,0 +1,26 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "incerto",
+    "evidencia": "Suspeita de gestação, aguardando beta-HCG",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "Metformina suspensa desde a última internação",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "hipertensão arterial",
+    "insuficiência renal crônica"
+  ],
+  "observacoes_relevantes": "Suspeita de gestação."
+}

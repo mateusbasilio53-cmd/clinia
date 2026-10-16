@@ -1,0 +1,25 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Faz uso de MTF 1g 12/12h",
+    "confianca": "media"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "dislipidemia"
+  ],
+  "observacoes_relevantes": "Últimos exames indicam controle inadequado do diabetes mellitus tipo 2."
+}

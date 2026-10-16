@@ -1,0 +1,25 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": true,
+    "status": "incerto",
+    "evidencia": "Suspeita de gestação, aguardando beta-HCG",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "MTF suspensa pela nefrologia após piora da função renal",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "hipertensão arterial sistêmica"
+  ],
+  "observacoes_relevantes": "Gestação a confirmar."
+}

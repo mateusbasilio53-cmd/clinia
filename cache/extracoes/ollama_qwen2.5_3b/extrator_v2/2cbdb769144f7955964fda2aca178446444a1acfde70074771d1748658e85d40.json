@@ -1,0 +1,26 @@
+{
+  "neoplasia_ativa": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "Linfoma tratado na juventude, curado, sem seguimento oncológico há mais de 10 anos.",
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Faz uso de metfomina 1g 12/12h",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "lúpus eritematoso sistêmico",
+    "linfoma"
+  ],
+  "observacoes_relevantes": "Diabetes e obesidade."
+}

@@ -78,7 +78,9 @@ def caminho_planilha(caminho: str | None = None) -> Path:
 
 
 def ler_planilha(caminho: str | Path) -> pd.DataFrame:
-    return pd.read_excel(caminho, sheet_name=ABA_PACIENTES)
+    """Lê a aba Base_Pacientes; se não existir, a primeira aba (ex.: bases sintéticas novas)."""
+    abas = pd.ExcelFile(caminho).sheet_names
+    return pd.read_excel(caminho, sheet_name=ABA_PACIENTES if ABA_PACIENTES in abas else 0)
 
 
 def textos_para_extracao(df: pd.DataFrame) -> list[tuple[str, str]]:

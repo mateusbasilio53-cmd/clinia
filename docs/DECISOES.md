@@ -106,6 +106,33 @@
 - **Erro perigoso que sobrou:** CT-04 ("História de Ca de próstata, em seguimento") saiu "negado" em vez de "incerto". Esse tipo de erro pode deixar elegível alguém que deveria ir para revisão.
 - **Limite da medida:** os exemplos cobrem os mesmos tipos de dificuldade dos 15 casos, então 87% é otimista. Precisa de casos escritos por outra pessoa (D20).
 
+## D24 — Dupla checagem: IA + regras
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Paulo
+- **Decisão:** com IA (Ollama ou Claude), a leitura final passa por `ia/extracao/combinacao.py`:
+  - se IA e regras discordam sobre "tem" ou "não tem" → INCERTO, confiança baixa (vai para REVISAR), com a nota da divergência;
+  - "negado" e "nao_mencionado" contam como a mesma conclusão; se uma diz "negado" com trecho, fica o "negado";
+  - trava: "usa metformina" só vale se o trecho citado fala de metformina ou MTF.
+  Desligável com `--sem-dupla-checagem`.
+- **Motivo (Base 2, 100 pacientes):** erros perigosos 11 (só IA) e 19 (só regras) → **3** (combinado).
+- **Custo:** 46 de 100 pacientes vão para REVISAR.
+- **Alternativa descartada:** só IA (mais erros perigosos) ou só regras (14 erros perigosos em metformina).
+
+## D25 — A Base 2 é a prova, não material de ajuste
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Paulo
+- **Decisão:** `dados/pacientes_ficticios_PAC201-300.xlsx` (100 pacientes, gerada no Claude chat) serve só para **medir**. O prompt e as regras não são ajustados olhando para ela. Melhorias futuras usam outra base de estudo.
+- **Motivo:** se ajustarmos pela prova, o número deixa de valer. Exemplo: as regras não pegam "oncologia"; isso fica anotado para corrigir junto com uma base nova.
+- **Impacto:** `docs/RESULTADOS_EXTRACAO.md` é a fonte dos números para a apresentação.
+
+## D26 — Pasta `entregas/` e demo no computador do Mateus
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Paulo
+- **Decisão:**
+  - `entregas/` guarda o que o Paulo entrega ao Mateus: as extrações prontas e a planilha de saída. O Mateus não precisa rodar a IA para trabalhar.
+  - A demo de 04/12 roda no computador do Mateus, **com Ollama instalado**, para ler textos ao vivo. O cache (`--offline`) é o plano B.
+- **Impacto:** testar a demo completa no computador do Mateus na S6 (21–27/11), 3 vezes seguidas. Guia em `docs/GUIA_INSTALACAO.md`.
+
 ---
 
 ## Pendentes

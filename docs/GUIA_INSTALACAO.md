@@ -48,7 +48,7 @@ pip install -r requirements.txt
 python -m pytest
 ```
 
-O último comando tem que terminar com **`35 passed`** (ou mais). Se der erro de "execução de scripts desabilitada" no `Activate.ps1`, rode antes:
+O último comando tem que terminar com **`41 passed`** (ou mais). Se der erro de "execução de scripts desabilitada" no `Activate.ps1`, rode antes:
 `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`
 
 **Teste rápido, ainda sem IA** (usa as respostas que já estão no cache):
@@ -58,7 +58,7 @@ python -m ia.entrada.validar
 python -m ia.extracao.extrator --provedor ollama --offline
 ```
 
-Se o segundo comando terminar com `"falhas": []` e `"do_cache": 200`, o projeto está funcionando. A partir daqui você já consegue trabalhar no Pandas / regras / RF.
+Se o segundo comando terminar com `"falhas": []` e `"do_cache": 200`, o projeto está funcionando. As extrações prontas (para não rodar nada) estão em `entregas/`; veja `docs/PARA_O_MATEUS.md`. A partir daqui você já consegue trabalhar no Pandas / regras / RF.
 
 ## Passo 4 — Ollama (a IA local)
 

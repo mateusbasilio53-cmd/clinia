@@ -7,6 +7,8 @@ Triagem inteligente de pacientes para pesquisa clínica. MVP previsto para 04/12
 - Decisões: [docs/DECISOES.md](docs/DECISOES.md)
 - Estado atual: [docs/AUDITORIA.md](docs/AUDITORIA.md)
 - **Instalar e rodar no seu computador (inclui a IA local):** [docs/GUIA_INSTALACAO.md](docs/GUIA_INSTALACAO.md)
+- **Resultados da extração (números para a apresentação):** [docs/RESULTADOS_EXTRACAO.md](docs/RESULTADOS_EXTRACAO.md)
+- **Para o Mateus (o que está pronto e como usar):** [docs/PARA_O_MATEUS.md](docs/PARA_O_MATEUS.md)
 
 ## Como preparar o ambiente (Windows)
 
@@ -51,7 +53,10 @@ python -m ia.extracao.avaliar --extracoes saidas/<data>/extracoes_claude.json
 python -m ia.extracao.avaliar --extracoes saidas/<data>/extracoes_claude.json --casos prompts/casos_teste_v1.json
 
 # demo sem internet: usa só o cache
-python -m ia.extracao.extrator --provedor claude --offline
+python -m ia.extracao.extrator --provedor ollama --offline
+
+# 5. planilha de saída (dados + leitura + gabarito + motivo do REVISAR)
+python -m ia.extracao.relatorio --base "Base 2|dados/pacientes_ficticios_PAC201-300.xlsx|entregas/extracoes_base2.json"
 ```
 
 | Pasta | Dono | O quê |
@@ -60,5 +65,8 @@ python -m ia.extracao.extrator --provedor claude --offline
 | `ia/extracao/` | Paulo | LLM, verificação de evidência, cache, avaliação |
 | `prompts/` | Paulo | prompt do extrator (versionado) e casos de teste |
 | `contratos/` | Paulo + Mateus | schema e exemplos de `extracoes.json` (mudança só com OK dos dois) |
+| `entregas/` | Paulo → Mateus | extrações prontas e planilha de saída |
+| `dados/` | os dois (só leitura) | planilhas de pacientes fictícios |
+| `cache/` | automático | respostas da IA já calculadas (modo `--offline`) |
 
 > Só dados fictícios neste repositório. Chaves de API ficam em `.env`, que nunca vai para o git.

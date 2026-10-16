@@ -1,0 +1,27 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "incerto",
+    "evidencia": "G3P2A1",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "MTF 1g 12/12h",
+    "confianca": "media"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "hipertensão arterial",
+    "obesidade",
+    "neoplasia de próstata"
+  ],
+  "observacoes_relevantes": "Gestação a confirmar."
+}

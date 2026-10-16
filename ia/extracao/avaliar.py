@@ -4,6 +4,7 @@ Gabarito da planilha (D14): as colunas escondidas do pipeline.
     - neoplasia_ativa / gestacao "Sim" -> esperado "afirmado";
       "Não" -> aceita "negado" ou "nao_mencionado" (a coluna não distingue os dois).
     - uso_metformina: "metformina" em `medicamentos` -> "afirmado"; senão "negado" ou "nao_mencionado".
+Gabarito explícito (colunas gab_neoplasia, gab_gestacao, gab_metformina): o status exato.
 Gabarito dos casos de teste: o status exato em `esperado`.
 
 Uso:
@@ -29,7 +30,16 @@ from ia.extracao.schema import CAMPOS, ExtracaoPaciente
 NAO = {"negado", "nao_mencionado"}
 
 
+COLUNAS_GAB = {"neoplasia_ativa": "gab_neoplasia", "gestacao": "gab_gestacao", "uso_metformina": "gab_metformina"}
+
+
 def gabarito_planilha(df: pd.DataFrame) -> dict[str, dict[str, set[str]]]:
+    # Bases com gabarito explícito por status (ex.: PAC-201 a 300): comparação exata.
+    if all(c in df.columns for c in COLUNAS_GAB.values()):
+        return {
+            str(linha["id_paciente"]): {campo: {str(linha[col]).strip()} for campo, col in COLUNAS_GAB.items()}
+            for _, linha in df.iterrows()
+        }
     gab = {}
     for linha in df.itertuples(index=False):
         tem_metformina = "metformina" in str(linha.medicamentos).casefold()

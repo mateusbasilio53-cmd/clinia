@@ -1,0 +1,586 @@
+[
+  {
+    "id_paciente": "CT-01",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": false,
+        "status": "negado",
+        "evidencia": "Nega história de neoplasia",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": false,
+        "status": "negado",
+        "evidencia": "Nega gestação atual",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Em uso de metformina 850 mg 2x/dia",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": null,
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "e5c2561721436d8ad0667a503a110b01bff87c1b29d08a5d21129a0e8e108cea",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-02",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": false,
+        "status": "negado",
+        "evidencia": "Sem Ca",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "faz uso de metformina 500 mg 12/12h",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2",
+      "hipertensão arterial sistêmica"
+    ],
+    "observacoes_relevantes": "Uso de metformina e losartana.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "26bc624965222c0095a64ca04aa6953e8ff22492c4b560e8d8ccb6a1485299cb",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-03",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": false,
+        "status": "negado",
+        "evidencia": "Ca de mama tratado em 2018, em remissão",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Metformina XR 1 g à noite",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2",
+      "neoplasia de mama"
+    ],
+    "observacoes_relevantes": "Em remissão após tratamento.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "ba1bbeeb5940736038af93df80290449f8da2c4bb80c6758ce807e8df0f4155e",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-04",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "incerto",
+        "evidencia": "História de Ca de próstata, em seguimento com a urologia",
+        "confianca": "baixa",
+        "evidencia_verificada": true,
+        "problemas": [
+          "leituras divergentes: IA = não tem, regras = incerto"
+        ]
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Em uso de metformina 850 mg 2x/dia",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2",
+      "neoplasia de próstata"
+    ],
+    "observacoes_relevantes": "Em seguimento com urologia.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "3de501a8c872e052b5c4918d14292c4cb797b5cca796f48b5428c063605af529",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-05",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "QT para Ca de cólon",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Metformina 500 mg 2x/dia mantida",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2",
+      "neoplasia de cólon"
+    ],
+    "observacoes_relevantes": "Controle irregular de diabetes e tratamento contra câncer de cólon.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "bc2bd0f83c6c6ab9825279ac3c8c0af285ba98d4db68e3ae2f61bb37b3c8f381",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-06",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "incerto",
+        "evidencia": "suspeita de gestação, aguarda beta-HCG",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Em uso de metformina 850 mg 2x/dia",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": "Gestação a confirmar.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "7456192839d801fc8672116b4e7988bbd4cee07964adfa19a51bcf41dad412b5",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-07",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "incerto",
+        "evidencia": "beta-HCG negativo em 10/10",
+        "confianca": "baixa",
+        "evidencia_verificada": true,
+        "problemas": [
+          "leituras divergentes: IA = incerto, regras = não tem"
+        ]
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Metformina 1.000 mg 2x/dia",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": "Gestação a confirmar.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "37efba3744c5d2d3684f134cdaae0e53dcea7fb7589536a1992f3cb444b7ccc3",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-08",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "negado",
+        "evidencia": "G2P2",
+        "confianca": "baixa",
+        "evidencia_verificada": true,
+        "problemas": [
+          "valor None incoerente com status negado"
+        ]
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "usa metformina 500 mg 2x/dia",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": "Gestação encerrada.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "455b16875f6ed9e03c4e03766421bc17fade66186a292d322bc9a4d05fd136c6",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-09",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Gestante de 14 semanas, IG por USG",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Metformina mantida pelo obstetra",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": "Gestação confirmada.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "ed138014f6a2a20d664b81af5e5067f02939c1dc78515d1255d91747e5604f67",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-10",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": false,
+        "status": "negado",
+        "evidencia": "Metformina suspensa há 2 meses por intolerância gastrointestinal",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": "Sitagliptina substituindo metformina.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "683c983fa009b47470d144feebdb29c25cf4605e65ab6bc25c770acdfd7b5597",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-11",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": null,
+        "status": "incerto",
+        "evidencia": "Prescrita metformina 500 mg na última consulta",
+        "confianca": "baixa",
+        "evidencia_verificada": true,
+        "problemas": [
+          "leituras divergentes: IA = incerto, regras = não tem"
+        ]
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": "Recém-diagnosticado.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "9dd59808c5317803a29f9f147c845917c95d11b3e9a24969c922c4931802ba92",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-12",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Em uso de metfomina 850mg 2x ao dia",
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": "Adesão boa.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "1f8261ba251231e3142dad745c48d3cee9d2f51e2781aaeeb4eb962d9d4ab0e4",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-13",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Em uso de MTF 1g 12/12h",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": null,
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "b1627960ce1857a999735eff82a61edc9a397a2e4001c3a26f4e8900b3beb7a7",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-14",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "incerto",
+        "evidencia": "Mãe falecida por Ca de mama",
+        "confianca": "baixa",
+        "evidencia_verificada": true,
+        "problemas": [
+          "leituras divergentes: IA = incerto, regras = não mencionado"
+        ]
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": true,
+        "status": "afirmado",
+        "evidencia": "Metformina 850 mg 2x/dia",
+        "confianca": "media",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus tipo 2"
+    ],
+    "observacoes_relevantes": "Gestação não mencionada.",
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "59a6dd028fb841927ffd28a3677d6385fef09427b881812ea17e1a6c5a885db4",
+    "extraido_em": "2026-10-16T17:06:22"
+  },
+  {
+    "id_paciente": "CT-15",
+    "campos": {
+      "neoplasia_ativa": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "gestacao": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      },
+      "uso_metformina": {
+        "valor": null,
+        "status": "nao_mencionado",
+        "evidencia": null,
+        "confianca": "alta",
+        "evidencia_verificada": true,
+        "problemas": []
+      }
+    },
+    "diagnosticos_mencionados": [
+      "diabetes mellitus"
+    ],
+    "observacoes_relevantes": null,
+    "evidencia_verificada": true,
+    "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
+    "versao_prompt": "extrator_v2",
+    "hash_texto": "0f4c45850631fa2df0b165ba8c94ba20ed549e21bace4e25aa8905369f1c0157",
+    "extraido_em": "2026-10-16T17:06:22"
+  }
+]

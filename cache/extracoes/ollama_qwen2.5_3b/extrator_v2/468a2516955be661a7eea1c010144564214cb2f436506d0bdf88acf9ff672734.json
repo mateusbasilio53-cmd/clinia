@@ -1,0 +1,28 @@
+{
+  "neoplasia_ativa": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Linfoma em QT no hospital de referência",
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Em uso de metformina 1g 2x/dia",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "hipertensão arterial",
+    "dislipidemia",
+    "obesidade",
+    "linfoma"
+  ],
+  "observacoes_relevantes": "Linfoma em atividade."
+}

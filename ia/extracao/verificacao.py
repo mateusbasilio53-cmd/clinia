@@ -50,5 +50,13 @@ def verificar_campo(campo: CampoExtraido, texto: str) -> CampoVerificado:
     return CampoVerificado(**dados, evidencia_verificada=verificada, problemas=problemas)
 
 
-def verificar_resposta(resposta: RespostaLLM, texto: str) -> CamposVerificados:
-    return CamposVerificados(**{nome: verificar_campo(getattr(resposta, nome), texto) for nome in CAMPOS})
+def verificar_resposta(resposta: RespostaLLM, texto: str, notas: dict[str, list[str]] | None = None) -> CamposVerificados:
+    """Verifica cada campo; `notas` (da dupla checagem) entram como problemas e rebaixam a confiança."""
+    campos = {}
+    for nome in CAMPOS:
+        campo = verificar_campo(getattr(resposta, nome), texto)
+        extras = (notas or {}).get(nome, [])
+        if extras:
+            campo = campo.model_copy(update={"problemas": [*extras, *campo.problemas], "confianca": "baixa"})
+        campos[nome] = campo
+    return CamposVerificados(**campos)

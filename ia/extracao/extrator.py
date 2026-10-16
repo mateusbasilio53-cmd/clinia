@@ -29,6 +29,7 @@ from dotenv import load_dotenv
 
 from ia.entrada.planilha import caminho_planilha, ler_planilha, textos_para_extracao
 from ia.extracao.cache import CacheExtracoes, hash_texto
+from ia.extracao.combinacao import combinar
 from ia.extracao.provedores import ErroExtracao, Provedor, ProvedorClaude, ProvedorOllama, ProvedorRegras
 from ia.extracao.schema import CAMPOS, CampoVerificado, CamposVerificados, ExtracaoPaciente, RespostaLLM
 from ia.extracao.verificacao import verificar_resposta
@@ -67,8 +68,11 @@ def _falha(id_paciente: str, motivo: str, modelo: str, versao: str, hash_: str) 
     )
 
 
-def montar_item(id_paciente: str, texto: str, resposta: RespostaLLM, modelo: str, versao: str) -> ExtracaoPaciente:
-    campos = verificar_resposta(resposta, texto)
+def montar_item(
+    id_paciente: str, texto: str, resposta: RespostaLLM, modelo: str, versao: str,
+    notas: dict[str, list[str]] | None = None,
+) -> ExtracaoPaciente:
+    campos = verificar_resposta(resposta, texto, notas)
     return ExtracaoPaciente(
         id_paciente=id_paciente,
         campos=campos,
@@ -89,6 +93,7 @@ def executar(
     cache: CacheExtracoes | None,
     confirmar: bool = False,
     offline: bool = False,
+    dupla_checagem: bool = False,
 ) -> tuple[list[ExtracaoPaciente], dict]:
     pendentes = [i for i, (_, t) in enumerate(itens) if cache is None or cache.obter(provedor.nome, versao, hash_texto(t)) is None]
     if cache is not None and pendentes:
@@ -118,9 +123,13 @@ def executar(
             if cache is not None:
                 cache.guardar(provedor.nome, versao, h, resposta)
                 print(f"  [{n}/{len(itens)}] {id_paciente}: extraído", file=sys.stderr)
-        resultado.append(montar_item(id_paciente, texto, resposta, modelo_usado, versao))
+        notas = None
+        if dupla_checagem:
+            resposta, notas = combinar(resposta, ProvedorRegras().extrair(texto)[0])
+            modelo_usado = f"{modelo_usado}+{ProvedorRegras.nome}"
+        resultado.append(montar_item(id_paciente, texto, resposta, modelo_usado, versao, notas))
 
-    baixa = sum(getattr(r.campos, c).confianca == "baixa" for r in resultado for c in CAMPOS)
+    baixa =sum(getattr(r.campos, c).confianca == "baixa" for r in resultado for c in CAMPOS)
     resumo = {
         "pacientes": len(itens),
         "chamadas_api": chamadas,
@@ -131,6 +140,11 @@ def executar(
             not getattr(r.campos, c).evidencia_verificada for r in resultado for c in CAMPOS
         ),
         "segundos": round(time.perf_counter() - inicio, 2),
+        "dupla_checagem": dupla_checagem,
+        "campos_divergentes": sum(
+            any(p.startswith(("leituras divergentes", "IA disse")) for p in getattr(r.campos, c).problemas)
+            for r in resultado for c in CAMPOS
+        ),
     }
     return resultado, resumo
 
@@ -150,6 +164,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--saida", type=Path, help="padrão: saidas/AAAA-MM-DD_HHMM/extracoes_<provedor>.json")
     p.add_argument("--confirmar", action="store_true", help="autoriza as chamadas pagas")
     p.add_argument("--offline", action="store_true", help="usa só o cache, sem chamar a API")
+    p.add_argument("--sem-dupla-checagem", action="store_true", help="usa só a IA, sem conferir com as regras (D24)")
     args = p.parse_args(argv)
 
     itens = carregar_casos(args.casos) if args.casos else textos_para_extracao(ler_planilha(caminho_planilha(args.planilha)))
@@ -173,7 +188,8 @@ def main(argv: list[str] | None = None) -> int:
             modelo = args.modelo or os.getenv("CLINIA_MODELO", MODELO_PADRAO)
             provedor = ProvedorClaude(modelo, prompt, args.effort)
 
-    resultado, resumo = executar(itens, provedor, versao, cache, args.confirmar, args.offline)
+    dupla = args.provedor != "regras" and not args.sem_dupla_checagem
+    resultado, resumo = executar(itens, provedor, versao, cache, args.confirmar, args.offline, dupla)
 
     saida = args.saida or Path("saidas") / datetime.now().strftime("%Y-%m-%d_%H%M") / f"extracoes_{args.provedor}.json"
     saida.parent.mkdir(parents=True, exist_ok=True)

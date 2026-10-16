@@ -1,0 +1,27 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "incerto",
+    "evidencia": "Veio acompanhada do filho",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Em uso de empagliflozina 25mg/dia",
+    "confianca": "media"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "insuficiência renal crônica",
+    "obesidade",
+    "hiperglicemia"
+  ],
+  "observacoes_relevantes": "Possível gravidez a confirmar."
+}
