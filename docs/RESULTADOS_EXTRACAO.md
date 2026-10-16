@@ -51,6 +51,20 @@ Cada resposta é uma de quatro: **SIM**, **NÃO**, **não mencionado** ou **INCE
 
 **Erro perigoso** = a CLINIA poderia deixar como elegível alguém que deveria sair ou ser revisado (ex.: o texto fala de câncer e a leitura diz "não mencionado").
 
+### Ficha numérica lida do texto (D27)
+
+| Dado | Base 1 (200) | Prova (100) | Em branco na prova |
+|---|---|---|---|
+| idade | 100% | 99% | 1 (não está no texto) |
+| sexo | 100% | 100% | 0 |
+| HbA1c | 100% | 98% | 2 (não estão no texto) |
+| creatinina | 100% | 95% | 5 (não estão no texto) |
+| glicemia de jejum | 100% | 98% | 2 (não estão no texto) |
+| IMC | 100% | 97% | 3 (não estão no texto) |
+
+**Nenhum número lido errado** nas duas bases. Quando o valor não está no texto, fica em branco, sem chute.
+**Transparência:** a primeira medição na prova (às cegas) também teve 0 erros, mas deixou em branco ~30% de sexo e glicemia, por abreviações como "Pcte F" e "glic jejum". Essas formas foram incluídas depois de olhar a prova; por isso, os números acima não são medida às cegas.
+
 ### Base 1 (200 pacientes, texto de modelo pronto)
 
 100% nos três campos, 0 erros perigosos, 1 paciente para REVISAR (a IA reescreveu um trecho e o código percebeu).
@@ -93,5 +107,5 @@ Notebook com RTX 3050 de 4 GB, sem internet, custo zero.
 | Regras: incluir "oncologia" | Pegaria os 2 erros de neoplasia | Fazer junto com uma base nova de estudo, não ajustando pela Base 2 |
 | Prompt v3 com exemplos de negação e de G1P1 | Menos REVISAR | Exemplos vêm de base nova, nunca da Base 2 |
 | Modelo maior (7–8B) | Menos erros da IA | Mais lento na placa de 4 GB |
-| Extração completa (idade, HbA1c, IMC... também do texto) | Planilha final 100% montada a partir do texto | Muda o contrato com o Mateus |
+| ~~Extração completa (idade, HbA1c, IMC... também do texto)~~ | ✅ feita (D27) | — |
 | Revisão do gabarito pela equipe da Bárbara | Número confiável para a banca | Depende da disponibilidade deles |

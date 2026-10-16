@@ -9,6 +9,225 @@
       "id_paciente": {
         "type": "string"
       },
+      "dados_lidos": {
+        "additionalProperties": false,
+        "description": "Ficha numérica montada só a partir do texto corrido (D27). null = não está no texto.",
+        "properties": {
+          "idade": {
+            "additionalProperties": false,
+            "description": "Um dado lido do texto pelas regras (número ou sexo), com o trecho literal.",
+            "properties": {
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidencia": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "valor",
+              "evidencia"
+            ],
+            "type": "object"
+          },
+          "sexo": {
+            "additionalProperties": false,
+            "description": "Um dado lido do texto pelas regras (número ou sexo), com o trecho literal.",
+            "properties": {
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidencia": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "valor",
+              "evidencia"
+            ],
+            "type": "object"
+          },
+          "hba1c": {
+            "additionalProperties": false,
+            "description": "Um dado lido do texto pelas regras (número ou sexo), com o trecho literal.",
+            "properties": {
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidencia": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "valor",
+              "evidencia"
+            ],
+            "type": "object"
+          },
+          "creatinina": {
+            "additionalProperties": false,
+            "description": "Um dado lido do texto pelas regras (número ou sexo), com o trecho literal.",
+            "properties": {
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidencia": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "valor",
+              "evidencia"
+            ],
+            "type": "object"
+          },
+          "glicemia_jejum": {
+            "additionalProperties": false,
+            "description": "Um dado lido do texto pelas regras (número ou sexo), com o trecho literal.",
+            "properties": {
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidencia": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "valor",
+              "evidencia"
+            ],
+            "type": "object"
+          },
+          "imc": {
+            "additionalProperties": false,
+            "description": "Um dado lido do texto pelas regras (número ou sexo), com o trecho literal.",
+            "properties": {
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidencia": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "valor",
+              "evidencia"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "idade",
+          "sexo",
+          "hba1c",
+          "creatinina",
+          "glicemia_jejum",
+          "imc"
+        ],
+        "type": "object"
+      },
       "campos": {
         "additionalProperties": false,
         "properties": {
@@ -237,6 +456,7 @@
     },
     "required": [
       "id_paciente",
+      "dados_lidos",
       "campos",
       "diagnosticos_mencionados",
       "observacoes_relevantes",

@@ -30,6 +30,7 @@ from dotenv import load_dotenv
 from ia.entrada.planilha import caminho_planilha, ler_planilha, textos_para_extracao
 from ia.extracao.cache import CacheExtracoes, hash_texto
 from ia.extracao.combinacao import combinar
+from ia.extracao.estruturados import ler_dados
 from ia.extracao.provedores import ErroExtracao, Provedor, ProvedorClaude, ProvedorOllama, ProvedorRegras
 from ia.extracao.schema import CAMPOS, CampoVerificado, CamposVerificados, ExtracaoPaciente, RespostaLLM
 from ia.extracao.verificacao import verificar_resposta
@@ -54,7 +55,7 @@ def carregar_casos(caminho: Path) -> list[tuple[str, str]]:
     return [(c["id"], c["anotacao_medica"]) for c in casos]
 
 
-def _falha(id_paciente: str, motivo: str, modelo: str, versao: str, hash_: str) -> ExtracaoPaciente:
+def _falha(id_paciente: str, texto: str, motivo: str, modelo: str, versao: str, hash_: str) -> ExtracaoPaciente:
     """Extração que falhou: todos os campos incertos e com confiança baixa, para cair em REVISAR."""
     campo = CampoVerificado(
         valor=None, status="incerto", evidencia=None, confianca="baixa",
@@ -62,6 +63,7 @@ def _falha(id_paciente: str, motivo: str, modelo: str, versao: str, hash_: str) 
     )
     return ExtracaoPaciente(
         id_paciente=id_paciente,
+        dados_lidos=ler_dados(texto),
         campos=CamposVerificados(**{nome: campo for nome in CAMPOS}),
         diagnosticos_mencionados=[], observacoes_relevantes=None, evidencia_verificada=False,
         modelo_llm=modelo, versao_prompt=versao, hash_texto=hash_, extraido_em=datetime.now().isoformat(timespec="seconds"),
@@ -75,6 +77,7 @@ def montar_item(
     campos = verificar_resposta(resposta, texto, notas)
     return ExtracaoPaciente(
         id_paciente=id_paciente,
+        dados_lidos=ler_dados(texto),
         campos=campos,
         diagnosticos_mencionados=resposta.diagnosticos_mencionados,
         observacoes_relevantes=resposta.observacoes_relevantes,
@@ -118,7 +121,7 @@ def executar(
             except (ErroExtracao, ValueError) as e:
                 falhas.append(id_paciente)
                 print(f"  [{n}/{len(itens)}] {id_paciente}: FALHA ({e})", file=sys.stderr)
-                resultado.append(_falha(id_paciente, str(e), provedor.nome, versao, h))
+                resultado.append(_falha(id_paciente, texto, str(e), provedor.nome, versao, h))
                 continue
             if cache is not None:
                 cache.guardar(provedor.nome, versao, h, resposta)

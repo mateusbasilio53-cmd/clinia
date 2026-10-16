@@ -1,0 +1,3 @@
+data;conjunto;modelo;prompt;dupla_checagem;pacientes;segundos;s_por_paciente;acerto_neoplasia_ativa;acerto_gestacao;acerto_uso_metformina;erros_perigosos;pacientes_revisar;falhas
+2026-10-16 17:17;prova;qwen2.5:3b;extrator_v2;True;100;0.09;cache;0.91;0.92;0.8;3;46;0
+2026-10-16 17:17;casos;qwen2.5:3b;extrator_v2;True;15;0.01;cache;0.933;0.867;0.933;0;6;0

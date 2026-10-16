@@ -133,6 +133,31 @@
   - A demo de 04/12 roda no computador do Mateus, **com Ollama instalado**, para ler textos ao vivo. O cache (`--offline`) é o plano B.
 - **Impacto:** testar a demo completa no computador do Mateus na S6 (21–27/11), 3 vezes seguidas. Guia em `docs/GUIA_INSTALACAO.md`.
 
+## D27 — Ficha numérica lida do texto, por regras
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Claude Code (Paulo delegou)
+- **Decisão:** a extração também lê do texto idade, sexo, HbA1c, creatinina, glicemia de jejum e IMC (`ia/extracao/estruturados.py`), cada um com o trecho literal. Vai no campo `dados_lidos` do `extracoes.json`. Quem faz é **regex, não a IA**.
+- **Motivo:** no AGHUx só existe o texto; a ficha completa precisa vir dele. Números seguem padrões fixos: regras leem com precisão, na hora e de graça, sem rodar a IA de novo.
+- **Resultado:** Base 1, 100%. Prova, medido às cegas: **0 números errados**, mas sexo e glicemia ficavam em branco em ~30% (formas como "Pcte F", "Sra.", "glic jejum", "A1c"). Depois de incluir essas formas (ajuste feito **olhando a prova**, então não é medida às cegas): 0 errados, e só ficam em branco os valores que de fato não estão no texto.
+- **Impacto:** o contrato **ganha** o campo `dados_lidos`; nada do que existia muda. O Mateus pode usar os números lidos ou os da planilha.
+
+## D28 — Espaço de avaliação e escolha de modelo por PC
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Paulo
+- **Decisão:**
+  - `python -m ia.verificar_pc` analisa RAM e placa de vídeo e recomenda o modelo (8 GB de VRAM ou mais → `qwen2.5:7b`);
+  - `python -m ia.extracao.experimento` compara modelos nas mesmas bases e guarda cada medição em `avaliacao/historico.csv`;
+  - `avaliacao/estudo/` é o lugar para melhorar prompt e regras, com o prompt pronto para gerar a base de estudo no Claude chat.
+- **Motivo:** o PC do Mateus deve aguentar um modelo maior; precisamos comparar com números guardados, sem misturar prova e estudo (D25).
+
+## D29 — Demo por comando e correção da trava de metformina
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Claude Code (Paulo delegou)
+- **Decisão:**
+  - `python -m ia.demo` mostra texto → ficha estruturada → motivo da revisão. Com `--texto`, a IA lê ao vivo; se o Ollama estiver fechado, cai para as regras e avisa.
+  - A trava da D24 passou a aceitar qualquer palavra que começa com "metf" (pega erros como "metformia"). Antes só aceitava "metformina" exata e mandava para revisão casos certos.
+- **Transparência:** o defeito da trava foi visto ao olhar a prova. Os números da prova não mudaram com a correção.
+
 ---
 
 ## Pendentes

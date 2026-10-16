@@ -1,6 +1,32 @@
 [
   {
     "id_paciente": "PAC-001",
+    "dados_lidos": {
+      "idade": {
+        "valor": 36.0,
+        "evidencia": "36 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.5,
+        "evidencia": "HbA1c 9.5"
+      },
+      "creatinina": {
+        "valor": 0.87,
+        "evidencia": "creatinina 0.87"
+      },
+      "glicemia_jejum": {
+        "valor": 171.0,
+        "evidencia": "glicemia de jejum 171"
+      },
+      "imc": {
+        "valor": 32.6,
+        "evidencia": "IMC 32.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -38,10 +64,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "62890de7ff12729bf4844d54ec40a057861d8f0f4355e17af52f86bb271ea386",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-002",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.3,
+        "evidencia": "HbA1c 8.3"
+      },
+      "creatinina": {
+        "valor": 0.65,
+        "evidencia": "creatinina 0.65"
+      },
+      "glicemia_jejum": {
+        "valor": 178.0,
+        "evidencia": "glicemia de jejum 178"
+      },
+      "imc": {
+        "valor": 35.3,
+        "evidencia": "IMC 35.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -76,10 +128,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "63b4637a0fca648d9ca7bd1a22cc4fc8e708def4d9b09c1fd8f1660c8e33edc9",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-003",
+    "dados_lidos": {
+      "idade": {
+        "valor": 35.0,
+        "evidencia": "35 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.3,
+        "evidencia": "HbA1c 9.3"
+      },
+      "creatinina": {
+        "valor": 0.96,
+        "evidencia": "creatinina 0.96"
+      },
+      "glicemia_jejum": {
+        "valor": 194.0,
+        "evidencia": "glicemia de jejum 194"
+      },
+      "imc": {
+        "valor": 36.5,
+        "evidencia": "IMC 36.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -114,10 +192,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "dc38a780ffad8d6636d74c1aafc39cffa999b8168f83f29e6a2e003fb50099d9",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-004",
+    "dados_lidos": {
+      "idade": {
+        "valor": 43.0,
+        "evidencia": "43 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.9,
+        "evidencia": "HbA1c 9.9"
+      },
+      "creatinina": {
+        "valor": 1.2,
+        "evidencia": "creatinina 1.20"
+      },
+      "glicemia_jejum": {
+        "valor": 172.0,
+        "evidencia": "glicemia de jejum 172"
+      },
+      "imc": {
+        "valor": 40.5,
+        "evidencia": "IMC 40.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -152,10 +256,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "099c55af059b1e8f24a9acd1a29ad0cc1038ac52f19a06f60313591223bb0a0f",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-005",
+    "dados_lidos": {
+      "idade": {
+        "valor": 43.0,
+        "evidencia": "43 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.7,
+        "evidencia": "HbA1c 9.7"
+      },
+      "creatinina": {
+        "valor": 1.1,
+        "evidencia": "creatinina 1.10"
+      },
+      "glicemia_jejum": {
+        "valor": 177.0,
+        "evidencia": "glicemia de jejum 177"
+      },
+      "imc": {
+        "valor": 36.7,
+        "evidencia": "IMC 36.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -190,10 +320,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "83f3c639d71b48334363abea779186bc6ab78b6e39a1e2df46d186f483bc412b",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-006",
+    "dados_lidos": {
+      "idade": {
+        "valor": 54.0,
+        "evidencia": "54 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.5,
+        "evidencia": "HbA1c 7.5"
+      },
+      "creatinina": {
+        "valor": 1.01,
+        "evidencia": "creatinina 1.01"
+      },
+      "glicemia_jejum": {
+        "valor": 173.0,
+        "evidencia": "glicemia de jejum 173"
+      },
+      "imc": {
+        "valor": 31.4,
+        "evidencia": "IMC 31.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -228,10 +384,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "208aacf6ef0fc9be1369ce8032e5a1eae77a4bcc49d8a526cb3a00459cf6bb8c",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-007",
+    "dados_lidos": {
+      "idade": {
+        "valor": 59.0,
+        "evidencia": "59 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.7,
+        "evidencia": "HbA1c 7.7"
+      },
+      "creatinina": {
+        "valor": 0.93,
+        "evidencia": "creatinina 0.93"
+      },
+      "glicemia_jejum": {
+        "valor": 175.0,
+        "evidencia": "glicemia de jejum 175"
+      },
+      "imc": {
+        "valor": 31.0,
+        "evidencia": "IMC 31.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -266,10 +448,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "0f66ef1d0021a38a66d2493d1af40abbd96ceee7a925c6533f1a776e6b003ec1",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-008",
+    "dados_lidos": {
+      "idade": {
+        "valor": 40.0,
+        "evidencia": "40 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 0.98,
+        "evidencia": "creatinina 0.98"
+      },
+      "glicemia_jejum": {
+        "valor": 154.0,
+        "evidencia": "glicemia de jejum 154"
+      },
+      "imc": {
+        "valor": 39.1,
+        "evidencia": "IMC 39.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -304,10 +512,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "066b103aea1605b2ebb38c79fc9e1fd2680f5e37d7d7fcd25da2ec864df9b109",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-009",
+    "dados_lidos": {
+      "idade": {
+        "valor": 64.0,
+        "evidencia": "64 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.8,
+        "evidencia": "HbA1c 7.8"
+      },
+      "creatinina": {
+        "valor": 1.11,
+        "evidencia": "creatinina 1.11"
+      },
+      "glicemia_jejum": {
+        "valor": 177.0,
+        "evidencia": "glicemia de jejum 177"
+      },
+      "imc": {
+        "valor": 34.9,
+        "evidencia": "IMC 34.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -342,10 +576,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "1c25b5dbc9be47e852f46e4e0b9baedc3b0a3b405beaa41ad05d79654efb306a",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-010",
+    "dados_lidos": {
+      "idade": {
+        "valor": 66.0,
+        "evidencia": "66 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 0.83,
+        "evidencia": "creatinina 0.83"
+      },
+      "glicemia_jejum": {
+        "valor": 156.0,
+        "evidencia": "glicemia de jejum 156"
+      },
+      "imc": {
+        "valor": 37.7,
+        "evidencia": "IMC 37.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -380,10 +640,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "8c122d6ce7fb0657c516a0a3d399b0cb9e8148aed7fa134f3cafef818d931bce",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-011",
+    "dados_lidos": {
+      "idade": {
+        "valor": 48.0,
+        "evidencia": "48 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.8,
+        "evidencia": "HbA1c 9.8"
+      },
+      "creatinina": {
+        "valor": 1.1,
+        "evidencia": "creatinina 1.10"
+      },
+      "glicemia_jejum": {
+        "valor": 202.0,
+        "evidencia": "glicemia de jejum 202"
+      },
+      "imc": {
+        "valor": 35.9,
+        "evidencia": "IMC 35.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -418,10 +704,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "1826345cc4d072273da8794bf7df9160d00c365c4356a580cd15be2e2af46b34",
-    "extraido_em": "2026-10-16T17:06:03"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-012",
+    "dados_lidos": {
+      "idade": {
+        "valor": 54.0,
+        "evidencia": "54 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.4,
+        "evidencia": "HbA1c 9.4"
+      },
+      "creatinina": {
+        "valor": 1.13,
+        "evidencia": "creatinina 1.13"
+      },
+      "glicemia_jejum": {
+        "valor": 165.0,
+        "evidencia": "glicemia de jejum 165"
+      },
+      "imc": {
+        "valor": 30.4,
+        "evidencia": "IMC 30.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -456,10 +768,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "463a1eaff6cf7ad5e3038ddb1bd433232090fad414960979eb5b33d44cebaeb8",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-013",
+    "dados_lidos": {
+      "idade": {
+        "valor": 38.0,
+        "evidencia": "38 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.7,
+        "evidencia": "HbA1c 8.7"
+      },
+      "creatinina": {
+        "valor": 0.74,
+        "evidencia": "creatinina 0.74"
+      },
+      "glicemia_jejum": {
+        "valor": 165.0,
+        "evidencia": "glicemia de jejum 165"
+      },
+      "imc": {
+        "valor": 28.7,
+        "evidencia": "IMC 28.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -494,10 +832,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "fae629b65c083449ac907bf5205b0713c80d54eaf2c5c112d1e3873cd2233b75",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-014",
+    "dados_lidos": {
+      "idade": {
+        "valor": 59.0,
+        "evidencia": "59 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.3,
+        "evidencia": "HbA1c 8.3"
+      },
+      "creatinina": {
+        "valor": 0.71,
+        "evidencia": "creatinina 0.71"
+      },
+      "glicemia_jejum": {
+        "valor": 167.0,
+        "evidencia": "glicemia de jejum 167"
+      },
+      "imc": {
+        "valor": 39.0,
+        "evidencia": "IMC 39.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -532,10 +896,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "f7d30123685d0794a5e3d92672f42ca0f5eebb856c8e4bf6edbe8f64d12905eb",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-015",
+    "dados_lidos": {
+      "idade": {
+        "valor": 39.0,
+        "evidencia": "39 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.5,
+        "evidencia": "HbA1c 7.5"
+      },
+      "creatinina": {
+        "valor": 1.26,
+        "evidencia": "creatinina 1.26"
+      },
+      "glicemia_jejum": {
+        "valor": 151.0,
+        "evidencia": "glicemia de jejum 151"
+      },
+      "imc": {
+        "valor": 32.5,
+        "evidencia": "IMC 32.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -570,10 +960,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "3614fe2be489caede32dbb16ba43dff023ba6208bcb79df91e7333d6f00affe2",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-016",
+    "dados_lidos": {
+      "idade": {
+        "valor": 59.0,
+        "evidencia": "59 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.4,
+        "evidencia": "HbA1c 9.4"
+      },
+      "creatinina": {
+        "valor": 0.89,
+        "evidencia": "creatinina 0.89"
+      },
+      "glicemia_jejum": {
+        "valor": 198.0,
+        "evidencia": "glicemia de jejum 198"
+      },
+      "imc": {
+        "valor": 34.9,
+        "evidencia": "IMC 34.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -608,10 +1024,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "b292876393d2d66b1ea464bc484786279f952ded1e8e6454147462935ae95e2f",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-017",
+    "dados_lidos": {
+      "idade": {
+        "valor": 66.0,
+        "evidencia": "66 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.6,
+        "evidencia": "HbA1c 7.6"
+      },
+      "creatinina": {
+        "valor": 1.14,
+        "evidencia": "creatinina 1.14"
+      },
+      "glicemia_jejum": {
+        "valor": 161.0,
+        "evidencia": "glicemia de jejum 161"
+      },
+      "imc": {
+        "valor": 31.7,
+        "evidencia": "IMC 31.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -646,10 +1088,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "b002d589948ba5661c9e103fc91327d3be2c0794dce71783df898953b30e964e",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-018",
+    "dados_lidos": {
+      "idade": {
+        "valor": 39.0,
+        "evidencia": "39 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 0.72,
+        "evidencia": "creatinina 0.72"
+      },
+      "glicemia_jejum": {
+        "valor": 191.0,
+        "evidencia": "glicemia de jejum 191"
+      },
+      "imc": {
+        "valor": 34.0,
+        "evidencia": "IMC 34.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -684,10 +1152,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a44aac2417c6bb172e719f18b3161836c67d99f5066a3d7c3f722fd2d17eb880",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-019",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 10.1,
+        "evidencia": "HbA1c 10.1"
+      },
+      "creatinina": {
+        "valor": 0.75,
+        "evidencia": "creatinina 0.75"
+      },
+      "glicemia_jejum": {
+        "valor": 204.0,
+        "evidencia": "glicemia de jejum 204"
+      },
+      "imc": {
+        "valor": 38.4,
+        "evidencia": "IMC 38.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -722,10 +1216,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "b8566172af4209c325923c379b810a07f670c0791b35a1022f270806e40080d4",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-020",
+    "dados_lidos": {
+      "idade": {
+        "valor": 39.0,
+        "evidencia": "39 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.9,
+        "evidencia": "HbA1c 8.9"
+      },
+      "creatinina": {
+        "valor": 0.66,
+        "evidencia": "creatinina 0.66"
+      },
+      "glicemia_jejum": {
+        "valor": 171.0,
+        "evidencia": "glicemia de jejum 171"
+      },
+      "imc": {
+        "valor": 37.6,
+        "evidencia": "IMC 37.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -760,10 +1280,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "4a9d7b53dd6f56717a90ecd6f6196ad8bc980de402ddcc53f680ec436f6541dd",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-021",
+    "dados_lidos": {
+      "idade": {
+        "valor": 62.0,
+        "evidencia": "62 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.5,
+        "evidencia": "HbA1c 7.5"
+      },
+      "creatinina": {
+        "valor": 0.83,
+        "evidencia": "creatinina 0.83"
+      },
+      "glicemia_jejum": {
+        "valor": 167.0,
+        "evidencia": "glicemia de jejum 167"
+      },
+      "imc": {
+        "valor": 34.0,
+        "evidencia": "IMC 34.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -798,10 +1344,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "51b8155726b82e9d1d6de874d89a8de82c34a1f600993209766b1f3b90c77bc2",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-022",
+    "dados_lidos": {
+      "idade": {
+        "valor": 63.0,
+        "evidencia": "63 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 0.78,
+        "evidencia": "creatinina 0.78"
+      },
+      "glicemia_jejum": {
+        "valor": 176.0,
+        "evidencia": "glicemia de jejum 176"
+      },
+      "imc": {
+        "valor": 34.8,
+        "evidencia": "IMC 34.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -836,10 +1408,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "45f154436852951ddd69f13cf05f3dd040a54e25e30b6b46ddb7b4e2095abde2",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-023",
+    "dados_lidos": {
+      "idade": {
+        "valor": 62.0,
+        "evidencia": "62 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.4,
+        "evidencia": "HbA1c 7.4"
+      },
+      "creatinina": {
+        "valor": 1.08,
+        "evidencia": "creatinina 1.08"
+      },
+      "glicemia_jejum": {
+        "valor": 170.0,
+        "evidencia": "glicemia de jejum 170"
+      },
+      "imc": {
+        "valor": 33.2,
+        "evidencia": "IMC 33.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -874,10 +1472,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5abb28d52455d82f9a7146eaf242e8dc05a8c7a21d2802731a03955bc93aff23",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-024",
+    "dados_lidos": {
+      "idade": {
+        "valor": 42.0,
+        "evidencia": "42 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.4,
+        "evidencia": "HbA1c 8.4"
+      },
+      "creatinina": {
+        "valor": 0.84,
+        "evidencia": "creatinina 0.84"
+      },
+      "glicemia_jejum": {
+        "valor": 170.0,
+        "evidencia": "glicemia de jejum 170"
+      },
+      "imc": {
+        "valor": 35.0,
+        "evidencia": "IMC 35.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -912,10 +1536,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "ec9c358ac7cf0ac4248762b20b61aedf1ea09a96e5710fd9e83010cc537ebae5",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-025",
+    "dados_lidos": {
+      "idade": {
+        "valor": 66.0,
+        "evidencia": "66 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 1.11,
+        "evidencia": "creatinina 1.11"
+      },
+      "glicemia_jejum": {
+        "valor": 175.0,
+        "evidencia": "glicemia de jejum 175"
+      },
+      "imc": {
+        "valor": 38.9,
+        "evidencia": "IMC 38.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -950,10 +1600,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "aff8c0cce37f07bcc328f736c678564096e0226463ac1e625731f865c3f8a721",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-026",
+    "dados_lidos": {
+      "idade": {
+        "valor": 58.0,
+        "evidencia": "58 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.7,
+        "evidencia": "HbA1c 9.7"
+      },
+      "creatinina": {
+        "valor": 1.11,
+        "evidencia": "creatinina 1.11"
+      },
+      "glicemia_jejum": {
+        "valor": 199.0,
+        "evidencia": "glicemia de jejum 199"
+      },
+      "imc": {
+        "valor": 37.6,
+        "evidencia": "IMC 37.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -988,10 +1664,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "03eacf6feba915606a1f282f7441d8d3cdbdf7206c882ff247d11e4bae248fb3",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-027",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.9,
+        "evidencia": "HbA1c 8.9"
+      },
+      "creatinina": {
+        "valor": 1.29,
+        "evidencia": "creatinina 1.29"
+      },
+      "glicemia_jejum": {
+        "valor": 188.0,
+        "evidencia": "glicemia de jejum 188"
+      },
+      "imc": {
+        "valor": 32.1,
+        "evidencia": "IMC 32.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1026,10 +1728,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "fb653b97119e010b6fba4f8be95ed2cc3f018796c31db943638ebdf2b269b845",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-028",
+    "dados_lidos": {
+      "idade": {
+        "valor": 43.0,
+        "evidencia": "43 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 10.1,
+        "evidencia": "HbA1c 10.1"
+      },
+      "creatinina": {
+        "valor": 0.81,
+        "evidencia": "creatinina 0.81"
+      },
+      "glicemia_jejum": {
+        "valor": 175.0,
+        "evidencia": "glicemia de jejum 175"
+      },
+      "imc": {
+        "valor": 41.7,
+        "evidencia": "IMC 41.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1064,10 +1792,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e4aba3da3655c2c8a54c05a6b8833dcc3b44606a8e6e1c238802604ac4c7f119",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-029",
+    "dados_lidos": {
+      "idade": {
+        "valor": 39.0,
+        "evidencia": "39 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.7,
+        "evidencia": "HbA1c 9.7"
+      },
+      "creatinina": {
+        "valor": 1.2,
+        "evidencia": "creatinina 1.20"
+      },
+      "glicemia_jejum": {
+        "valor": 173.0,
+        "evidencia": "glicemia de jejum 173"
+      },
+      "imc": {
+        "valor": 40.9,
+        "evidencia": "IMC 40.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1102,10 +1856,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "7629234c38404c69852a8ed7a187f52e892554a1fe611b0c8dc1c478ab182095",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-030",
+    "dados_lidos": {
+      "idade": {
+        "valor": 38.0,
+        "evidencia": "38 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.4,
+        "evidencia": "HbA1c 9.4"
+      },
+      "creatinina": {
+        "valor": 1.03,
+        "evidencia": "creatinina 1.03"
+      },
+      "glicemia_jejum": {
+        "valor": 191.0,
+        "evidencia": "glicemia de jejum 191"
+      },
+      "imc": {
+        "valor": 36.6,
+        "evidencia": "IMC 36.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1140,10 +1920,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "9a43e3284f788b53094278805302a807c1905e0cb51d9de8ca04b0a514d0daf5",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-031",
+    "dados_lidos": {
+      "idade": {
+        "valor": 62.0,
+        "evidencia": "62 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.8,
+        "evidencia": "HbA1c 8.8"
+      },
+      "creatinina": {
+        "valor": 0.81,
+        "evidencia": "creatinina 0.81"
+      },
+      "glicemia_jejum": {
+        "valor": 158.0,
+        "evidencia": "glicemia de jejum 158"
+      },
+      "imc": {
+        "valor": 40.6,
+        "evidencia": "IMC 40.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1178,10 +1984,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "3784937fc5595392101868241827bd8c35ee7ab5ac8254ce14c7c51614b16ec0",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-032",
+    "dados_lidos": {
+      "idade": {
+        "valor": 40.0,
+        "evidencia": "40 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.6,
+        "evidencia": "HbA1c 8.6"
+      },
+      "creatinina": {
+        "valor": 0.86,
+        "evidencia": "creatinina 0.86"
+      },
+      "glicemia_jejum": {
+        "valor": 161.0,
+        "evidencia": "glicemia de jejum 161"
+      },
+      "imc": {
+        "valor": 36.5,
+        "evidencia": "IMC 36.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1216,10 +2048,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a1e433b5ab6e2e9729f69caa8401c53395068072b41ec56cfdc9738f4d2fdf99",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-033",
+    "dados_lidos": {
+      "idade": {
+        "valor": 58.0,
+        "evidencia": "58 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 0.91,
+        "evidencia": "creatinina 0.91"
+      },
+      "glicemia_jejum": {
+        "valor": 172.0,
+        "evidencia": "glicemia de jejum 172"
+      },
+      "imc": {
+        "valor": 35.0,
+        "evidencia": "IMC 35.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1254,10 +2112,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "db9b63cd7178915d72a2be4490e45c14f8bb11479dd73b561eb8fbb75ee0b448",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-034",
+    "dados_lidos": {
+      "idade": {
+        "valor": 65.0,
+        "evidencia": "65 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.2,
+        "evidencia": "HbA1c 8.2"
+      },
+      "creatinina": {
+        "valor": 1.1,
+        "evidencia": "creatinina 1.10"
+      },
+      "glicemia_jejum": {
+        "valor": 170.0,
+        "evidencia": "glicemia de jejum 170"
+      },
+      "imc": {
+        "valor": 26.0,
+        "evidencia": "IMC 26.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1292,10 +2176,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "668f749813c50cc2f972afff236fca470a06711afc53403dd336fbadf4c65b5d",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-035",
+    "dados_lidos": {
+      "idade": {
+        "valor": 64.0,
+        "evidencia": "64 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.9,
+        "evidencia": "HbA1c 9.9"
+      },
+      "creatinina": {
+        "valor": 0.79,
+        "evidencia": "creatinina 0.79"
+      },
+      "glicemia_jejum": {
+        "valor": 175.0,
+        "evidencia": "glicemia de jejum 175"
+      },
+      "imc": {
+        "valor": 29.9,
+        "evidencia": "IMC 29.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1330,10 +2240,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "d281ca0d1c4033de87d24cbf0928750769bdc91a74940f753fce4e9490cdeafe",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-036",
+    "dados_lidos": {
+      "idade": {
+        "valor": 55.0,
+        "evidencia": "55 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 1.23,
+        "evidencia": "creatinina 1.23"
+      },
+      "glicemia_jejum": {
+        "valor": 157.0,
+        "evidencia": "glicemia de jejum 157"
+      },
+      "imc": {
+        "valor": 39.5,
+        "evidencia": "IMC 39.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1368,10 +2304,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "c58490471df6f167bd34afe1d822b32f05f13e0006761841940345188374aec4",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-037",
+    "dados_lidos": {
+      "idade": {
+        "valor": 48.0,
+        "evidencia": "48 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 0.66,
+        "evidencia": "creatinina 0.66"
+      },
+      "glicemia_jejum": {
+        "valor": 158.0,
+        "evidencia": "glicemia de jejum 158"
+      },
+      "imc": {
+        "valor": 32.1,
+        "evidencia": "IMC 32.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1406,10 +2368,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "53c5392c6be09dd0ecbe06ca86082503d1aad898fdb1a4e1663283367c037a59",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-038",
+    "dados_lidos": {
+      "idade": {
+        "valor": 60.0,
+        "evidencia": "60 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.6,
+        "evidencia": "HbA1c 8.6"
+      },
+      "creatinina": {
+        "valor": 0.9,
+        "evidencia": "creatinina 0.90"
+      },
+      "glicemia_jejum": {
+        "valor": 173.0,
+        "evidencia": "glicemia de jejum 173"
+      },
+      "imc": {
+        "valor": 31.2,
+        "evidencia": "IMC 31.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1444,10 +2432,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "ddd0bf527bed1ce715e29bb773ee43e9f314f4df705f32144198137ce063517d",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-039",
+    "dados_lidos": {
+      "idade": {
+        "valor": 61.0,
+        "evidencia": "61 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 0.67,
+        "evidencia": "creatinina 0.67"
+      },
+      "glicemia_jejum": {
+        "valor": 181.0,
+        "evidencia": "glicemia de jejum 181"
+      },
+      "imc": {
+        "valor": 33.6,
+        "evidencia": "IMC 33.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1482,10 +2496,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "fba05e2775f7d398fc847dcd772d31b2d0dbabb87f8eae831eb641fb7014e975",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-040",
+    "dados_lidos": {
+      "idade": {
+        "valor": 60.0,
+        "evidencia": "60 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.3,
+        "evidencia": "HbA1c 8.3"
+      },
+      "creatinina": {
+        "valor": 1.32,
+        "evidencia": "creatinina 1.32"
+      },
+      "glicemia_jejum": {
+        "valor": 154.0,
+        "evidencia": "glicemia de jejum 154"
+      },
+      "imc": {
+        "valor": 26.3,
+        "evidencia": "IMC 26.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1520,10 +2560,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "4ef636a115f020d41b59da4848aa5e9dc59b95d46045df97af8f366042160702",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-041",
+    "dados_lidos": {
+      "idade": {
+        "valor": 42.0,
+        "evidencia": "42 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 0.8,
+        "evidencia": "creatinina 0.80"
+      },
+      "glicemia_jejum": {
+        "valor": 166.0,
+        "evidencia": "glicemia de jejum 166"
+      },
+      "imc": {
+        "valor": 30.5,
+        "evidencia": "IMC 30.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1558,10 +2624,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "f7426083733c68c05108fc1cc7390776fb251c508de00c4dfcb8727ef27d640b",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-042",
+    "dados_lidos": {
+      "idade": {
+        "valor": 40.0,
+        "evidencia": "40 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.5,
+        "evidencia": "HbA1c 9.5"
+      },
+      "creatinina": {
+        "valor": 1.13,
+        "evidencia": "creatinina 1.13"
+      },
+      "glicemia_jejum": {
+        "valor": 188.0,
+        "evidencia": "glicemia de jejum 188"
+      },
+      "imc": {
+        "valor": 40.0,
+        "evidencia": "IMC 40.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1596,10 +2688,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "d9cfbdae49870a00a31ddd847c4d43ba2aebd91bea6567c1d2cd4512adf714fc",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-043",
+    "dados_lidos": {
+      "idade": {
+        "valor": 63.0,
+        "evidencia": "63 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 0.79,
+        "evidencia": "creatinina 0.79"
+      },
+      "glicemia_jejum": {
+        "valor": 170.0,
+        "evidencia": "glicemia de jejum 170"
+      },
+      "imc": {
+        "valor": 28.7,
+        "evidencia": "IMC 28.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1634,10 +2752,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "75d0913146fd07caeb2a679deb77309f03e8f35f3646676cc7e72e7fd04fce08",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-044",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 1.05,
+        "evidencia": "creatinina 1.05"
+      },
+      "glicemia_jejum": {
+        "valor": 171.0,
+        "evidencia": "glicemia de jejum 171"
+      },
+      "imc": {
+        "valor": 31.0,
+        "evidencia": "IMC 31.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1672,10 +2816,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "7448846b3c9dc0015fa637ee8aa580b657adce52a73a119877f00be44e7d2393",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-045",
+    "dados_lidos": {
+      "idade": {
+        "valor": 54.0,
+        "evidencia": "54 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.3,
+        "evidencia": "HbA1c 9.3"
+      },
+      "creatinina": {
+        "valor": 1.11,
+        "evidencia": "creatinina 1.11"
+      },
+      "glicemia_jejum": {
+        "valor": 167.0,
+        "evidencia": "glicemia de jejum 167"
+      },
+      "imc": {
+        "valor": 34.1,
+        "evidencia": "IMC 34.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1710,10 +2880,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "b31e4b11bd3b353482446d09d7d17fee97d3c40273484426b39c33ac58399aab",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-046",
+    "dados_lidos": {
+      "idade": {
+        "valor": 64.0,
+        "evidencia": "64 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.8,
+        "evidencia": "HbA1c 7.8"
+      },
+      "creatinina": {
+        "valor": 0.81,
+        "evidencia": "creatinina 0.81"
+      },
+      "glicemia_jejum": {
+        "valor": 158.0,
+        "evidencia": "glicemia de jejum 158"
+      },
+      "imc": {
+        "valor": 26.4,
+        "evidencia": "IMC 26.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1748,10 +2944,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "b7a2d23765081676bbe4823dd749d4db3f993dc0f4bb4a817e13232ca1063634",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-047",
+    "dados_lidos": {
+      "idade": {
+        "valor": 46.0,
+        "evidencia": "46 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.4,
+        "evidencia": "HbA1c 7.4"
+      },
+      "creatinina": {
+        "valor": 0.84,
+        "evidencia": "creatinina 0.84"
+      },
+      "glicemia_jejum": {
+        "valor": 145.0,
+        "evidencia": "glicemia de jejum 145"
+      },
+      "imc": {
+        "valor": 28.4,
+        "evidencia": "IMC 28.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1786,10 +3008,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e5d6df7d6bfed88e3f9d4458afbe752a88c285fa9d52d9e06c7233b07a54a7ca",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-048",
+    "dados_lidos": {
+      "idade": {
+        "valor": 59.0,
+        "evidencia": "59 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.7,
+        "evidencia": "HbA1c 9.7"
+      },
+      "creatinina": {
+        "valor": 0.77,
+        "evidencia": "creatinina 0.77"
+      },
+      "glicemia_jejum": {
+        "valor": 182.0,
+        "evidencia": "glicemia de jejum 182"
+      },
+      "imc": {
+        "valor": 38.9,
+        "evidencia": "IMC 38.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1824,10 +3072,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "2b0b0c63fa5264d65a1df8f4a32c5966712024d2d3789c7809a0e5f5468e9587",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-049",
+    "dados_lidos": {
+      "idade": {
+        "valor": 42.0,
+        "evidencia": "42 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 0.97,
+        "evidencia": "creatinina 0.97"
+      },
+      "glicemia_jejum": {
+        "valor": 164.0,
+        "evidencia": "glicemia de jejum 164"
+      },
+      "imc": {
+        "valor": 37.9,
+        "evidencia": "IMC 37.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1862,10 +3136,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "bdfda38e306b799bc45964bcc41f5505481f4c0edd25798faf184c0c7adf930c",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-050",
+    "dados_lidos": {
+      "idade": {
+        "valor": 37.0,
+        "evidencia": "37 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.8,
+        "evidencia": "HbA1c 8.8"
+      },
+      "creatinina": {
+        "valor": 0.68,
+        "evidencia": "creatinina 0.68"
+      },
+      "glicemia_jejum": {
+        "valor": 186.0,
+        "evidencia": "glicemia de jejum 186"
+      },
+      "imc": {
+        "valor": 34.5,
+        "evidencia": "IMC 34.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1900,10 +3200,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "b7c10ab60e6b4c16ca421061acfcfb9b2c4fa64251fb376b4656313a54641524",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-051",
+    "dados_lidos": {
+      "idade": {
+        "valor": 48.0,
+        "evidencia": "48 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 10.1,
+        "evidencia": "HbA1c 10.1"
+      },
+      "creatinina": {
+        "valor": 1.3,
+        "evidencia": "creatinina 1.30"
+      },
+      "glicemia_jejum": {
+        "valor": 173.0,
+        "evidencia": "glicemia de jejum 173"
+      },
+      "imc": {
+        "valor": 26.4,
+        "evidencia": "IMC 26.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1938,10 +3264,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "9de005a0f668e90e29299858b97d07d8dcda292a11e07a9088b9079bf0522817",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-052",
+    "dados_lidos": {
+      "idade": {
+        "valor": 41.0,
+        "evidencia": "41 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.2,
+        "evidencia": "HbA1c 8.2"
+      },
+      "creatinina": {
+        "valor": 0.86,
+        "evidencia": "creatinina 0.86"
+      },
+      "glicemia_jejum": {
+        "valor": 155.0,
+        "evidencia": "glicemia de jejum 155"
+      },
+      "imc": {
+        "valor": 28.1,
+        "evidencia": "IMC 28.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -1976,10 +3328,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a92bd58f44c4b41c97254fea51559db2f2a396e964b8c0a4d687ab41821a6e77",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-053",
+    "dados_lidos": {
+      "idade": {
+        "valor": 42.0,
+        "evidencia": "42 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.6,
+        "evidencia": "HbA1c 8.6"
+      },
+      "creatinina": {
+        "valor": 0.78,
+        "evidencia": "creatinina 0.78"
+      },
+      "glicemia_jejum": {
+        "valor": 189.0,
+        "evidencia": "glicemia de jejum 189"
+      },
+      "imc": {
+        "valor": 26.4,
+        "evidencia": "IMC 26.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2014,10 +3392,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e41f8b1625264121edc36edd5a43017b90afec42be1b7239886031e926e0de96",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-054",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 1.33,
+        "evidencia": "creatinina 1.33"
+      },
+      "glicemia_jejum": {
+        "valor": 160.0,
+        "evidencia": "glicemia de jejum 160"
+      },
+      "imc": {
+        "valor": 34.6,
+        "evidencia": "IMC 34.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2052,10 +3456,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "76e36ec5e5b735c1673344bf6a1c3b93efc0c08033ca4e4aa7e39b70ba2a561f",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-055",
+    "dados_lidos": {
+      "idade": {
+        "valor": 49.0,
+        "evidencia": "49 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.8,
+        "evidencia": "HbA1c 7.8"
+      },
+      "creatinina": {
+        "valor": 1.18,
+        "evidencia": "creatinina 1.18"
+      },
+      "glicemia_jejum": {
+        "valor": 153.0,
+        "evidencia": "glicemia de jejum 153"
+      },
+      "imc": {
+        "valor": 30.5,
+        "evidencia": "IMC 30.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2090,10 +3520,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "96af67170ebc8f3a8276d69d13f783024e7bd5f41028d18939f41ccc4e44af52",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-056",
+    "dados_lidos": {
+      "idade": {
+        "valor": 42.0,
+        "evidencia": "42 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.3,
+        "evidencia": "HbA1c 9.3"
+      },
+      "creatinina": {
+        "valor": 1.17,
+        "evidencia": "creatinina 1.17"
+      },
+      "glicemia_jejum": {
+        "valor": 181.0,
+        "evidencia": "glicemia de jejum 181"
+      },
+      "imc": {
+        "valor": 31.3,
+        "evidencia": "IMC 31.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2128,10 +3584,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "52c4d40754946f3afe3ab4f03402e7e960f67e4a8b39e03789eac5b55e9240e3",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-057",
+    "dados_lidos": {
+      "idade": {
+        "valor": 64.0,
+        "evidencia": "64 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 0.96,
+        "evidencia": "creatinina 0.96"
+      },
+      "glicemia_jejum": {
+        "valor": 183.0,
+        "evidencia": "glicemia de jejum 183"
+      },
+      "imc": {
+        "valor": 39.5,
+        "evidencia": "IMC 39.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2166,10 +3648,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a25f06e51e82fa934c2012c3eaac775d7cd58f15c55fb5ecb8112c8e09a96c48",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-058",
+    "dados_lidos": {
+      "idade": {
+        "valor": 60.0,
+        "evidencia": "60 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 0.93,
+        "evidencia": "creatinina 0.93"
+      },
+      "glicemia_jejum": {
+        "valor": 192.0,
+        "evidencia": "glicemia de jejum 192"
+      },
+      "imc": {
+        "valor": 41.3,
+        "evidencia": "IMC 41.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2204,10 +3712,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "72ecb0cae5f6c606b1585b67a468ec7d7b12c0ca9eabda5febc9b724ea9aa208",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-059",
+    "dados_lidos": {
+      "idade": {
+        "valor": 44.0,
+        "evidencia": "44 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.6,
+        "evidencia": "HbA1c 7.6"
+      },
+      "creatinina": {
+        "valor": 1.21,
+        "evidencia": "creatinina 1.21"
+      },
+      "glicemia_jejum": {
+        "valor": 176.0,
+        "evidencia": "glicemia de jejum 176"
+      },
+      "imc": {
+        "valor": 31.7,
+        "evidencia": "IMC 31.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2242,10 +3776,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "32b95401f3e09fabc2bf8bed92cce93a888d2f7633c96597b987ec7fbb5040db",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-060",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.1,
+        "evidencia": "HbA1c 8.1"
+      },
+      "creatinina": {
+        "valor": 0.89,
+        "evidencia": "creatinina 0.89"
+      },
+      "glicemia_jejum": {
+        "valor": 153.0,
+        "evidencia": "glicemia de jejum 153"
+      },
+      "imc": {
+        "valor": 36.8,
+        "evidencia": "IMC 36.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2280,10 +3840,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "7deec55aa36bccef25ed8e84775be58ec27fb7597d15d509279e2a8da02c9f95",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-061",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.6,
+        "evidencia": "HbA1c 7.6"
+      },
+      "creatinina": {
+        "valor": 0.66,
+        "evidencia": "creatinina 0.66"
+      },
+      "glicemia_jejum": {
+        "valor": 172.0,
+        "evidencia": "glicemia de jejum 172"
+      },
+      "imc": {
+        "valor": 35.7,
+        "evidencia": "IMC 35.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2318,10 +3904,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "494714b3ced5cf2da7ab214be0c2ce9b0dc09de2c7819f09747818b8a38a19e0",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-062",
+    "dados_lidos": {
+      "idade": {
+        "valor": 61.0,
+        "evidencia": "61 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 0.76,
+        "evidencia": "creatinina 0.76"
+      },
+      "glicemia_jejum": {
+        "valor": 154.0,
+        "evidencia": "glicemia de jejum 154"
+      },
+      "imc": {
+        "valor": 34.3,
+        "evidencia": "IMC 34.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2356,10 +3968,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "072ef22565dd148b35dc4d7be8d63ea8acf6347b44cd28d98aee69a72e4522ac",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-063",
+    "dados_lidos": {
+      "idade": {
+        "valor": 58.0,
+        "evidencia": "58 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.5,
+        "evidencia": "HbA1c 8.5"
+      },
+      "creatinina": {
+        "valor": 1.21,
+        "evidencia": "creatinina 1.21"
+      },
+      "glicemia_jejum": {
+        "valor": 174.0,
+        "evidencia": "glicemia de jejum 174"
+      },
+      "imc": {
+        "valor": 37.2,
+        "evidencia": "IMC 37.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2394,10 +4032,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "6d97d38a5a251e71b9c4470a60743ae1790e1edf19c2a6ab704a9545a7c401a8",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-064",
+    "dados_lidos": {
+      "idade": {
+        "valor": 58.0,
+        "evidencia": "58 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 1.03,
+        "evidencia": "creatinina 1.03"
+      },
+      "glicemia_jejum": {
+        "valor": 171.0,
+        "evidencia": "glicemia de jejum 171"
+      },
+      "imc": {
+        "valor": 38.1,
+        "evidencia": "IMC 38.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2432,10 +4096,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "8c44c23f4572e02dd5530b18f792549378207235aea33d42e4c80393984fce80",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-065",
+    "dados_lidos": {
+      "idade": {
+        "valor": 57.0,
+        "evidencia": "57 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.2,
+        "evidencia": "HbA1c 8.2"
+      },
+      "creatinina": {
+        "valor": 1.04,
+        "evidencia": "creatinina 1.04"
+      },
+      "glicemia_jejum": {
+        "valor": 159.0,
+        "evidencia": "glicemia de jejum 159"
+      },
+      "imc": {
+        "valor": 35.3,
+        "evidencia": "IMC 35.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2470,10 +4160,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "2a1ea49ab19bd098b854c51753666cf52c0988204bb9f0143d12747d77a16127",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-066",
+    "dados_lidos": {
+      "idade": {
+        "valor": 49.0,
+        "evidencia": "49 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.6,
+        "evidencia": "HbA1c 8.6"
+      },
+      "creatinina": {
+        "valor": 0.71,
+        "evidencia": "creatinina 0.71"
+      },
+      "glicemia_jejum": {
+        "valor": 165.0,
+        "evidencia": "glicemia de jejum 165"
+      },
+      "imc": {
+        "valor": 38.6,
+        "evidencia": "IMC 38.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2508,10 +4224,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "6254bc7816f872aad119068a8567f36dac56ce269e2423899821890482a72ef7",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-067",
+    "dados_lidos": {
+      "idade": {
+        "valor": 41.0,
+        "evidencia": "41 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.7,
+        "evidencia": "HbA1c 8.7"
+      },
+      "creatinina": {
+        "valor": 1.21,
+        "evidencia": "creatinina 1.21"
+      },
+      "glicemia_jejum": {
+        "valor": 188.0,
+        "evidencia": "glicemia de jejum 188"
+      },
+      "imc": {
+        "valor": 35.7,
+        "evidencia": "IMC 35.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2546,10 +4288,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a07b9b4e20df997e3c2d3e3e53e3646775dbc8313f6fd2cd58281bf9b06eb16c",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-068",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 1.2,
+        "evidencia": "creatinina 1.20"
+      },
+      "glicemia_jejum": {
+        "valor": 183.0,
+        "evidencia": "glicemia de jejum 183"
+      },
+      "imc": {
+        "valor": 41.3,
+        "evidencia": "IMC 41.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2584,10 +4352,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "9668c34f9a0d60c030a061997c57b31265f791d6937814a37a78649057c80269",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-069",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.7,
+        "evidencia": "HbA1c 8.7"
+      },
+      "creatinina": {
+        "valor": 0.67,
+        "evidencia": "creatinina 0.67"
+      },
+      "glicemia_jejum": {
+        "valor": 170.0,
+        "evidencia": "glicemia de jejum 170"
+      },
+      "imc": {
+        "valor": 38.4,
+        "evidencia": "IMC 38.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2622,10 +4416,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a0e3213ec22128f1b34eeecd7034aef18cc3c7532fc96054a0da948b0e6ca2a0",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-070",
+    "dados_lidos": {
+      "idade": {
+        "valor": 64.0,
+        "evidencia": "64 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.6,
+        "evidencia": "HbA1c 8.6"
+      },
+      "creatinina": {
+        "valor": 1.33,
+        "evidencia": "creatinina 1.33"
+      },
+      "glicemia_jejum": {
+        "valor": 186.0,
+        "evidencia": "glicemia de jejum 186"
+      },
+      "imc": {
+        "valor": 26.9,
+        "evidencia": "IMC 26.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2660,10 +4480,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "fb2adf50c0e995fc6996e50c619b8b91d108bafe38edf8e5c8a952673bc28a10",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-071",
+    "dados_lidos": {
+      "idade": {
+        "valor": 38.0,
+        "evidencia": "38 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.0,
+        "evidencia": "HbA1c 9.0"
+      },
+      "creatinina": {
+        "valor": 0.95,
+        "evidencia": "creatinina 0.95"
+      },
+      "glicemia_jejum": {
+        "valor": 163.0,
+        "evidencia": "glicemia de jejum 163"
+      },
+      "imc": {
+        "valor": 35.2,
+        "evidencia": "IMC 35.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2698,10 +4544,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "60766a68e5d56cc41721bcdfaa3b0654ec9c71af997526c1cf4acaffa7d68ae2",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-072",
+    "dados_lidos": {
+      "idade": {
+        "valor": 60.0,
+        "evidencia": "60 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.4,
+        "evidencia": "HbA1c 9.4"
+      },
+      "creatinina": {
+        "valor": 1.34,
+        "evidencia": "creatinina 1.34"
+      },
+      "glicemia_jejum": {
+        "valor": 189.0,
+        "evidencia": "glicemia de jejum 189"
+      },
+      "imc": {
+        "valor": 31.8,
+        "evidencia": "IMC 31.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2736,10 +4608,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "de8132d4b67be958ec5b131f425543a7b855ae57dc0f056896bc4056ecff1360",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-073",
+    "dados_lidos": {
+      "idade": {
+        "valor": 40.0,
+        "evidencia": "40 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.8,
+        "evidencia": "HbA1c 9.8"
+      },
+      "creatinina": {
+        "valor": 1.33,
+        "evidencia": "creatinina 1.33"
+      },
+      "glicemia_jejum": {
+        "valor": 189.0,
+        "evidencia": "glicemia de jejum 189"
+      },
+      "imc": {
+        "valor": 36.5,
+        "evidencia": "IMC 36.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2774,10 +4672,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "9060e409fac35aa5997fdc847914eb145b0844dac3f99ef84aae6403b966dc20",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-074",
+    "dados_lidos": {
+      "idade": {
+        "valor": 63.0,
+        "evidencia": "63 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.1,
+        "evidencia": "HbA1c 8.1"
+      },
+      "creatinina": {
+        "valor": 1.25,
+        "evidencia": "creatinina 1.25"
+      },
+      "glicemia_jejum": {
+        "valor": 183.0,
+        "evidencia": "glicemia de jejum 183"
+      },
+      "imc": {
+        "valor": 39.1,
+        "evidencia": "IMC 39.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2812,10 +4736,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e51abcc5d29e3e8b02dcc5542ea5d518eb13eae13afb95df40e5b6b8596fd4ad",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-075",
+    "dados_lidos": {
+      "idade": {
+        "valor": 46.0,
+        "evidencia": "46 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.3,
+        "evidencia": "HbA1c 9.3"
+      },
+      "creatinina": {
+        "valor": 1.06,
+        "evidencia": "creatinina 1.06"
+      },
+      "glicemia_jejum": {
+        "valor": 166.0,
+        "evidencia": "glicemia de jejum 166"
+      },
+      "imc": {
+        "valor": 36.0,
+        "evidencia": "IMC 36.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2850,10 +4800,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a8a7c6ea06a3d90c336d76b5df8bc69a924dc2a9534fc2f42af4400f7c87b21f",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-076",
+    "dados_lidos": {
+      "idade": {
+        "valor": 44.0,
+        "evidencia": "44 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.7,
+        "evidencia": "HbA1c 9.7"
+      },
+      "creatinina": {
+        "valor": 1.22,
+        "evidencia": "creatinina 1.22"
+      },
+      "glicemia_jejum": {
+        "valor": 202.0,
+        "evidencia": "glicemia de jejum 202"
+      },
+      "imc": {
+        "valor": 38.7,
+        "evidencia": "IMC 38.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2888,10 +4864,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "365aeff127f25edae42f6ddf54fcb2305ebbbd72563eca7c1aa9ad48b686240e",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-077",
+    "dados_lidos": {
+      "idade": {
+        "valor": 52.0,
+        "evidencia": "52 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 0.72,
+        "evidencia": "creatinina 0.72"
+      },
+      "glicemia_jejum": {
+        "valor": 182.0,
+        "evidencia": "glicemia de jejum 182"
+      },
+      "imc": {
+        "valor": 29.6,
+        "evidencia": "IMC 29.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2926,10 +4928,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "6119ef0bda0ee2deba86902cee67e3456b2755bb13cc8a9ccf3236144a159384",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-078",
+    "dados_lidos": {
+      "idade": {
+        "valor": 52.0,
+        "evidencia": "52 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.1,
+        "evidencia": "HbA1c 8.1"
+      },
+      "creatinina": {
+        "valor": 1.33,
+        "evidencia": "creatinina 1.33"
+      },
+      "glicemia_jejum": {
+        "valor": 183.0,
+        "evidencia": "glicemia de jejum 183"
+      },
+      "imc": {
+        "valor": 29.0,
+        "evidencia": "IMC 29.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -2964,10 +4992,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "530b5ab5a8fa7d911293dee98b4b2a8d56b891796cd5c7db403002149e277f46",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-079",
+    "dados_lidos": {
+      "idade": {
+        "valor": 58.0,
+        "evidencia": "58 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.5,
+        "evidencia": "HbA1c 9.5"
+      },
+      "creatinina": {
+        "valor": 1.08,
+        "evidencia": "creatinina 1.08"
+      },
+      "glicemia_jejum": {
+        "valor": 167.0,
+        "evidencia": "glicemia de jejum 167"
+      },
+      "imc": {
+        "valor": 36.9,
+        "evidencia": "IMC 36.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3002,10 +5056,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5592daef9017267e6a2287eef2339ab849aa01c22d640f17c41de9c84649dabf",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-080",
+    "dados_lidos": {
+      "idade": {
+        "valor": 64.0,
+        "evidencia": "64 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.9,
+        "evidencia": "HbA1c 8.9"
+      },
+      "creatinina": {
+        "valor": 0.94,
+        "evidencia": "creatinina 0.94"
+      },
+      "glicemia_jejum": {
+        "valor": 170.0,
+        "evidencia": "glicemia de jejum 170"
+      },
+      "imc": {
+        "valor": 27.5,
+        "evidencia": "IMC 27.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3040,10 +5120,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "26f9a235e09d43e949c38f0e24957c8275917c8d45ef7b36bd84ea986d6eec74",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-081",
+    "dados_lidos": {
+      "idade": {
+        "valor": 45.0,
+        "evidencia": "45 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.7,
+        "evidencia": "HbA1c 8.7"
+      },
+      "creatinina": {
+        "valor": 0.67,
+        "evidencia": "creatinina 0.67"
+      },
+      "glicemia_jejum": {
+        "valor": 175.0,
+        "evidencia": "glicemia de jejum 175"
+      },
+      "imc": {
+        "valor": 27.8,
+        "evidencia": "IMC 27.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3078,10 +5184,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e28897f560774f2326ff4aea2412c22e355ea1c5154a229015f5681125e5d65d",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-082",
+    "dados_lidos": {
+      "idade": {
+        "valor": 45.0,
+        "evidencia": "45 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.1,
+        "evidencia": "HbA1c 9.1"
+      },
+      "creatinina": {
+        "valor": 1.09,
+        "evidencia": "creatinina 1.09"
+      },
+      "glicemia_jejum": {
+        "valor": 189.0,
+        "evidencia": "glicemia de jejum 189"
+      },
+      "imc": {
+        "valor": 39.2,
+        "evidencia": "IMC 39.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3116,10 +5248,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "d39beb2aa4a94d86755894c9029110daabaddbb36cfe74c09f51dcd069667976",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-083",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.6,
+        "evidencia": "HbA1c 7.6"
+      },
+      "creatinina": {
+        "valor": 0.75,
+        "evidencia": "creatinina 0.75"
+      },
+      "glicemia_jejum": {
+        "valor": 170.0,
+        "evidencia": "glicemia de jejum 170"
+      },
+      "imc": {
+        "valor": 40.2,
+        "evidencia": "IMC 40.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3154,10 +5312,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "d1d97ea61b01bc1284ad494d5c862483a6694dd148c46cfcf26d89eea7829eb5",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-084",
+    "dados_lidos": {
+      "idade": {
+        "valor": 45.0,
+        "evidencia": "45 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 1.11,
+        "evidencia": "creatinina 1.11"
+      },
+      "glicemia_jejum": {
+        "valor": 179.0,
+        "evidencia": "glicemia de jejum 179"
+      },
+      "imc": {
+        "valor": 41.9,
+        "evidencia": "IMC 41.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3192,10 +5376,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "9967152deabadce526186fd2c9c2acf9023be458f7c84f994011c48d1f4d2ed3",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-085",
+    "dados_lidos": {
+      "idade": {
+        "valor": 43.0,
+        "evidencia": "43 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 10.1,
+        "evidencia": "HbA1c 10.1"
+      },
+      "creatinina": {
+        "valor": 1.06,
+        "evidencia": "creatinina 1.06"
+      },
+      "glicemia_jejum": {
+        "valor": 201.0,
+        "evidencia": "glicemia de jejum 201"
+      },
+      "imc": {
+        "valor": 36.8,
+        "evidencia": "IMC 36.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3230,10 +5440,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e49cb47fb09386227acb3d4a162403fa229664bc0cdcd84ecdfe70dfba97dc49",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-086",
+    "dados_lidos": {
+      "idade": {
+        "valor": 39.0,
+        "evidencia": "39 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.3,
+        "evidencia": "HbA1c 8.3"
+      },
+      "creatinina": {
+        "valor": 0.94,
+        "evidencia": "creatinina 0.94"
+      },
+      "glicemia_jejum": {
+        "valor": 155.0,
+        "evidencia": "glicemia de jejum 155"
+      },
+      "imc": {
+        "valor": 30.7,
+        "evidencia": "IMC 30.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3268,10 +5504,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "0651b6998f92d90da9474bf19bd420f56b22bb4f74092eb91a0fd963c00a3ae9",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-087",
+    "dados_lidos": {
+      "idade": {
+        "valor": 45.0,
+        "evidencia": "45 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.0,
+        "evidencia": "HbA1c 9.0"
+      },
+      "creatinina": {
+        "valor": 0.94,
+        "evidencia": "creatinina 0.94"
+      },
+      "glicemia_jejum": {
+        "valor": 163.0,
+        "evidencia": "glicemia de jejum 163"
+      },
+      "imc": {
+        "valor": 26.4,
+        "evidencia": "IMC 26.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3306,10 +5568,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5157c3f7ed905859e3121373224207ac11b1c248e14a4aeacdece26392664572",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-088",
+    "dados_lidos": {
+      "idade": {
+        "valor": 44.0,
+        "evidencia": "44 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.8,
+        "evidencia": "HbA1c 9.8"
+      },
+      "creatinina": {
+        "valor": 1.06,
+        "evidencia": "creatinina 1.06"
+      },
+      "glicemia_jejum": {
+        "valor": 193.0,
+        "evidencia": "glicemia de jejum 193"
+      },
+      "imc": {
+        "valor": 28.3,
+        "evidencia": "IMC 28.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3344,10 +5632,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e5fb39b501de571a0cc483ff5cad95af750a3ee7c058edc385dff8d76a8db8cb",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-089",
+    "dados_lidos": {
+      "idade": {
+        "valor": 66.0,
+        "evidencia": "66 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.4,
+        "evidencia": "HbA1c 7.4"
+      },
+      "creatinina": {
+        "valor": 0.8,
+        "evidencia": "creatinina 0.80"
+      },
+      "glicemia_jejum": {
+        "valor": 148.0,
+        "evidencia": "glicemia de jejum 148"
+      },
+      "imc": {
+        "valor": 30.2,
+        "evidencia": "IMC 30.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3382,10 +5696,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "53eac4c1b9cc98ef75c92c353da0e251d633573f17c1fa06dac4dc94a731de3b",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-090",
+    "dados_lidos": {
+      "idade": {
+        "valor": 65.0,
+        "evidencia": "65 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.8,
+        "evidencia": "HbA1c 8.8"
+      },
+      "creatinina": {
+        "valor": 0.92,
+        "evidencia": "creatinina 0.92"
+      },
+      "glicemia_jejum": {
+        "valor": 173.0,
+        "evidencia": "glicemia de jejum 173"
+      },
+      "imc": {
+        "valor": 42.4,
+        "evidencia": "IMC 42.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3420,10 +5760,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "cc2f8834c916c3e993a18f72ffe71bdb49b5bbbf18ba1a03e9b521980ab97608",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-091",
+    "dados_lidos": {
+      "idade": {
+        "valor": 66.0,
+        "evidencia": "66 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.3,
+        "evidencia": "HbA1c 9.3"
+      },
+      "creatinina": {
+        "valor": 0.69,
+        "evidencia": "creatinina 0.69"
+      },
+      "glicemia_jejum": {
+        "valor": 185.0,
+        "evidencia": "glicemia de jejum 185"
+      },
+      "imc": {
+        "valor": 30.3,
+        "evidencia": "IMC 30.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3458,10 +5824,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5ebacf9facad4d23fc96c7276339da37276d6612fe4603b82d27a6d89bc019b3",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-092",
+    "dados_lidos": {
+      "idade": {
+        "valor": 49.0,
+        "evidencia": "49 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.5,
+        "evidencia": "HbA1c 9.5"
+      },
+      "creatinina": {
+        "valor": 1.18,
+        "evidencia": "creatinina 1.18"
+      },
+      "glicemia_jejum": {
+        "valor": 182.0,
+        "evidencia": "glicemia de jejum 182"
+      },
+      "imc": {
+        "valor": 30.5,
+        "evidencia": "IMC 30.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3496,10 +5888,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "82fb35da4a9bd3e44c662ea39bb31e0a309734337a846d051de0dc50d9c9a55d",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-093",
+    "dados_lidos": {
+      "idade": {
+        "valor": 36.0,
+        "evidencia": "36 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.4,
+        "evidencia": "HbA1c 9.4"
+      },
+      "creatinina": {
+        "valor": 1.18,
+        "evidencia": "creatinina 1.18"
+      },
+      "glicemia_jejum": {
+        "valor": 199.0,
+        "evidencia": "glicemia de jejum 199"
+      },
+      "imc": {
+        "valor": 30.4,
+        "evidencia": "IMC 30.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3534,10 +5952,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5bbb35c089845b017d6df9389d983c6b53e1dc4ba247c4e01019e13fea0ce0f3",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-094",
+    "dados_lidos": {
+      "idade": {
+        "valor": 38.0,
+        "evidencia": "38 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.5,
+        "evidencia": "HbA1c 9.5"
+      },
+      "creatinina": {
+        "valor": 1.2,
+        "evidencia": "creatinina 1.20"
+      },
+      "glicemia_jejum": {
+        "valor": 170.0,
+        "evidencia": "glicemia de jejum 170"
+      },
+      "imc": {
+        "valor": 26.1,
+        "evidencia": "IMC 26.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3572,10 +6016,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "f9af1f822f1b5ac6f708632a3b3ed958b85cac591f5ae367b8b502880c17c874",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-095",
+    "dados_lidos": {
+      "idade": {
+        "valor": 45.0,
+        "evidencia": "45 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.9,
+        "evidencia": "HbA1c 9.9"
+      },
+      "creatinina": {
+        "valor": 0.73,
+        "evidencia": "creatinina 0.73"
+      },
+      "glicemia_jejum": {
+        "valor": 198.0,
+        "evidencia": "glicemia de jejum 198"
+      },
+      "imc": {
+        "valor": 31.4,
+        "evidencia": "IMC 31.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3610,10 +6080,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e802b60c3fe4e8ec5e3337a0cb9ac21e5228b12a09f210000d96763b4b4f3fbc",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-096",
+    "dados_lidos": {
+      "idade": {
+        "valor": 57.0,
+        "evidencia": "57 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.1,
+        "evidencia": "HbA1c 8.1"
+      },
+      "creatinina": {
+        "valor": 1.01,
+        "evidencia": "creatinina 1.01"
+      },
+      "glicemia_jejum": {
+        "valor": 184.0,
+        "evidencia": "glicemia de jejum 184"
+      },
+      "imc": {
+        "valor": 27.5,
+        "evidencia": "IMC 27.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3648,10 +6144,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5bacb8fdd4c3e0f80f480ac2d53601edf85f98d20077042148ebdbd68932bf9c",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-097",
+    "dados_lidos": {
+      "idade": {
+        "valor": 53.0,
+        "evidencia": "53 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.6,
+        "evidencia": "HbA1c 7.6"
+      },
+      "creatinina": {
+        "valor": 1.09,
+        "evidencia": "creatinina 1.09"
+      },
+      "glicemia_jejum": {
+        "valor": 166.0,
+        "evidencia": "glicemia de jejum 166"
+      },
+      "imc": {
+        "valor": 42.1,
+        "evidencia": "IMC 42.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3686,10 +6208,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "cb47f94950a8731c1c4b85e145f56a56563bba4d45977e1e507a3898d67cecd0",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-098",
+    "dados_lidos": {
+      "idade": {
+        "valor": 64.0,
+        "evidencia": "64 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.8,
+        "evidencia": "HbA1c 8.8"
+      },
+      "creatinina": {
+        "valor": 1.22,
+        "evidencia": "creatinina 1.22"
+      },
+      "glicemia_jejum": {
+        "valor": 162.0,
+        "evidencia": "glicemia de jejum 162"
+      },
+      "imc": {
+        "valor": 31.2,
+        "evidencia": "IMC 31.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3724,10 +6272,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "4dc82c924980f1d4d4385811255d96c53f5238343ebfe7011b0b3b45b68b1ee3",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-099",
+    "dados_lidos": {
+      "idade": {
+        "valor": 42.0,
+        "evidencia": "42 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.4,
+        "evidencia": "HbA1c 9.4"
+      },
+      "creatinina": {
+        "valor": 1.03,
+        "evidencia": "creatinina 1.03"
+      },
+      "glicemia_jejum": {
+        "valor": 190.0,
+        "evidencia": "glicemia de jejum 190"
+      },
+      "imc": {
+        "valor": 29.8,
+        "evidencia": "IMC 29.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3762,10 +6336,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "51a9302f323d5d71ca3211d5f417389bc5f79a16dbeb70e0fddb62f1168d38a7",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-100",
+    "dados_lidos": {
+      "idade": {
+        "valor": 36.0,
+        "evidencia": "36 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.6,
+        "evidencia": "HbA1c 7.6"
+      },
+      "creatinina": {
+        "valor": 0.86,
+        "evidencia": "creatinina 0.86"
+      },
+      "glicemia_jejum": {
+        "valor": 157.0,
+        "evidencia": "glicemia de jejum 157"
+      },
+      "imc": {
+        "valor": 33.6,
+        "evidencia": "IMC 33.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3800,10 +6400,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5422743ee6a44e3ddade0149943f01d97732a98af80cdf878177bad41380b365",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-101",
+    "dados_lidos": {
+      "idade": {
+        "valor": 82.0,
+        "evidencia": "82 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.2,
+        "evidencia": "HbA1c 9.2"
+      },
+      "creatinina": {
+        "valor": 1.08,
+        "evidencia": "creatinina 1.08"
+      },
+      "glicemia_jejum": {
+        "valor": 178.0,
+        "evidencia": "glicemia de jejum 178"
+      },
+      "imc": {
+        "valor": 29.3,
+        "evidencia": "IMC 29.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3838,10 +6464,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "1d7ac85085e42abd2576f1f511f8d5dee8dcd887fb78c9e4b8e802072eaf9ca6",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-102",
+    "dados_lidos": {
+      "idade": {
+        "valor": 36.0,
+        "evidencia": "36 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 10.8,
+        "evidencia": "HbA1c 10.8"
+      },
+      "creatinina": {
+        "valor": 1.27,
+        "evidencia": "creatinina 1.27"
+      },
+      "glicemia_jejum": {
+        "valor": 186.0,
+        "evidencia": "glicemia de jejum 186"
+      },
+      "imc": {
+        "valor": 31.9,
+        "evidencia": "IMC 31.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3876,10 +6528,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "ab65877530ef797f64fb8b219149fedb8d097cfb927a74b9c35818e070120ccd",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-103",
+    "dados_lidos": {
+      "idade": {
+        "valor": 58.0,
+        "evidencia": "58 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 10.0,
+        "evidencia": "HbA1c 10.0"
+      },
+      "creatinina": {
+        "valor": 1.85,
+        "evidencia": "creatinina 1.85"
+      },
+      "glicemia_jejum": {
+        "valor": 178.0,
+        "evidencia": "glicemia de jejum 178"
+      },
+      "imc": {
+        "valor": 27.0,
+        "evidencia": "IMC 27.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3914,10 +6592,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "831b16f8c3ba1d128c865f91683336b19f227c0acf016d664b9d4e1af223b78b",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-104",
+    "dados_lidos": {
+      "idade": {
+        "valor": 54.0,
+        "evidencia": "54 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.2,
+        "evidencia": "HbA1c 8.2"
+      },
+      "creatinina": {
+        "valor": 1.19,
+        "evidencia": "creatinina 1.19"
+      },
+      "glicemia_jejum": {
+        "valor": 182.0,
+        "evidencia": "glicemia de jejum 182"
+      },
+      "imc": {
+        "valor": 38.4,
+        "evidencia": "IMC 38.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -3952,10 +6656,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "8e568d46174e06f8b0a8b086196c1f6bc19f4638972ef01d5874973a1ee35d09",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-105",
+    "dados_lidos": {
+      "idade": {
+        "valor": 51.0,
+        "evidencia": "51 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.5,
+        "evidencia": "HbA1c 8.5"
+      },
+      "creatinina": {
+        "valor": 1.31,
+        "evidencia": "creatinina 1.31"
+      },
+      "glicemia_jejum": {
+        "valor": 188.0,
+        "evidencia": "glicemia de jejum 188"
+      },
+      "imc": {
+        "valor": 28.9,
+        "evidencia": "IMC 28.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": true,
@@ -3990,10 +6720,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "10b2f9d3c9b5e52adaec619e2eb7d9ab802b95810d4cef59ae1c0ecf89a29356",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-106",
+    "dados_lidos": {
+      "idade": {
+        "valor": 29.0,
+        "evidencia": "29 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.3,
+        "evidencia": "HbA1c 7.3"
+      },
+      "creatinina": {
+        "valor": 1.24,
+        "evidencia": "creatinina 1.24"
+      },
+      "glicemia_jejum": {
+        "valor": 158.0,
+        "evidencia": "glicemia de jejum 158"
+      },
+      "imc": {
+        "valor": 32.7,
+        "evidencia": "IMC 32.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4028,10 +6784,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "61b9c42173cc9d3227d70bf01f5e0b899e8d1ed6e4e19780160ab40e8b70a426",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-107",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.5,
+        "evidencia": "HbA1c 7.5"
+      },
+      "creatinina": {
+        "valor": 1.05,
+        "evidencia": "creatinina 1.05"
+      },
+      "glicemia_jejum": {
+        "valor": 173.0,
+        "evidencia": "glicemia de jejum 173"
+      },
+      "imc": {
+        "valor": 29.2,
+        "evidencia": "IMC 29.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4066,10 +6848,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "ee4937b92beec3abe267c606cd924e5c1e90d5a6d2948acc772b2238794991f8",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-108",
+    "dados_lidos": {
+      "idade": {
+        "valor": 52.0,
+        "evidencia": "52 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 6.1,
+        "evidencia": "HbA1c 6.1"
+      },
+      "creatinina": {
+        "valor": 0.69,
+        "evidencia": "creatinina 0.69"
+      },
+      "glicemia_jejum": {
+        "valor": 139.0,
+        "evidencia": "glicemia de jejum 139"
+      },
+      "imc": {
+        "valor": 26.2,
+        "evidencia": "IMC 26.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4104,10 +6912,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "1c79818c287e4b655c97e510f45b10cde916311ebfb1b9f888235242d93931d0",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-109",
+    "dados_lidos": {
+      "idade": {
+        "valor": 55.0,
+        "evidencia": "55 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.8,
+        "evidencia": "HbA1c 8.8"
+      },
+      "creatinina": {
+        "valor": 1.7,
+        "evidencia": "creatinina 1.70"
+      },
+      "glicemia_jejum": {
+        "valor": 174.0,
+        "evidencia": "glicemia de jejum 174"
+      },
+      "imc": {
+        "valor": 31.9,
+        "evidencia": "IMC 31.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4142,10 +6976,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "2f6d869f820c2dd4abf302fd6ba3c5cd99160b6730c9223babdac33e6276a92b",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-110",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.7,
+        "evidencia": "HbA1c 9.7"
+      },
+      "creatinina": {
+        "valor": 2.35,
+        "evidencia": "creatinina 2.35"
+      },
+      "glicemia_jejum": {
+        "valor": 200.0,
+        "evidencia": "glicemia de jejum 200"
+      },
+      "imc": {
+        "valor": 28.1,
+        "evidencia": "IMC 28.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4180,10 +7040,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "53b6d48b895991c731df4665b75529be7fbaf4155b57f162886d14a1c6f213fa",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-111",
+    "dados_lidos": {
+      "idade": {
+        "valor": 61.0,
+        "evidencia": "61 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 5.9,
+        "evidencia": "HbA1c 5.9"
+      },
+      "creatinina": {
+        "valor": 0.72,
+        "evidencia": "creatinina 0.72"
+      },
+      "glicemia_jejum": {
+        "valor": 163.0,
+        "evidencia": "glicemia de jejum 163"
+      },
+      "imc": {
+        "valor": 41.8,
+        "evidencia": "IMC 41.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4218,10 +7104,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "f799682e2f90866ae7375f8d454d88046764122e283eea93e849e4db02776e5f",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-112",
+    "dados_lidos": {
+      "idade": {
+        "valor": 59.0,
+        "evidencia": "59 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 11.3,
+        "evidencia": "HbA1c 11.3"
+      },
+      "creatinina": {
+        "valor": 1.04,
+        "evidencia": "creatinina 1.04"
+      },
+      "glicemia_jejum": {
+        "valor": 196.0,
+        "evidencia": "glicemia de jejum 196"
+      },
+      "imc": {
+        "valor": 38.1,
+        "evidencia": "IMC 38.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4256,10 +7168,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "278a22bb48959e77bcbc7e513fece5a90c43821a91357bbb2dbfc41cc1e2908f",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-113",
+    "dados_lidos": {
+      "idade": {
+        "valor": 54.0,
+        "evidencia": "54 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 1.18,
+        "evidencia": "creatinina 1.18"
+      },
+      "glicemia_jejum": {
+        "valor": 178.0,
+        "evidencia": "glicemia de jejum 178"
+      },
+      "imc": {
+        "valor": 36.5,
+        "evidencia": "IMC 36.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4294,10 +7232,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e62f5dcc28dc640abc73becaa4704b35e6874a1423aa23ebb8052f00e1693527",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-114",
+    "dados_lidos": {
+      "idade": {
+        "valor": 40.0,
+        "evidencia": "40 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.7,
+        "evidencia": "HbA1c 7.7"
+      },
+      "creatinina": {
+        "valor": 1.05,
+        "evidencia": "creatinina 1.05"
+      },
+      "glicemia_jejum": {
+        "valor": 171.0,
+        "evidencia": "glicemia de jejum 171"
+      },
+      "imc": {
+        "valor": 31.4,
+        "evidencia": "IMC 31.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4332,10 +7296,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "1760d9ace19042774451a94bb088f3ee1974917c59bd3abc6ff29656661afc24",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-115",
+    "dados_lidos": {
+      "idade": {
+        "valor": 46.0,
+        "evidencia": "46 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.6,
+        "evidencia": "HbA1c 7.6"
+      },
+      "creatinina": {
+        "valor": 0.67,
+        "evidencia": "creatinina 0.67"
+      },
+      "glicemia_jejum": {
+        "valor": 165.0,
+        "evidencia": "glicemia de jejum 165"
+      },
+      "imc": {
+        "valor": 23.3,
+        "evidencia": "IMC 23.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4370,10 +7360,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "dc869bafcc484deee2e8321b5b5fc1f0ec1bbf5a8d1ae1124a4c97413982f496",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-116",
+    "dados_lidos": {
+      "idade": {
+        "valor": 59.0,
+        "evidencia": "59 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.5,
+        "evidencia": "HbA1c 8.5"
+      },
+      "creatinina": {
+        "valor": 1.25,
+        "evidencia": "creatinina 1.25"
+      },
+      "glicemia_jejum": {
+        "valor": 166.0,
+        "evidencia": "glicemia de jejum 166"
+      },
+      "imc": {
+        "valor": 41.6,
+        "evidencia": "IMC 41.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4408,10 +7424,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5e2734e64b5a8c7b79dd45b9cb9badf0be1ebeb5e97dd0266cb454949a237507",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-117",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 6.2,
+        "evidencia": "HbA1c 6.2"
+      },
+      "creatinina": {
+        "valor": 1.07,
+        "evidencia": "creatinina 1.07"
+      },
+      "glicemia_jejum": {
+        "valor": 161.0,
+        "evidencia": "glicemia de jejum 161"
+      },
+      "imc": {
+        "valor": 29.1,
+        "evidencia": "IMC 29.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4446,10 +7488,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "4f106458c054d4b602f372a0d5b80a45d5b9a876898de31e4fc780f8560090fb",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-118",
+    "dados_lidos": {
+      "idade": {
+        "valor": 42.0,
+        "evidencia": "42 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 10.0,
+        "evidencia": "HbA1c 10.0"
+      },
+      "creatinina": {
+        "valor": 0.71,
+        "evidencia": "creatinina 0.71"
+      },
+      "glicemia_jejum": {
+        "valor": 200.0,
+        "evidencia": "glicemia de jejum 200"
+      },
+      "imc": {
+        "valor": 51.7,
+        "evidencia": "IMC 51.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4484,10 +7552,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "541d0a1f0fa44cde83cfd4321fd6449b98bbd5094d5f7a823994f381a6753a5a",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-119",
+    "dados_lidos": {
+      "idade": {
+        "valor": 27.0,
+        "evidencia": "27 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.4,
+        "evidencia": "HbA1c 8.4"
+      },
+      "creatinina": {
+        "valor": 1.3,
+        "evidencia": "creatinina 1.30"
+      },
+      "glicemia_jejum": {
+        "valor": 159.0,
+        "evidencia": "glicemia de jejum 159"
+      },
+      "imc": {
+        "valor": 40.5,
+        "evidencia": "IMC 40.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4522,10 +7616,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "2d68774533587c535c7f39d249cb76e556373723d732e356a49cfc22db7bf281",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-120",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.4,
+        "evidencia": "HbA1c 7.4"
+      },
+      "creatinina": {
+        "valor": 0.91,
+        "evidencia": "creatinina 0.91"
+      },
+      "glicemia_jejum": {
+        "valor": 165.0,
+        "evidencia": "glicemia de jejum 165"
+      },
+      "imc": {
+        "valor": 45.6,
+        "evidencia": "IMC 45.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4560,10 +7680,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "02403f81b1d201ffeec83a7672b69ae62a0e380a49e91245ee1007b43191af0e",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-121",
+    "dados_lidos": {
+      "idade": {
+        "valor": 59.0,
+        "evidencia": "59 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.2,
+        "evidencia": "HbA1c 8.2"
+      },
+      "creatinina": {
+        "valor": 1.1,
+        "evidencia": "creatinina 1.10"
+      },
+      "glicemia_jejum": {
+        "valor": 178.0,
+        "evidencia": "glicemia de jejum 178"
+      },
+      "imc": {
+        "valor": 31.0,
+        "evidencia": "IMC 31.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": true,
@@ -4599,10 +7745,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "1054bc84a2670fd75219878758ffee52dd170ae398c0b581e5c29c06150df6ec",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-122",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.9,
+        "evidencia": "HbA1c 8.9"
+      },
+      "creatinina": {
+        "valor": 1.19,
+        "evidencia": "creatinina 1.19"
+      },
+      "glicemia_jejum": {
+        "valor": 161.0,
+        "evidencia": "glicemia de jejum 161"
+      },
+      "imc": {
+        "valor": 39.7,
+        "evidencia": "IMC 39.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": true,
@@ -4637,10 +7809,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "489ec80b369f568485c1a0aa50a589a68e28b543510f5dd971fc0778f8a90be9",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-123",
+    "dados_lidos": {
+      "idade": {
+        "valor": 73.0,
+        "evidencia": "73 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.2,
+        "evidencia": "HbA1c 8.2"
+      },
+      "creatinina": {
+        "valor": 1.14,
+        "evidencia": "creatinina 1.14"
+      },
+      "glicemia_jejum": {
+        "valor": 163.0,
+        "evidencia": "glicemia de jejum 163"
+      },
+      "imc": {
+        "valor": 36.4,
+        "evidencia": "IMC 36.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4675,10 +7873,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "dc6f97d7c26f8aa6aca15dc1c1f6bbed9aebf46db6d0b8667c85b4b84b9e1fa8",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-124",
+    "dados_lidos": {
+      "idade": {
+        "valor": 28.0,
+        "evidencia": "28 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.3,
+        "evidencia": "HbA1c 8.3"
+      },
+      "creatinina": {
+        "valor": 1.3,
+        "evidencia": "creatinina 1.30"
+      },
+      "glicemia_jejum": {
+        "valor": 170.0,
+        "evidencia": "glicemia de jejum 170"
+      },
+      "imc": {
+        "valor": 40.1,
+        "evidencia": "IMC 40.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4713,10 +7937,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a0140f6b707fb99ada58b8e9f58d98c808c22962a9ec875ea1f5ba87fdb90356",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-125",
+    "dados_lidos": {
+      "idade": {
+        "valor": 44.0,
+        "evidencia": "44 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.5,
+        "evidencia": "HbA1c 8.5"
+      },
+      "creatinina": {
+        "valor": 0.89,
+        "evidencia": "creatinina 0.89"
+      },
+      "glicemia_jejum": {
+        "valor": 183.0,
+        "evidencia": "glicemia de jejum 183"
+      },
+      "imc": {
+        "valor": 29.6,
+        "evidencia": "IMC 29.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": true,
@@ -4752,10 +8002,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "ac17f43963e5ba7d05d3a7f9ed688a4b651ad36e67643f287903c6ef88712f23",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-126",
+    "dados_lidos": {
+      "idade": {
+        "valor": 64.0,
+        "evidencia": "64 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 2.23,
+        "evidencia": "creatinina 2.23"
+      },
+      "glicemia_jejum": {
+        "valor": 187.0,
+        "evidencia": "glicemia de jejum 187"
+      },
+      "imc": {
+        "valor": 39.3,
+        "evidencia": "IMC 39.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4790,10 +8066,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "264330b0306ea0f452537a3fe7205d25d102bc7af123209bc9523e692381e017",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-127",
+    "dados_lidos": {
+      "idade": {
+        "valor": 63.0,
+        "evidencia": "63 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.7,
+        "evidencia": "HbA1c 8.7"
+      },
+      "creatinina": {
+        "valor": 1.35,
+        "evidencia": "creatinina 1.35"
+      },
+      "glicemia_jejum": {
+        "valor": 160.0,
+        "evidencia": "glicemia de jejum 160"
+      },
+      "imc": {
+        "valor": 39.3,
+        "evidencia": "IMC 39.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4828,10 +8130,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "38cc62ae066a7ba1bada936cf2bf915bd20bcab56794528f9896adb1aff8bbfe",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-128",
+    "dados_lidos": {
+      "idade": {
+        "valor": 61.0,
+        "evidencia": "61 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.7,
+        "evidencia": "HbA1c 7.7"
+      },
+      "creatinina": {
+        "valor": 1.21,
+        "evidencia": "creatinina 1.21"
+      },
+      "glicemia_jejum": {
+        "valor": 156.0,
+        "evidencia": "glicemia de jejum 156"
+      },
+      "imc": {
+        "valor": 37.1,
+        "evidencia": "IMC 37.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4868,10 +8196,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "52b789717fba3665877d12fce95984e4bfa000027205361d697149962dd411ca",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-129",
+    "dados_lidos": {
+      "idade": {
+        "valor": 81.0,
+        "evidencia": "81 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.8,
+        "evidencia": "HbA1c 7.8"
+      },
+      "creatinina": {
+        "valor": 0.84,
+        "evidencia": "creatinina 0.84"
+      },
+      "glicemia_jejum": {
+        "valor": 150.0,
+        "evidencia": "glicemia de jejum 150"
+      },
+      "imc": {
+        "valor": 35.2,
+        "evidencia": "IMC 35.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4906,10 +8260,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "2b0ee47775d172d3828bc5c8f111c21b3cedad0fe9ea6d9656470f12dbb88cb0",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-130",
+    "dados_lidos": {
+      "idade": {
+        "valor": 43.0,
+        "evidencia": "43 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.6,
+        "evidencia": "HbA1c 7.6"
+      },
+      "creatinina": {
+        "valor": 0.67,
+        "evidencia": "creatinina 0.67"
+      },
+      "glicemia_jejum": {
+        "valor": 157.0,
+        "evidencia": "glicemia de jejum 157"
+      },
+      "imc": {
+        "valor": 26.0,
+        "evidencia": "IMC 26.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4944,10 +8324,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "40a7c9a7fa0585596f583cc78d3eae226ac3b32e44ae76f529fb0653d5567a1f",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-131",
+    "dados_lidos": {
+      "idade": {
+        "valor": 38.0,
+        "evidencia": "38 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.8,
+        "evidencia": "HbA1c 7.8"
+      },
+      "creatinina": {
+        "valor": 1.23,
+        "evidencia": "creatinina 1.23"
+      },
+      "glicemia_jejum": {
+        "valor": 166.0,
+        "evidencia": "glicemia de jejum 166"
+      },
+      "imc": {
+        "valor": 21.1,
+        "evidencia": "IMC 21.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -4982,10 +8388,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "578ee3012bf22afec5a28ceee8f9048161124c6881839cd7170128ea984188e0",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-132",
+    "dados_lidos": {
+      "idade": {
+        "valor": 74.0,
+        "evidencia": "74 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 0.95,
+        "evidencia": "creatinina 0.95"
+      },
+      "glicemia_jejum": {
+        "valor": 154.0,
+        "evidencia": "glicemia de jejum 154"
+      },
+      "imc": {
+        "valor": 34.0,
+        "evidencia": "IMC 34.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5020,10 +8452,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "528d48a8aa283a4053acc2b517dacf5508069fbbf0efc2a3562009eef99c2a06",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-133",
+    "dados_lidos": {
+      "idade": {
+        "valor": 27.0,
+        "evidencia": "27 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.3,
+        "evidencia": "HbA1c 9.3"
+      },
+      "creatinina": {
+        "valor": 1.29,
+        "evidencia": "creatinina 1.29"
+      },
+      "glicemia_jejum": {
+        "valor": 180.0,
+        "evidencia": "glicemia de jejum 180"
+      },
+      "imc": {
+        "valor": 33.2,
+        "evidencia": "IMC 33.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5058,10 +8516,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "238a467c8cf74a1491950e617462302c6bd104025fce4f4271b9a0689abbf152",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-134",
+    "dados_lidos": {
+      "idade": {
+        "valor": 57.0,
+        "evidencia": "57 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.4,
+        "evidencia": "HbA1c 9.4"
+      },
+      "creatinina": {
+        "valor": 0.84,
+        "evidencia": "creatinina 0.84"
+      },
+      "glicemia_jejum": {
+        "valor": 190.0,
+        "evidencia": "glicemia de jejum 190"
+      },
+      "imc": {
+        "valor": 33.9,
+        "evidencia": "IMC 33.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": true,
@@ -5096,10 +8580,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "996495e6a7e6812cf0773c1b04c43f308659540a47ce253f615e382ec22eecbe",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-135",
+    "dados_lidos": {
+      "idade": {
+        "valor": 61.0,
+        "evidencia": "61 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 6.6,
+        "evidencia": "HbA1c 6.6"
+      },
+      "creatinina": {
+        "valor": 1.32,
+        "evidencia": "creatinina 1.32"
+      },
+      "glicemia_jejum": {
+        "valor": 148.0,
+        "evidencia": "glicemia de jejum 148"
+      },
+      "imc": {
+        "valor": 34.9,
+        "evidencia": "IMC 34.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5134,10 +8644,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "102fcb9264dbb5b61b6334335db0d6cc499b9665fcdae97fea86b342a69e009e",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-136",
+    "dados_lidos": {
+      "idade": {
+        "valor": 53.0,
+        "evidencia": "53 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.4,
+        "evidencia": "HbA1c 8.4"
+      },
+      "creatinina": {
+        "valor": 1.32,
+        "evidencia": "creatinina 1.32"
+      },
+      "glicemia_jejum": {
+        "valor": 177.0,
+        "evidencia": "glicemia de jejum 177"
+      },
+      "imc": {
+        "valor": 24.1,
+        "evidencia": "IMC 24.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5172,10 +8708,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5e756d42386bb8d35a16b6f3197683739314cf690c1b1395692ed0c1e94e7040",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-137",
+    "dados_lidos": {
+      "idade": {
+        "valor": 59.0,
+        "evidencia": "59 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.7,
+        "evidencia": "HbA1c 9.7"
+      },
+      "creatinina": {
+        "valor": 0.79,
+        "evidencia": "creatinina 0.79"
+      },
+      "glicemia_jejum": {
+        "valor": 195.0,
+        "evidencia": "glicemia de jejum 195"
+      },
+      "imc": {
+        "valor": 23.8,
+        "evidencia": "IMC 23.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5210,10 +8772,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "192ad9de22bbcbe311b2a60614f0df9560052811cd4277abf4e7b4fb0099f515",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-138",
+    "dados_lidos": {
+      "idade": {
+        "valor": 66.0,
+        "evidencia": "66 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 5.9,
+        "evidencia": "HbA1c 5.9"
+      },
+      "creatinina": {
+        "valor": 0.92,
+        "evidencia": "creatinina 0.92"
+      },
+      "glicemia_jejum": {
+        "valor": 140.0,
+        "evidencia": "glicemia de jejum 140"
+      },
+      "imc": {
+        "valor": 41.0,
+        "evidencia": "IMC 41.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5248,10 +8836,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "b9958edc562faf509ef1f56f08d9f5cd0e9f3638d3f3e2bf7f2a6bff536b3b2c",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-139",
+    "dados_lidos": {
+      "idade": {
+        "valor": 79.0,
+        "evidencia": "79 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.4,
+        "evidencia": "HbA1c 9.4"
+      },
+      "creatinina": {
+        "valor": 0.96,
+        "evidencia": "creatinina 0.96"
+      },
+      "glicemia_jejum": {
+        "valor": 194.0,
+        "evidencia": "glicemia de jejum 194"
+      },
+      "imc": {
+        "valor": 40.5,
+        "evidencia": "IMC 40.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5286,10 +8900,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "b279ccb4fcbaa65ecb0b290b55e52333310f02975593a2cae41c09ec10e7b67f",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-140",
+    "dados_lidos": {
+      "idade": {
+        "valor": 38.0,
+        "evidencia": "38 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.9,
+        "evidencia": "HbA1c 8.9"
+      },
+      "creatinina": {
+        "valor": 2.24,
+        "evidencia": "creatinina 2.24"
+      },
+      "glicemia_jejum": {
+        "valor": 180.0,
+        "evidencia": "glicemia de jejum 180"
+      },
+      "imc": {
+        "valor": 38.5,
+        "evidencia": "IMC 38.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5324,10 +8964,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "4cbca69ff9531fd135691c3f3918746b6f153f723f320181734dbc7ef80351e6",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-141",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.6,
+        "evidencia": "HbA1c 7.6"
+      },
+      "creatinina": {
+        "valor": 0.67,
+        "evidencia": "creatinina 0.67"
+      },
+      "glicemia_jejum": {
+        "valor": 151.0,
+        "evidencia": "glicemia de jejum 151"
+      },
+      "imc": {
+        "valor": 39.4,
+        "evidencia": "IMC 39.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": true,
@@ -5363,10 +9029,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "8befd2083d895e95e31e97f885620eda717a3072d5672d07424537db6f1ff35c",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-142",
+    "dados_lidos": {
+      "idade": {
+        "valor": 39.0,
+        "evidencia": "39 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.9,
+        "evidencia": "HbA1c 8.9"
+      },
+      "creatinina": {
+        "valor": 1.13,
+        "evidencia": "creatinina 1.13"
+      },
+      "glicemia_jejum": {
+        "valor": 188.0,
+        "evidencia": "glicemia de jejum 188"
+      },
+      "imc": {
+        "valor": 40.9,
+        "evidencia": "IMC 40.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5401,10 +9093,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "44f2640144a40e7c9e1f5b1e3a4da6c5c28299777d345121dfff60854e2aea68",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-143",
+    "dados_lidos": {
+      "idade": {
+        "valor": 21.0,
+        "evidencia": "21 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 0.92,
+        "evidencia": "creatinina 0.92"
+      },
+      "glicemia_jejum": {
+        "valor": 172.0,
+        "evidencia": "glicemia de jejum 172"
+      },
+      "imc": {
+        "valor": 28.6,
+        "evidencia": "IMC 28.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5439,10 +9157,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "669cc85923666052d33a218d1d7829fcab47dfd54b68ec0e7b059b4cd2a2d085",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-144",
+    "dados_lidos": {
+      "idade": {
+        "valor": 58.0,
+        "evidencia": "58 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.8,
+        "evidencia": "HbA1c 9.8"
+      },
+      "creatinina": {
+        "valor": 0.79,
+        "evidencia": "creatinina 0.79"
+      },
+      "glicemia_jejum": {
+        "valor": 183.0,
+        "evidencia": "glicemia de jejum 183"
+      },
+      "imc": {
+        "valor": 48.2,
+        "evidencia": "IMC 48.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5477,10 +9221,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "d6ad8ec87460b73f0dd5bdfd6ee2979c1f13eccccb705712d7ac8c685d4a6a80",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-145",
+    "dados_lidos": {
+      "idade": {
+        "valor": 55.0,
+        "evidencia": "55 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 11.9,
+        "evidencia": "HbA1c 11.9"
+      },
+      "creatinina": {
+        "valor": 1.17,
+        "evidencia": "creatinina 1.17"
+      },
+      "glicemia_jejum": {
+        "valor": 214.0,
+        "evidencia": "glicemia de jejum 214"
+      },
+      "imc": {
+        "valor": 31.5,
+        "evidencia": "IMC 31.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5515,10 +9285,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "fad1aab1e6d1a2a4ab0d93216a269bdca64ca874edb5593c6ebb34f3f8c15c9a",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-146",
+    "dados_lidos": {
+      "idade": {
+        "valor": 65.0,
+        "evidencia": "65 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 6.3,
+        "evidencia": "HbA1c 6.3"
+      },
+      "creatinina": {
+        "valor": 1.04,
+        "evidencia": "creatinina 1.04"
+      },
+      "glicemia_jejum": {
+        "valor": 150.0,
+        "evidencia": "glicemia de jejum 150"
+      },
+      "imc": {
+        "valor": 32.6,
+        "evidencia": "IMC 32.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5553,10 +9349,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "dd9f85ca8e0418caa125218ff6aca907b47dd20f36169a5af1a0346b4125a88e",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-147",
+    "dados_lidos": {
+      "idade": {
+        "valor": 45.0,
+        "evidencia": "45 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 12.3,
+        "evidencia": "HbA1c 12.3"
+      },
+      "creatinina": {
+        "valor": 0.99,
+        "evidencia": "creatinina 0.99"
+      },
+      "glicemia_jejum": {
+        "valor": 205.0,
+        "evidencia": "glicemia de jejum 205"
+      },
+      "imc": {
+        "valor": 34.7,
+        "evidencia": "IMC 34.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5591,10 +9413,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "92ea8ff786a0060c972894e94eeec67286c63dc0f4a6d544068d6354fdf723f3",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-148",
+    "dados_lidos": {
+      "idade": {
+        "valor": 26.0,
+        "evidencia": "26 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 1.01,
+        "evidencia": "creatinina 1.01"
+      },
+      "glicemia_jejum": {
+        "valor": 157.0,
+        "evidencia": "glicemia de jejum 157"
+      },
+      "imc": {
+        "valor": 30.2,
+        "evidencia": "IMC 30.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5629,10 +9477,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "e795136e25f4a148b624fcaa8c6b5c99f351d7932cbec847caa40d218b621a5c",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-149",
+    "dados_lidos": {
+      "idade": {
+        "valor": 63.0,
+        "evidencia": "63 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.0,
+        "evidencia": "HbA1c 9.0"
+      },
+      "creatinina": {
+        "valor": 1.71,
+        "evidencia": "creatinina 1.71"
+      },
+      "glicemia_jejum": {
+        "valor": 161.0,
+        "evidencia": "glicemia de jejum 161"
+      },
+      "imc": {
+        "valor": 34.5,
+        "evidencia": "IMC 34.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5667,10 +9541,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "6fc565ec2e70e2d72b1511a4aac0b6a1958ae883239389eead96a354b65623b5",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-150",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 11.6,
+        "evidencia": "HbA1c 11.6"
+      },
+      "creatinina": {
+        "valor": 1.25,
+        "evidencia": "creatinina 1.25"
+      },
+      "glicemia_jejum": {
+        "valor": 192.0,
+        "evidencia": "glicemia de jejum 192"
+      },
+      "imc": {
+        "valor": 26.3,
+        "evidencia": "IMC 26.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5705,10 +9605,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "6afe2b64f301421168ddde7568c8cf8ca976e05a7a9e3a45be399e6ce6f71187",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-151",
+    "dados_lidos": {
+      "idade": {
+        "valor": 28.0,
+        "evidencia": "28 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.7,
+        "evidencia": "HbA1c 7.7"
+      },
+      "creatinina": {
+        "valor": 0.91,
+        "evidencia": "creatinina 0.91"
+      },
+      "glicemia_jejum": {
+        "valor": 162.0,
+        "evidencia": "glicemia de jejum 162"
+      },
+      "imc": {
+        "valor": 36.7,
+        "evidencia": "IMC 36.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5743,10 +9669,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "6b20c83fe2cf1b2bbe5a70cd6396fb6f37c6f58323b8500745f31df221db9a50",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-152",
+    "dados_lidos": {
+      "idade": {
+        "valor": 38.0,
+        "evidencia": "38 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 10.7,
+        "evidencia": "HbA1c 10.7"
+      },
+      "creatinina": {
+        "valor": 0.73,
+        "evidencia": "creatinina 0.73"
+      },
+      "glicemia_jejum": {
+        "valor": 179.0,
+        "evidencia": "glicemia de jejum 179"
+      },
+      "imc": {
+        "valor": 35.7,
+        "evidencia": "IMC 35.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5781,10 +9733,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "6e0c89bb1c78778d6008d2f4322626da6fdd50ced343f81b97c6bfa1a578322f",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-153",
+    "dados_lidos": {
+      "idade": {
+        "valor": 46.0,
+        "evidencia": "46 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.3,
+        "evidencia": "HbA1c 9.3"
+      },
+      "creatinina": {
+        "valor": 1.08,
+        "evidencia": "creatinina 1.08"
+      },
+      "glicemia_jejum": {
+        "valor": 172.0,
+        "evidencia": "glicemia de jejum 172"
+      },
+      "imc": {
+        "valor": 46.6,
+        "evidencia": "IMC 46.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5819,10 +9797,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "2aa5d388b85ee1ecd6174149ba1e52c3f62c9c8ccf55715d268a47c3a72d8575",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-154",
+    "dados_lidos": {
+      "idade": {
+        "valor": 81.0,
+        "evidencia": "81 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 1.12,
+        "evidencia": "creatinina 1.12"
+      },
+      "glicemia_jejum": {
+        "valor": 172.0,
+        "evidencia": "glicemia de jejum 172"
+      },
+      "imc": {
+        "valor": 31.9,
+        "evidencia": "IMC 31.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5857,10 +9861,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a5dc9cf358294e55b7a1f68f45dd63da7fca7fd09a8a24fbc2bdb65c9f4bf9ed",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-155",
+    "dados_lidos": {
+      "idade": {
+        "valor": 51.0,
+        "evidencia": "51 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 1.27,
+        "evidencia": "creatinina 1.27"
+      },
+      "glicemia_jejum": {
+        "valor": 179.0,
+        "evidencia": "glicemia de jejum 179"
+      },
+      "imc": {
+        "valor": 22.3,
+        "evidencia": "IMC 22.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5895,10 +9925,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "3c3467950c99de011f4a22ef759608d2f781ba51550561fe86eb657fdfd5beb3",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-156",
+    "dados_lidos": {
+      "idade": {
+        "valor": 44.0,
+        "evidencia": "44 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 10.0,
+        "evidencia": "HbA1c 10.0"
+      },
+      "creatinina": {
+        "valor": 1.02,
+        "evidencia": "creatinina 1.02"
+      },
+      "glicemia_jejum": {
+        "valor": 172.0,
+        "evidencia": "glicemia de jejum 172"
+      },
+      "imc": {
+        "valor": 41.9,
+        "evidencia": "IMC 41.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5933,10 +9989,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "ff99a704e3802bc989c8bb62ca8bbf0d805eaed0bf83107e1effbdbf7def62e7",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-157",
+    "dados_lidos": {
+      "idade": {
+        "valor": 58.0,
+        "evidencia": "58 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.1,
+        "evidencia": "HbA1c 9.1"
+      },
+      "creatinina": {
+        "valor": 1.84,
+        "evidencia": "creatinina 1.84"
+      },
+      "glicemia_jejum": {
+        "valor": 171.0,
+        "evidencia": "glicemia de jejum 171"
+      },
+      "imc": {
+        "valor": 34.5,
+        "evidencia": "IMC 34.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -5971,10 +10053,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "806ae4f3c58beea959dd2ccb395402aa7cdb418fc02e65d192906af3fc163236",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-158",
+    "dados_lidos": {
+      "idade": {
+        "valor": 42.0,
+        "evidencia": "42 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 12.4,
+        "evidencia": "HbA1c 12.4"
+      },
+      "creatinina": {
+        "valor": 1.19,
+        "evidencia": "creatinina 1.19"
+      },
+      "glicemia_jejum": {
+        "valor": 206.0,
+        "evidencia": "glicemia de jejum 206"
+      },
+      "imc": {
+        "valor": 37.6,
+        "evidencia": "IMC 37.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6009,10 +10117,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "56636f080a68a7d8351b6bf00aa982b7311e852158422717a71d190b534d0a46",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-159",
+    "dados_lidos": {
+      "idade": {
+        "valor": 48.0,
+        "evidencia": "48 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.7,
+        "evidencia": "HbA1c 9.7"
+      },
+      "creatinina": {
+        "valor": 0.99,
+        "evidencia": "creatinina 0.99"
+      },
+      "glicemia_jejum": {
+        "valor": 187.0,
+        "evidencia": "glicemia de jejum 187"
+      },
+      "imc": {
+        "valor": 34.4,
+        "evidencia": "IMC 34.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": true,
@@ -6047,10 +10181,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "0b19433936efc449664354da3a78dc1be8f523380ae4a512732b52332e14c2dd",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-160",
+    "dados_lidos": {
+      "idade": {
+        "valor": 52.0,
+        "evidencia": "52 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 12.6,
+        "evidencia": "HbA1c 12.6"
+      },
+      "creatinina": {
+        "valor": 1.12,
+        "evidencia": "creatinina 1.12"
+      },
+      "glicemia_jejum": {
+        "valor": 197.0,
+        "evidencia": "glicemia de jejum 197"
+      },
+      "imc": {
+        "valor": 41.5,
+        "evidencia": "IMC 41.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6085,10 +10245,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "613fb36efe5e3363ff4bc3b6c4ec3aeaa03c4f638053be66a9c71c623b32a2a0",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-161",
+    "dados_lidos": {
+      "idade": {
+        "valor": 76.0,
+        "evidencia": "76 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.2,
+        "evidencia": "HbA1c 8.2"
+      },
+      "creatinina": {
+        "valor": 1.24,
+        "evidencia": "creatinina 1.24"
+      },
+      "glicemia_jejum": {
+        "valor": 157.0,
+        "evidencia": "glicemia de jejum 157"
+      },
+      "imc": {
+        "valor": 35.4,
+        "evidencia": "IMC 35.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6123,10 +10309,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "767f33d0cad141e1375bb435103fb266af3368b4ab6006a9af1f756e0925cc37",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-162",
+    "dados_lidos": {
+      "idade": {
+        "valor": 61.0,
+        "evidencia": "61 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.6,
+        "evidencia": "HbA1c 9.6"
+      },
+      "creatinina": {
+        "valor": 1.08,
+        "evidencia": "creatinina 1.08"
+      },
+      "glicemia_jejum": {
+        "valor": 199.0,
+        "evidencia": "glicemia de jejum 199"
+      },
+      "imc": {
+        "valor": 33.8,
+        "evidencia": "IMC 33.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6161,10 +10373,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "92a84ead22b7299fa7007dd2d287d3134916e11e130e87d32f1f63f5abfa93b8",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-163",
+    "dados_lidos": {
+      "idade": {
+        "valor": 52.0,
+        "evidencia": "52 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.8,
+        "evidencia": "HbA1c 9.8"
+      },
+      "creatinina": {
+        "valor": 2.04,
+        "evidencia": "creatinina 2.04"
+      },
+      "glicemia_jejum": {
+        "valor": 185.0,
+        "evidencia": "glicemia de jejum 185"
+      },
+      "imc": {
+        "valor": 40.9,
+        "evidencia": "IMC 40.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6199,10 +10437,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a93a4b45c6cd5d6367e8e7a126c5e4d097085a98fb4f75c823512c165cdf67f7",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-164",
+    "dados_lidos": {
+      "idade": {
+        "valor": 44.0,
+        "evidencia": "44 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 11.2,
+        "evidencia": "HbA1c 11.2"
+      },
+      "creatinina": {
+        "valor": 1.29,
+        "evidencia": "creatinina 1.29"
+      },
+      "glicemia_jejum": {
+        "valor": 186.0,
+        "evidencia": "glicemia de jejum 186"
+      },
+      "imc": {
+        "valor": 35.2,
+        "evidencia": "IMC 35.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6237,10 +10501,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "1d3b365265695464664a9c281511a17ed8a49bce4a6c371a0cb0e260ca58a47d",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-165",
+    "dados_lidos": {
+      "idade": {
+        "valor": 54.0,
+        "evidencia": "54 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.7,
+        "evidencia": "HbA1c 8.7"
+      },
+      "creatinina": {
+        "valor": 1.62,
+        "evidencia": "creatinina 1.62"
+      },
+      "glicemia_jejum": {
+        "valor": 185.0,
+        "evidencia": "glicemia de jejum 185"
+      },
+      "imc": {
+        "valor": 31.0,
+        "evidencia": "IMC 31.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6275,10 +10565,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "183fcb0449ab2045b14deadbc7af14a59941e7d6571a831d17eff85e45db0163",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-166",
+    "dados_lidos": {
+      "idade": {
+        "valor": 41.0,
+        "evidencia": "41 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.0,
+        "evidencia": "HbA1c 9.0"
+      },
+      "creatinina": {
+        "valor": 1.69,
+        "evidencia": "creatinina 1.69"
+      },
+      "glicemia_jejum": {
+        "valor": 177.0,
+        "evidencia": "glicemia de jejum 177"
+      },
+      "imc": {
+        "valor": 26.9,
+        "evidencia": "IMC 26.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6313,10 +10629,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "9467b0e612e24d8b602b5d10d5da48c9c721e04eee183fa52014851be780787e",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-167",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.3,
+        "evidencia": "HbA1c 8.3"
+      },
+      "creatinina": {
+        "valor": 1.34,
+        "evidencia": "creatinina 1.34"
+      },
+      "glicemia_jejum": {
+        "valor": 185.0,
+        "evidencia": "glicemia de jejum 185"
+      },
+      "imc": {
+        "valor": 35.8,
+        "evidencia": "IMC 35.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": true,
@@ -6351,10 +10693,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "dd33680a330a3600d3d83341ec7083916649d78bdd4673ad6860e45aa06bc7ca",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-168",
+    "dados_lidos": {
+      "idade": {
+        "valor": 48.0,
+        "evidencia": "48 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 6.8,
+        "evidencia": "HbA1c 6.8"
+      },
+      "creatinina": {
+        "valor": 1.27,
+        "evidencia": "creatinina 1.27"
+      },
+      "glicemia_jejum": {
+        "valor": 164.0,
+        "evidencia": "glicemia de jejum 164"
+      },
+      "imc": {
+        "valor": 40.1,
+        "evidencia": "IMC 40.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6389,10 +10757,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "652a51c9757fc8992751ade2387e96f48804d8d8145f798aabd11ba21bf11094",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-169",
+    "dados_lidos": {
+      "idade": {
+        "valor": 53.0,
+        "evidencia": "53 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 6.8,
+        "evidencia": "HbA1c 6.8"
+      },
+      "creatinina": {
+        "valor": 1.12,
+        "evidencia": "creatinina 1.12"
+      },
+      "glicemia_jejum": {
+        "valor": 156.0,
+        "evidencia": "glicemia de jejum 156"
+      },
+      "imc": {
+        "valor": 31.5,
+        "evidencia": "IMC 31.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6427,10 +10821,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "1022985af49eeed85f5cf952c33232ebd1a4cda78a00bd3877cb49d6e82e7eea",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-170",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 6.2,
+        "evidencia": "HbA1c 6.2"
+      },
+      "creatinina": {
+        "valor": 1.25,
+        "evidencia": "creatinina 1.25"
+      },
+      "glicemia_jejum": {
+        "valor": 137.0,
+        "evidencia": "glicemia de jejum 137"
+      },
+      "imc": {
+        "valor": 37.7,
+        "evidencia": "IMC 37.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6465,10 +10885,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "b060fec6357a1a0dd6284bf7f45629ac2c7219bca10b96ddf6a4ba36f5a45d75",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-171",
+    "dados_lidos": {
+      "idade": {
+        "valor": 60.0,
+        "evidencia": "60 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.2,
+        "evidencia": "HbA1c 9.2"
+      },
+      "creatinina": {
+        "valor": 0.88,
+        "evidencia": "creatinina 0.88"
+      },
+      "glicemia_jejum": {
+        "valor": 189.0,
+        "evidencia": "glicemia de jejum 189"
+      },
+      "imc": {
+        "valor": 45.1,
+        "evidencia": "IMC 45.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6503,10 +10949,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "351ba3d4d8a76e8ec09e3f9c230ab7345e5a787dc12af5f6c20372b85cda49d4",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-172",
+    "dados_lidos": {
+      "idade": {
+        "valor": 43.0,
+        "evidencia": "43 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.4,
+        "evidencia": "HbA1c 7.4"
+      },
+      "creatinina": {
+        "valor": 1.5,
+        "evidencia": "creatinina 1.50"
+      },
+      "glicemia_jejum": {
+        "valor": 160.0,
+        "evidencia": "glicemia de jejum 160"
+      },
+      "imc": {
+        "valor": 27.2,
+        "evidencia": "IMC 27.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6541,10 +11013,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5d69dac842d898b1181b9cbce68c253d2d0ba70bf2f4742f631d73f3f41bd7a0",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-173",
+    "dados_lidos": {
+      "idade": {
+        "valor": 29.0,
+        "evidencia": "29 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.3,
+        "evidencia": "HbA1c 8.3"
+      },
+      "creatinina": {
+        "valor": 0.9,
+        "evidencia": "creatinina 0.90"
+      },
+      "glicemia_jejum": {
+        "valor": 159.0,
+        "evidencia": "glicemia de jejum 159"
+      },
+      "imc": {
+        "valor": 42.1,
+        "evidencia": "IMC 42.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6579,10 +11077,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "2491cc8125706987339fbe535ce04d4564822d2d4893daf47cdad2419ba23ead",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-174",
+    "dados_lidos": {
+      "idade": {
+        "valor": 71.0,
+        "evidencia": "71 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 0.91,
+        "evidencia": "creatinina 0.91"
+      },
+      "glicemia_jejum": {
+        "valor": 175.0,
+        "evidencia": "glicemia de jejum 175"
+      },
+      "imc": {
+        "valor": 29.6,
+        "evidencia": "IMC 29.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6617,10 +11141,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "c0ec6fd86a389720eaad3defe97074bb12f51fb835fbe6c3ccb0e3a1a5b1b53e",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-175",
+    "dados_lidos": {
+      "idade": {
+        "valor": 52.0,
+        "evidencia": "52 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.0,
+        "evidencia": "HbA1c 9.0"
+      },
+      "creatinina": {
+        "valor": 0.97,
+        "evidencia": "creatinina 0.97"
+      },
+      "glicemia_jejum": {
+        "valor": 175.0,
+        "evidencia": "glicemia de jejum 175"
+      },
+      "imc": {
+        "valor": 24.9,
+        "evidencia": "IMC 24.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6655,10 +11205,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "9773d1cedf6cb2a440f4589cece6b309e94eeb4d9e2a7f373ed613e6da2765ca",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-176",
+    "dados_lidos": {
+      "idade": {
+        "valor": 30.0,
+        "evidencia": "30 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 9.7,
+        "evidencia": "HbA1c 9.7"
+      },
+      "creatinina": {
+        "valor": 0.82,
+        "evidencia": "creatinina 0.82"
+      },
+      "glicemia_jejum": {
+        "valor": 192.0,
+        "evidencia": "glicemia de jejum 192"
+      },
+      "imc": {
+        "valor": 36.3,
+        "evidencia": "IMC 36.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6693,10 +11269,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "d0a151d6444094c64283b744b4d5a1d22ab19bcb97c3943de639cdada8c0c6d7",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-177",
+    "dados_lidos": {
+      "idade": {
+        "valor": 69.0,
+        "evidencia": "69 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.3,
+        "evidencia": "HbA1c 7.3"
+      },
+      "creatinina": {
+        "valor": 1.15,
+        "evidencia": "creatinina 1.15"
+      },
+      "glicemia_jejum": {
+        "valor": 159.0,
+        "evidencia": "glicemia de jejum 159"
+      },
+      "imc": {
+        "valor": 42.1,
+        "evidencia": "IMC 42.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6731,10 +11333,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "49e5caa6c0e19ef71f47bd23fcaca433d860a1166dfbd1256944aa33316ec0f8",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-178",
+    "dados_lidos": {
+      "idade": {
+        "valor": 62.0,
+        "evidencia": "62 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.8,
+        "evidencia": "HbA1c 8.8"
+      },
+      "creatinina": {
+        "valor": 0.76,
+        "evidencia": "creatinina 0.76"
+      },
+      "glicemia_jejum": {
+        "valor": 163.0,
+        "evidencia": "glicemia de jejum 163"
+      },
+      "imc": {
+        "valor": 45.0,
+        "evidencia": "IMC 45.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6769,10 +11397,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a2ad84b32927ede5c0c376b78f84f6f7ba5f39e653ab3c31bf181f9e06d2297a",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-179",
+    "dados_lidos": {
+      "idade": {
+        "valor": 56.0,
+        "evidencia": "56 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.3,
+        "evidencia": "HbA1c 7.3"
+      },
+      "creatinina": {
+        "valor": 1.51,
+        "evidencia": "creatinina 1.51"
+      },
+      "glicemia_jejum": {
+        "valor": 159.0,
+        "evidencia": "glicemia de jejum 159"
+      },
+      "imc": {
+        "valor": 41.4,
+        "evidencia": "IMC 41.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6807,10 +11461,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "26da31c8b54a062f7d15a1f575fc9b2ee9323722a969908508e0cc29b9ce132e",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-180",
+    "dados_lidos": {
+      "idade": {
+        "valor": 31.0,
+        "evidencia": "31 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 10.0,
+        "evidencia": "HbA1c 10.0"
+      },
+      "creatinina": {
+        "valor": 0.85,
+        "evidencia": "creatinina 0.85"
+      },
+      "glicemia_jejum": {
+        "valor": 182.0,
+        "evidencia": "glicemia de jejum 182"
+      },
+      "imc": {
+        "valor": 35.4,
+        "evidencia": "IMC 35.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6845,10 +11525,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "47e2530e0a3a4fda747978c6778f9b60daf849a06368a232638ceda9f736b0b1",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-181",
+    "dados_lidos": {
+      "idade": {
+        "valor": 35.0,
+        "evidencia": "35 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.1,
+        "evidencia": "HbA1c 7.1"
+      },
+      "creatinina": {
+        "valor": 1.24,
+        "evidencia": "creatinina 1.24"
+      },
+      "glicemia_jejum": {
+        "valor": 161.0,
+        "evidencia": "glicemia de jejum 161"
+      },
+      "imc": {
+        "valor": 33.5,
+        "evidencia": "IMC 33.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6883,10 +11589,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "817c1f1aa9c438391a7e12ffdfbadf9c50fd7c25e2d279d2a8d95261a7f34cea",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-182",
+    "dados_lidos": {
+      "idade": {
+        "valor": 39.0,
+        "evidencia": "39 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 10.0,
+        "evidencia": "HbA1c 10.0"
+      },
+      "creatinina": {
+        "valor": 1.32,
+        "evidencia": "creatinina 1.32"
+      },
+      "glicemia_jejum": {
+        "valor": 176.0,
+        "evidencia": "glicemia de jejum 176"
+      },
+      "imc": {
+        "valor": 25.1,
+        "evidencia": "IMC 25.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6921,10 +11653,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "eae2b3dafe1396a8496ee53afbf2c6c176a8cf6f8ffd79166368b8d2a68b2127",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-183",
+    "dados_lidos": {
+      "idade": {
+        "valor": 66.0,
+        "evidencia": "66 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 8.5,
+        "evidencia": "HbA1c 8.5"
+      },
+      "creatinina": {
+        "valor": 1.51,
+        "evidencia": "creatinina 1.51"
+      },
+      "glicemia_jejum": {
+        "valor": 177.0,
+        "evidencia": "glicemia de jejum 177"
+      },
+      "imc": {
+        "valor": 36.8,
+        "evidencia": "IMC 36.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6959,10 +11717,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "3eb5a09e90c6d7c08e3eec9855f5c83d4d033083cabdad465e896d2bbf9910e9",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-184",
+    "dados_lidos": {
+      "idade": {
+        "valor": 50.0,
+        "evidencia": "50 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.0,
+        "evidencia": "HbA1c 7.0"
+      },
+      "creatinina": {
+        "valor": 0.76,
+        "evidencia": "creatinina 0.76"
+      },
+      "glicemia_jejum": {
+        "valor": 156.0,
+        "evidencia": "glicemia de jejum 156"
+      },
+      "imc": {
+        "valor": 30.5,
+        "evidencia": "IMC 30.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -6997,10 +11781,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "84a7f7f25035ab224bb6b394f5a3234b4e2db9b5bc29bcffc01ee5bb3dcb6c77",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-185",
+    "dados_lidos": {
+      "idade": {
+        "valor": 41.0,
+        "evidencia": "41 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 10.6,
+        "evidencia": "HbA1c 10.6"
+      },
+      "creatinina": {
+        "valor": 1.33,
+        "evidencia": "creatinina 1.33"
+      },
+      "glicemia_jejum": {
+        "valor": 179.0,
+        "evidencia": "glicemia de jejum 179"
+      },
+      "imc": {
+        "valor": 35.0,
+        "evidencia": "IMC 35.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7035,10 +11845,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "4b580e8625eb26b3ad7db34ce71b814cdee1e8bba30cbea81ede6fbd86a6b0b8",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-186",
+    "dados_lidos": {
+      "idade": {
+        "valor": 59.0,
+        "evidencia": "59 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 10.6,
+        "evidencia": "HbA1c 10.6"
+      },
+      "creatinina": {
+        "valor": 1.07,
+        "evidencia": "creatinina 1.07"
+      },
+      "glicemia_jejum": {
+        "valor": 199.0,
+        "evidencia": "glicemia de jejum 199"
+      },
+      "imc": {
+        "valor": 27.0,
+        "evidencia": "IMC 27.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7073,10 +11909,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "9852338b2a3558d0ef76aa0480ed3ab36ecf18d0d72920b99c3aa5a41e0b2044",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-187",
+    "dados_lidos": {
+      "idade": {
+        "valor": 63.0,
+        "evidencia": "63 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.9,
+        "evidencia": "HbA1c 8.9"
+      },
+      "creatinina": {
+        "valor": 0.73,
+        "evidencia": "creatinina 0.73"
+      },
+      "glicemia_jejum": {
+        "valor": 181.0,
+        "evidencia": "glicemia de jejum 181"
+      },
+      "imc": {
+        "valor": 24.9,
+        "evidencia": "IMC 24.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7111,10 +11973,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "417272eb51a9cd2bdd2efe871ca497d11f17faa97f621eb1a6ca27a850b186d5",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-188",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.3,
+        "evidencia": "HbA1c 7.3"
+      },
+      "creatinina": {
+        "valor": 1.12,
+        "evidencia": "creatinina 1.12"
+      },
+      "glicemia_jejum": {
+        "valor": 148.0,
+        "evidencia": "glicemia de jejum 148"
+      },
+      "imc": {
+        "valor": 45.1,
+        "evidencia": "IMC 45.1"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7149,10 +12037,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "95fee1e12e3a877adddb8919e09180dbe08087af5a9b9898b13aa90951686976",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-189",
+    "dados_lidos": {
+      "idade": {
+        "valor": 44.0,
+        "evidencia": "44 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 7.9,
+        "evidencia": "HbA1c 7.9"
+      },
+      "creatinina": {
+        "valor": 1.17,
+        "evidencia": "creatinina 1.17"
+      },
+      "glicemia_jejum": {
+        "valor": 156.0,
+        "evidencia": "glicemia de jejum 156"
+      },
+      "imc": {
+        "valor": 45.0,
+        "evidencia": "IMC 45.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7187,10 +12101,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "7f27ee9f3fed0e1d34947d4292d82f526971c92126162e62bb8844abf875f011",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-190",
+    "dados_lidos": {
+      "idade": {
+        "valor": 29.0,
+        "evidencia": "29 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.9,
+        "evidencia": "HbA1c 9.9"
+      },
+      "creatinina": {
+        "valor": 1.11,
+        "evidencia": "creatinina 1.11"
+      },
+      "glicemia_jejum": {
+        "valor": 191.0,
+        "evidencia": "glicemia de jejum 191"
+      },
+      "imc": {
+        "valor": 27.5,
+        "evidencia": "IMC 27.5"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7225,10 +12165,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "08a35669904b12a68a3c08e000aa45f1c35f3478aaab0eba64022c30d9afce7e",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-191",
+    "dados_lidos": {
+      "idade": {
+        "valor": 63.0,
+        "evidencia": "63 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 10.5,
+        "evidencia": "HbA1c 10.5"
+      },
+      "creatinina": {
+        "valor": 0.7,
+        "evidencia": "creatinina 0.70"
+      },
+      "glicemia_jejum": {
+        "valor": 193.0,
+        "evidencia": "glicemia de jejum 193"
+      },
+      "imc": {
+        "valor": 31.4,
+        "evidencia": "IMC 31.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7263,10 +12229,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "d2ab39bf1e40485adb8aaf59de592f221ba13450a73e3faceed22e584e0ca6b8",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-192",
+    "dados_lidos": {
+      "idade": {
+        "valor": 47.0,
+        "evidencia": "47 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.5,
+        "evidencia": "HbA1c 9.5"
+      },
+      "creatinina": {
+        "valor": 1.49,
+        "evidencia": "creatinina 1.49"
+      },
+      "glicemia_jejum": {
+        "valor": 169.0,
+        "evidencia": "glicemia de jejum 169"
+      },
+      "imc": {
+        "valor": 30.3,
+        "evidencia": "IMC 30.3"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7301,10 +12293,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "75a6e7359e9e8daea1673c38b340b594ed908068649346b3812a7d4650829ecb",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-193",
+    "dados_lidos": {
+      "idade": {
+        "valor": 53.0,
+        "evidencia": "53 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 10.6,
+        "evidencia": "HbA1c 10.6"
+      },
+      "creatinina": {
+        "valor": 0.76,
+        "evidencia": "creatinina 0.76"
+      },
+      "glicemia_jejum": {
+        "valor": 185.0,
+        "evidencia": "glicemia de jejum 185"
+      },
+      "imc": {
+        "valor": 40.2,
+        "evidencia": "IMC 40.2"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7339,10 +12357,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "07581f69c13781d8b5e003814038240670fa39b238a912cb999176b28d2e1938",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-194",
+    "dados_lidos": {
+      "idade": {
+        "valor": 42.0,
+        "evidencia": "42 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 6.9,
+        "evidencia": "HbA1c 6.9"
+      },
+      "creatinina": {
+        "valor": 1.3,
+        "evidencia": "creatinina 1.30"
+      },
+      "glicemia_jejum": {
+        "valor": 146.0,
+        "evidencia": "glicemia de jejum 146"
+      },
+      "imc": {
+        "valor": 26.4,
+        "evidencia": "IMC 26.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7377,10 +12421,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "ee78e5b605c57ed0d6039bfa0a9a7118dbced1b518596ffe7ab8a99427aa0a68",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-195",
+    "dados_lidos": {
+      "idade": {
+        "valor": 39.0,
+        "evidencia": "39 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 6.9,
+        "evidencia": "HbA1c 6.9"
+      },
+      "creatinina": {
+        "valor": 0.83,
+        "evidencia": "creatinina 0.83"
+      },
+      "glicemia_jejum": {
+        "valor": 141.0,
+        "evidencia": "glicemia de jejum 141"
+      },
+      "imc": {
+        "valor": 28.6,
+        "evidencia": "IMC 28.6"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7415,10 +12485,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "01d0b148c815b9d41ea07f4b70918179eb2b119eaae4a0f08f4cfa14d62efe4a",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-196",
+    "dados_lidos": {
+      "idade": {
+        "valor": 60.0,
+        "evidencia": "60 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 10.5,
+        "evidencia": "HbA1c 10.5"
+      },
+      "creatinina": {
+        "valor": 1.25,
+        "evidencia": "creatinina 1.25"
+      },
+      "glicemia_jejum": {
+        "valor": 191.0,
+        "evidencia": "glicemia de jejum 191"
+      },
+      "imc": {
+        "valor": 37.9,
+        "evidencia": "IMC 37.9"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7453,10 +12549,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a047df188d47ddd07fb3732303a397fd5799c940e47222021fa8982d6e3c1a29",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-197",
+    "dados_lidos": {
+      "idade": {
+        "valor": 55.0,
+        "evidencia": "55 anos"
+      },
+      "sexo": {
+        "valor": "F",
+        "evidencia": "sexo F"
+      },
+      "hba1c": {
+        "valor": 7.1,
+        "evidencia": "HbA1c 7.1"
+      },
+      "creatinina": {
+        "valor": 1.18,
+        "evidencia": "creatinina 1.18"
+      },
+      "glicemia_jejum": {
+        "valor": 152.0,
+        "evidencia": "glicemia de jejum 152"
+      },
+      "imc": {
+        "valor": 27.7,
+        "evidencia": "IMC 27.7"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7491,10 +12613,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "a9b462355496b8dd79796dc3c2177f59c6fbef7bd6c8ce5c1f635ce250eaa329",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-198",
+    "dados_lidos": {
+      "idade": {
+        "valor": 39.0,
+        "evidencia": "39 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.1,
+        "evidencia": "HbA1c 8.1"
+      },
+      "creatinina": {
+        "valor": 0.9,
+        "evidencia": "creatinina 0.90"
+      },
+      "glicemia_jejum": {
+        "valor": 166.0,
+        "evidencia": "glicemia de jejum 166"
+      },
+      "imc": {
+        "valor": 25.0,
+        "evidencia": "IMC 25.0"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7529,10 +12677,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "c19a554d794b58ab29ad7235444969e348eff829188913e66af6169d367b8c4d",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-199",
+    "dados_lidos": {
+      "idade": {
+        "valor": 69.0,
+        "evidencia": "69 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 8.0,
+        "evidencia": "HbA1c 8.0"
+      },
+      "creatinina": {
+        "valor": 1.23,
+        "evidencia": "creatinina 1.23"
+      },
+      "glicemia_jejum": {
+        "valor": 174.0,
+        "evidencia": "glicemia de jejum 174"
+      },
+      "imc": {
+        "valor": 37.8,
+        "evidencia": "IMC 37.8"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7567,10 +12741,36 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "d595c04dccdc4c239ee510cff1ed03f8644ee9c6d1db574bcb64a5f8bc88fdb7",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   },
   {
     "id_paciente": "PAC-200",
+    "dados_lidos": {
+      "idade": {
+        "valor": 71.0,
+        "evidencia": "71 anos"
+      },
+      "sexo": {
+        "valor": "M",
+        "evidencia": "sexo M"
+      },
+      "hba1c": {
+        "valor": 9.5,
+        "evidencia": "HbA1c 9.5"
+      },
+      "creatinina": {
+        "valor": 1.23,
+        "evidencia": "creatinina 1.23"
+      },
+      "glicemia_jejum": {
+        "valor": 189.0,
+        "evidencia": "glicemia de jejum 189"
+      },
+      "imc": {
+        "valor": 26.4,
+        "evidencia": "IMC 26.4"
+      }
+    },
     "campos": {
       "neoplasia_ativa": {
         "valor": null,
@@ -7605,6 +12805,6 @@
     "modelo_llm": "ollama/qwen2.5:3b+regras-v1",
     "versao_prompt": "extrator_v2",
     "hash_texto": "5cb10f8f6bc8f590f5dce8a7b3d4421eeb61364c049e8afdf682eaab552aa6c9",
-    "extraido_em": "2026-10-16T17:06:04"
+    "extraido_em": "2026-10-16T17:16:22"
   }
 ]

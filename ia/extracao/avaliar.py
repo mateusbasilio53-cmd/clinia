@@ -25,7 +25,7 @@ import pandas as pd
 from dotenv import load_dotenv
 
 from ia.entrada.planilha import caminho_planilha, ler_planilha
-from ia.extracao.schema import CAMPOS, ExtracaoPaciente
+from ia.extracao.schema import CAMPOS, CAMPOS_LIDOS, ExtracaoPaciente
 
 NAO = {"negado", "nao_mencionado"}
 
@@ -84,6 +84,39 @@ def avaliar(extracoes: list[ExtracaoPaciente], gabarito: dict) -> dict:
     return por_campo
 
 
+def avaliar_dados(extracoes: list[ExtracaoPaciente], df: pd.DataFrame) -> dict:
+    """Compara a ficha lida do texto (dados_lidos) com as colunas da planilha."""
+    colunas = df.set_index(df["id_paciente"].astype(str))
+    resultado = {}
+    for campo in CAMPOS_LIDOS:
+        if campo not in colunas.columns:
+            continue
+        certos, nao_lidos, errados = 0, 0, []
+        for item in extracoes:
+            if item.id_paciente not in colunas.index:
+                continue
+            lido = getattr(item.dados_lidos, campo).valor
+            real = colunas.at[item.id_paciente, campo]
+            if lido is None:
+                nao_lidos += 1
+            elif (lido == str(real).strip()) if campo == "sexo" else abs(float(lido) - float(real)) < 0.051:
+                certos += 1
+            else:
+                errados.append({"id": item.id_paciente, "lido": lido, "planilha": real})
+        total = certos + nao_lidos + len(errados)
+        resultado[campo] = {"certos": certos, "nao_lidos": nao_lidos, "errados": errados, "total": total}
+    return resultado
+
+
+def imprimir_dados(resultado: dict) -> None:
+    print(f"\n{'dado lido do texto':<18}{'certos':>9}{'não lidos':>11}{'errados':>9}")
+    for campo, r in resultado.items():
+        print(f"{campo:<18}{r['certos']:>5}/{r['total']:<3}{r['nao_lidos']:>11}{len(r['errados']):>9}")
+    for campo, r in resultado.items():
+        for e in r["errados"][:5]:
+            print(f"  ERRO {campo} {e['id']}: lido {e['lido']}, planilha {e['planilha']}")
+
+
 def imprimir(resultado: dict) -> None:
     print(f"{'campo':<18}{'acertos':>10}{'acurácia':>11}")
     for campo, r in resultado.items():
@@ -131,6 +164,8 @@ def main(argv: list[str] | None = None) -> int:
 
     resultado = avaliar(extracoes, gabarito)
     imprimir(resultado)
+    if not args.casos:
+        imprimir_dados(avaliar_dados(extracoes, df))
 
     if args.json:
         args.json.write_text(json.dumps(resultado, ensure_ascii=False, indent=2), encoding="utf-8")

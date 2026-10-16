@@ -36,7 +36,9 @@ lidos = pd.json_normalize(extracoes)  # colunas como campos.neoplasia_ativa.stat
 base = pacientes.merge(lidos, on="id_paciente", how="left")
 ```
 
-**Importante (D14):** na sua camada de regras, **não use** as colunas `neoplasia_ativa`, `gestacao` e `medicamentos` da planilha. Elas são o gabarito. Use o que a CLINIA leu (`campos.*`). Os números (idade, HbA1c, creatinina, IMC) vêm da planilha normalmente.
+**Importante (D14):** na sua camada de regras, **não use** as colunas `neoplasia_ativa`, `gestacao` e `medicamentos` da planilha. Elas são o gabarito. Use o que a CLINIA leu (`campos.*`).
+
+**Números (D27):** a CLINIA também lê do texto idade, sexo, HbA1c, creatinina, glicemia e IMC (`dados_lidos.<campo>.valor`, com o trecho em `.evidencia`). Na demo, use esses: é o que mostra a ficha montada **só a partir do texto**. Quando o valor não está no texto, vem `null` → trate como REVISAR no critério correspondente. Os números da planilha servem para conferência.
 
 Formato completo: `contratos/extracao.schema.json`.
 
@@ -65,16 +67,21 @@ Todo REVISAR deve mostrar o motivo. Ele está em `campos.<campo>.problemas` (ex.
 
 Sugestão de colunas: posição, id, resultado (ELEGÍVEL / NÃO ELEGÍVEL / REVISAR), probabilidade, critérios atendidos, critérios limitantes, **evidências do texto** e **motivo do REVISAR**. A evidência é o que faz o coordenador confiar.
 
-## 6. Se quiser rodar a extração você mesmo
+## 6. A IA no seu computador (testar um modelo melhor)
 
 Siga `docs/GUIA_INSTALACAO.md`. Resumo:
 
 ```powershell
-python -m pytest                                   # tem que dar "41 passed"
-python -m ia.extracao.extrator --provedor ollama --offline --planilha dados/pacientes_ficticios_PAC201-300.xlsx
+python -m pytest                    # tem que dar "54 passed"
+python -m ia.demo                   # demo (funciona sem Ollama, vem do cache)
+python -m ia.verificar_pc           # diz qual modelo seu PC aguenta
+ollama pull qwen2.5:7b              # ou o que o verificar_pc recomendar
+python -m ia.extracao.experimento --modelos qwen2.5:3b,qwen2.5:7b --conjunto prova
 ```
 
-Sem o Ollama, o `--offline` funciona para os 300 pacientes (usa o cache). Com o Ollama, roda também para textos novos.
+O experimento guarda o resultado em `avaliacao/historico.csv`. Regras da avaliação (prova x estudo): `avaliacao/README.md`.
+
+Suas pastas já existem com um README cada (`ia/dados/`, `ia/regras/`, `ia/modelo/`, `ia/saida/`), dizendo o que recebe e o que entrega.
 
 ## 7. Resultados
 
@@ -83,5 +90,5 @@ Ver `docs/RESULTADOS_EXTRACAO.md`. Resumo: na base com texto variado, **3 erros 
 ## 8. O que eu preciso de você
 
 1. OK no formato do `extracoes.json` (é o nosso contrato).
-2. O resultado do passo 0 do guia (configuração do seu computador), para sabermos se a demo ao vivo roda aí.
+2. A saída do `python -m ia.verificar_pc` e a tabela do `experimento` com o modelo recomendado, para sabermos se a demo ao vivo roda aí e qual modelo usar.
 3. Concordar (ou não) com a tabela da seção 3.

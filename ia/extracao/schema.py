@@ -57,12 +57,38 @@ class CamposVerificados(BaseModel):
     uso_metformina: CampoVerificado
 
 
+class ValorLido(BaseModel):
+    """Um dado lido do texto pelas regras (número ou sexo), com o trecho literal."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    valor: float | str | None
+    evidencia: str | None
+
+
+class DadosLidos(BaseModel):
+    """Ficha numérica montada só a partir do texto corrido (D27). null = não está no texto."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    idade: ValorLido
+    sexo: ValorLido
+    hba1c: ValorLido
+    creatinina: ValorLido
+    glicemia_jejum: ValorLido
+    imc: ValorLido
+
+
+CAMPOS_LIDOS = ("idade", "sexo", "hba1c", "creatinina", "glicemia_jejum", "imc")
+
+
 class ExtracaoPaciente(BaseModel):
     """Um item de extracoes.json: a passagem do Paulo para o Mateus."""
 
     model_config = ConfigDict(extra="forbid")
 
     id_paciente: str
+    dados_lidos: DadosLidos
     campos: CamposVerificados
     diagnosticos_mencionados: list[str]
     observacoes_relevantes: str | None

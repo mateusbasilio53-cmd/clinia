@@ -13,7 +13,8 @@ import re
 
 from ia.extracao.schema import CAMPOS, CampoExtraido, RespostaLLM
 
-_TERMO_METFORMINA = re.compile(r"metfo?r?mina|\bmtf\b", re.I)
+# Qualquer palavra começando com "metf" (aceita erros como "metformia", "metfromina") ou a sigla MTF.
+_TERMO_METFORMINA = re.compile(r"\bmetf\w*|\bmtf\b", re.I)
 
 NOME_LEGIVEL = {"afirmado": "tem", "negado": "não tem", "nao_mencionado": "não mencionado", "incerto": "incerto"}
 

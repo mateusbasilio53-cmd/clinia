@@ -1,0 +1,312 @@
+{
+  "registro": {
+    "data": "2026-10-16 17:17",
+    "conjunto": "prova",
+    "modelo": "qwen2.5:3b",
+    "prompt": "extrator_v2",
+    "dupla_checagem": true,
+    "pacientes": 100,
+    "segundos": 0.09,
+    "s_por_paciente": "cache",
+    "acerto_neoplasia_ativa": 0.91,
+    "acerto_gestacao": 0.92,
+    "acerto_uso_metformina": 0.8,
+    "erros_perigosos": 3,
+    "pacientes_revisar": 46,
+    "falhas": 0
+  },
+  "acertos": {
+    "neoplasia_ativa": {
+      "acertos": 91,
+      "total": 100,
+      "acuracia": 0.91,
+      "erros": [
+        {
+          "id": "PAC-208",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "AF: irmã com neoplasia de ovário"
+        },
+        {
+          "id": "PAC-229",
+          "esperado": "incerto",
+          "obtido": "nao_mencionado",
+          "evidencia": null
+        },
+        {
+          "id": "PAC-231",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Em QT adjuvante para Ca de mama, ciclo 4 de 6"
+        },
+        {
+          "id": "PAC-241",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "AF: irmã com neoplasia de ovário"
+        },
+        {
+          "id": "PAC-244",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Em radioterapia para tumor de cabeça e pescoço"
+        },
+        {
+          "id": "PAC-255",
+          "esperado": "incerto",
+          "obtido": "nao_mencionado",
+          "evidencia": null
+        },
+        {
+          "id": "PAC-267",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Em QT adjuvante para Ca de mama, ciclo 4 de 6"
+        },
+        {
+          "id": "PAC-268",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "Histórico familiar de câncer de cólon (avô)"
+        },
+        {
+          "id": "PAC-278",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "Pai faleceu de Ca de próstata"
+        }
+      ]
+    },
+    "gestacao": {
+      "acertos": 92,
+      "total": 100,
+      "acuracia": 0.92,
+      "erros": [
+        {
+          "id": "PAC-207",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Veio acompanhada do filho"
+        },
+        {
+          "id": "PAC-218",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "G3P2A1"
+        },
+        {
+          "id": "PAC-239",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Veio acompanhada do filho"
+        },
+        {
+          "id": "PAC-247",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "G2P2 (2 cesáreas)"
+        },
+        {
+          "id": "PAC-248",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "G1P1, filho de 6 anos."
+        },
+        {
+          "id": "PAC-252",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "G3P2A1"
+        },
+        {
+          "id": "PAC-295",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "G1P1, filho de 6 anos"
+        },
+        {
+          "id": "PAC-300",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "G1P1, filho de 6 anos"
+        }
+      ]
+    },
+    "uso_metformina": {
+      "acertos": 80,
+      "total": 100,
+      "acuracia": 0.8,
+      "erros": [
+        {
+          "id": "PAC-204",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Nunca usou metformina"
+        },
+        {
+          "id": "PAC-205",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Nega uso de metformina"
+        },
+        {
+          "id": "PAC-207",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "Em uso de empagliflozina 25mg/dia"
+        },
+        {
+          "id": "PAC-212",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "MUC: gliclazida MR 60mg pela manhã"
+        },
+        {
+          "id": "PAC-213",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Trocamos metformina por gliclazida há 4 meses"
+        },
+        {
+          "id": "PAC-218",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Em uso de metformia XR 1g 1x/d"
+        },
+        {
+          "id": "PAC-220",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Recebeu receita de metformina mas ainda não começou a tomar"
+        },
+        {
+          "id": "PAC-225",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Trocamos metformina por gliclazida há 4 meses"
+        },
+        {
+          "id": "PAC-226",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "recebeu receita de metformina mas ainda não começou a tomar."
+        },
+        {
+          "id": "PAC-231",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "MUC: metformia XR 1g 1x/d"
+        },
+        {
+          "id": "PAC-236",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "faz uso de metformna 1g 2x/dia"
+        },
+        {
+          "id": "PAC-240",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "Faz uso de sitagliptina 100mg/dia, HCTZ 25mg 1x/dia"
+        },
+        {
+          "id": "PAC-242",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Em uso de empagliflozina 25mg/dia. Recebeu receita de metformina mas ainda não começou a tomar"
+        },
+        {
+          "id": "PAC-248",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Prescrita metformina 500mg na última consulta;"
+        },
+        {
+          "id": "PAC-249",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Trocamos metformina por sitagliptina há 4 meses."
+        },
+        {
+          "id": "PAC-250",
+          "esperado": "incerto",
+          "obtido": "afirmado",
+          "evidencia": "Consta prescrição de MTF 850mg 12/12h"
+        },
+        {
+          "id": "PAC-251",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Faz uso de metfromina 500mg 3x/dia"
+        },
+        {
+          "id": "PAC-259",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Prescrita metformina 500mg na última consulta; refere que ainda não iniciou."
+        },
+        {
+          "id": "PAC-269",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Faz uso de metformia 850 mg de 12/12h"
+        },
+        {
+          "id": "PAC-298",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Trocamos metformina por insulina NPH há 4 meses"
+        }
+      ]
+    }
+  },
+  "resumo_execucao": {
+    "pacientes": 100,
+    "chamadas_api": 0,
+    "do_cache": 100,
+    "falhas": [],
+    "campos_confianca_baixa": 49,
+    "evidencias_nao_verificadas": 2,
+    "segundos": 0.09,
+    "dupla_checagem": true,
+    "campos_divergentes": 42
+  },
+  "dados_lidos": {
+    "idade": {
+      "certos": 99,
+      "nao_lidos": 1,
+      "errados": [],
+      "total": 100
+    },
+    "sexo": {
+      "certos": 100,
+      "nao_lidos": 0,
+      "errados": [],
+      "total": 100
+    },
+    "hba1c": {
+      "certos": 98,
+      "nao_lidos": 2,
+      "errados": [],
+      "total": 100
+    },
+    "creatinina": {
+      "certos": 95,
+      "nao_lidos": 5,
+      "errados": [],
+      "total": 100
+    },
+    "glicemia_jejum": {
+      "certos": 98,
+      "nao_lidos": 2,
+      "errados": [],
+      "total": 100
+    },
+    "imc": {
+      "certos": 97,
+      "nao_lidos": 3,
+      "errados": [],
+      "total": 100
+    }
+  }
+}

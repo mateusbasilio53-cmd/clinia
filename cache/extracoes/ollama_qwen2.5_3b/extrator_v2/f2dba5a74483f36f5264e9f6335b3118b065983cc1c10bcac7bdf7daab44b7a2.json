@@ -1,0 +1,26 @@
+{
+  "neoplasia_ativa": {
+    "valor": true,
+    "status": "negado",
+    "evidencia": "QT para Ca de pulmão desde julho",
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "MTF suspensa pela oncologia",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "hipertensão arterial sistêmica",
+    "neoplasia de pulmão"
+  ],
+  "observacoes_relevantes": "Oncologia suspendeu a metformina."
+}

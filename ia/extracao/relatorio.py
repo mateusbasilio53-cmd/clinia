@@ -19,14 +19,13 @@ from pathlib import Path
 import pandas as pd
 
 from ia.entrada.planilha import ler_planilha, textos_para_extracao
-from ia.extracao.avaliar import avaliar, gabarito_planilha
+from ia.extracao.avaliar import avaliar, avaliar_dados, gabarito_planilha
 from ia.extracao.extrator import executar
 from ia.extracao.provedores import ProvedorRegras
-from ia.extracao.schema import CAMPOS, ExtracaoPaciente
+from ia.extracao.schema import CAMPOS, CAMPOS_LIDOS, ExtracaoPaciente
 
 ROTULO = {"neoplasia_ativa": "neoplasia", "gestacao": "gestação", "uso_metformina": "metformina"}
 LEGIVEL = {"afirmado": "SIM", "negado": "NÃO", "nao_mencionado": "não mencionado", "incerto": "INCERTO"}
-ESTRUTURADAS = ["idade", "sexo", "diagnostico", "hba1c", "creatinina", "glicemia_jejum", "imc"]
 
 # Erro perigoso: pode deixar elegível quem deveria sair ou ser revisado.
 # Neoplasia e gestação são critérios de exclusão; metformina é de inclusão.
@@ -83,12 +82,25 @@ def main(argv: list[str] | None = None) -> int:
                 "só regex: erros perigosos": contar_perigosos(regex, gab, campo),
             })
 
+        for campo, r in avaliar_dados(ia, df).items():
+            resumo.append({
+                "base": nome,
+                "campo": f"{campo} (número lido do texto)",
+                "gabarito": "coluna da planilha",
+                "CLINIA: acertos": f"{r['certos']}/{r['total']} ({r['certos'] / r['total']:.0%})",
+                "CLINIA: erros perigosos": len(r["errados"]),
+                "CLINIA: vão para REVISAR": r["nao_lidos"],
+            })
+
         por_id = {i.id_paciente: i for i in ia}
         linhas = []
         for _, pac in df.iterrows():
             pid = str(pac["id_paciente"])
             item = por_id[pid]
-            linha = {"id_paciente": pid, **{c: pac[c] for c in ESTRUTURADAS if c in df.columns}}
+            linha = {"id_paciente": pid}
+            for c in CAMPOS_LIDOS:  # ficha montada só a partir do texto (D27)
+                valor = getattr(item.dados_lidos, c).valor
+                linha[f"{c} (lido do texto)"] = "—" if valor is None else valor
             motivos = []
             for campo in CAMPOS:
                 c = getattr(item.campos, campo)
@@ -110,6 +122,9 @@ def main(argv: list[str] | None = None) -> int:
             linha["vai para REVISAR?"] = "SIM" if motivos else ""
             linha["motivo do REVISAR"] = " | ".join(motivos)
             linha["anotacao_medica (entrada)"] = pac["anotacao_medica"]
+            for c in CAMPOS_LIDOS:  # conferência: valor da planilha original
+                if c in df.columns:
+                    linha[f"{c} (planilha, conferência)"] = pac[c]
             linhas.append(linha)
         abas[nome] = pd.DataFrame(linhas)
 

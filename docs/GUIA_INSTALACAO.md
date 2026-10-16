@@ -48,7 +48,7 @@ pip install -r requirements.txt
 python -m pytest
 ```
 
-O último comando tem que terminar com **`41 passed`** (ou mais). Se der erro de "execução de scripts desabilitada" no `Activate.ps1`, rode antes:
+O último comando tem que terminar com **`54 passed`** (ou mais). Se der erro de "execução de scripts desabilitada" no `Activate.ps1`, rode antes:
 `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`
 
 **Teste rápido, ainda sem IA** (usa as respostas que já estão no cache):
@@ -64,38 +64,37 @@ Se o segundo comando terminar com `"falhas": []` e `"do_cache": 200`, o projeto 
 
 1. Baixe e instale: <https://ollama.com/download> (botão **Download for Windows**, cerca de 1,5 GB).
 2. Depois de instalar, o Ollama fica rodando perto do relógio do Windows (ícone de lhama).
-3. Feche e abra o PowerShell e baixe o modelo (cerca de 1,9 GB):
-
-```powershell
-ollama pull qwen2.5:3b
-ollama list
-```
-
-O `ollama list` tem que mostrar `qwen2.5:3b`.
-
-## Passo 5 — A IA lendo os textos no seu computador
-
-Primeiro, 3 pacientes, para medir a velocidade. O `--saida` manda o resultado para uma pasta separada, e o `CLINIA_CACHE` faz a IA ler de verdade em vez de usar as respostas prontas:
+3. Feche e abra o PowerShell, entre no projeto e veja qual modelo o seu PC aguenta:
 
 ```powershell
 cd $HOME\clinia
 .\.venv\Scripts\Activate.ps1
-$env:CLINIA_CACHE = "cache_local"
-python -m ia.extracao.extrator --provedor ollama --ids "PAC-001,PAC-104,PAC-105" --saida saidas/teste_mateus/tres.json
+python -m ia.verificar_pc
 ```
 
-Veja o `"segundos"` no resultado e divida por 3: esse é o tempo por paciente no seu computador (no do Paulo, cerca de 5 s).
-
-Depois, os 200 (no do Paulo levou 16 minutos):
+4. Baixe o modelo recomendado **e** o `qwen2.5:3b` (o do Paulo, para comparar). Exemplo com 8 GB de VRAM:
 
 ```powershell
-python -m ia.extracao.extrator --provedor ollama --saida saidas/teste_mateus/extracoes_200.json
-python -m ia.extracao.avaliar --extracoes saidas/teste_mateus/extracoes_200.json
+ollama pull qwen2.5:3b
+ollama pull qwen2.5:7b
+ollama list
 ```
 
-Mande para o Paulo: o tempo total e a tabela de acurácia.
+## Passo 5 — A IA lendo os textos no seu computador
 
-> Para voltar a usar o cache normal do repositório, feche o PowerShell (ou rode `Remove-Item Env:CLINIA_CACHE`).
+Primeiro, um texto novo, ao vivo:
+
+```powershell
+python -m ia.demo --texto "Fem, 52a, DM2. Lab: A1c 8,1 | GJ 170 | Cr 0,9 | IMC 31. Nega Ca. Em uso de metformina 850mg 2x/dia."
+```
+
+Depois, a comparação de modelos na prova (100 pacientes). O `qwen2.5:3b` vem do cache (instantâneo); o modelo novo lê de verdade:
+
+```powershell
+python -m ia.extracao.experimento --modelos qwen2.5:3b,qwen2.5:7b --conjunto prova
+```
+
+O resultado fica guardado em `avaliacao/historico.csv`. Mande para o Paulo a tabela que aparece no fim (acerto, erros perigosos, revisar, segundos por paciente). Como ler: `avaliacao/README.md`.
 
 ---
 

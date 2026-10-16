@@ -46,6 +46,12 @@ def test_trava_metformina_com_evidencia_de_outro_remedio():
     assert "não fala de metformina" in notas["uso_metformina"][0]
 
 
+def test_erro_de_digitacao_conta_como_metformina():
+    ia = resposta(uso_metformina=campo("afirmado", True, "MUC: metformia XR 1g 1x/d"))
+    final, notas = combinar(ia, ia)
+    assert final.uso_metformina.status == "afirmado" and not notas["uso_metformina"]
+
+
 def test_mtf_conta_como_metformina():
     ia = resposta(uso_metformina=campo("afirmado", True, "MTF 850mg 12/12h"))
     final, notas = combinar(ia, ia)
