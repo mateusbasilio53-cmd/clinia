@@ -76,6 +76,36 @@
 - **Motivo:** saída estruturada com schema garantido pela API; troca de modelo sem mexer no código. Trocar de provedor = escrever outra classe em `ia/extracao/provedores.py`.
 - **Impacto:** o extrator nunca faz chamada paga sem `--confirmar`, e antes disso mostra quantas chamadas vai fazer.
 
+## D22 — LLM local e pequena (Ollama), grátis
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Paulo
+- **Decisão:** por enquanto, a extração usa uma LLM pequena rodando no próprio computador, via Ollama (padrão `qwen2.5:3b`). O Claude (D21) fica como opção, sem custo enquanto não for usado.
+- **Motivo:** custo zero; os dados não saem da máquina (argumento de LGPD para a banca, seção 6.2 do playbook); funciona sem internet. O notebook do Paulo tem RTX 3050 com 4 GB, onde um modelo de 3B cabe inteiro.
+- **Alternativas descartadas:** API paga (custo); API com plano gratuito (limites mudam, dados saem da máquina); agente de IA (várias chamadas para uma tarefa que se resolve com uma, e mais difícil de auditar).
+- **Impacto:**
+  - modelo pequeno erra mais em negação e abreviação; medir nos 15 casos contra o regex antes de decidir;
+  - aqui o `temperature = 0` existe e é usado;
+  - quem rodar a demo precisa do Ollama e do modelo instalados, ou usar `--offline` com o cache.
+
+## D23 — Prompt v2 (com exemplos) para o modelo local
+
+- **Data:** 16/10/2026 · **Quem decidiu:** Claude Code (Paulo delegou), a validar pelo Paulo
+- **Decisão:** com Ollama, o prompt padrão é `prompts/extrator_v2.md`, que traz 3 exemplos resolvidos. O Claude continua com o v1.
+- **Motivo (medido nos 15 casos de teste, `qwen2.5:3b`):**
+
+  | | v1 | v2 |
+  |---|---|---|
+  | neoplasia_ativa | 14/15 | 12/15 |
+  | gestacao | 12/15 | 13/15 |
+  | uso_metformina | 9/15 | 14/15 |
+  | total | 35/45 (78%) | 39/45 (87%) |
+  | campos com confiança baixa | 26 | 1 |
+  | tempo | 178 s | 71 s |
+
+  No v1, o modelo pequeno desistia e respondia "nao_mencionado" para tudo. Com exemplos, isso parou.
+- **Erro perigoso que sobrou:** CT-04 ("História de Ca de próstata, em seguimento") saiu "negado" em vez de "incerto". Esse tipo de erro pode deixar elegível alguém que deveria ir para revisão.
+- **Limite da medida:** os exemplos cobrem os mesmos tipos de dificuldade dos 15 casos, então 87% é otimista. Precisa de casos escritos por outra pessoa (D20).
+
 ---
 
 ## Pendentes

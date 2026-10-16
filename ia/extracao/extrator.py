@@ -29,12 +29,14 @@ from dotenv import load_dotenv
 
 from ia.entrada.planilha import caminho_planilha, ler_planilha, textos_para_extracao
 from ia.extracao.cache import CacheExtracoes, hash_texto
-from ia.extracao.provedores import ErroExtracao, Provedor, ProvedorClaude, ProvedorRegras
+from ia.extracao.provedores import ErroExtracao, Provedor, ProvedorClaude, ProvedorOllama, ProvedorRegras
 from ia.extracao.schema import CAMPOS, CampoVerificado, CamposVerificados, ExtracaoPaciente, RespostaLLM
 from ia.extracao.verificacao import verificar_resposta
 
 PROMPT_PADRAO = Path("prompts/extrator_v1.md")
+PROMPT_PADRAO_OLLAMA = Path("prompts/extrator_v2.md")  # com exemplos, para modelo pequeno (D23)
 MODELO_PADRAO = "claude-opus-5-5"
+OLLAMA_MODELO_PADRAO = "qwen2.5:3b"
 
 
 def carregar_prompt(caminho: Path) -> tuple[str, str]:
@@ -92,7 +94,7 @@ def executar(
     if cache is not None and pendentes:
         if offline:
             raise SystemExit(f"Modo offline: {len(pendentes)} texto(s) sem extração no cache. Rode online antes.")
-        if not confirmar:
+        if provedor.pago and not confirmar:
             raise SystemExit(
                 f"{len(pendentes)} chamada(s) paga(s) ao modelo {provedor.nome} "
                 f"({len(itens) - len(pendentes)} já no cache). Rode de novo com --confirmar para executar."
@@ -139,10 +141,10 @@ def main(argv: list[str] | None = None) -> int:
     origem = p.add_mutually_exclusive_group()
     origem.add_argument("--planilha", help="caminho do .xlsx (padrão: CLINIA_PLANILHA)")
     origem.add_argument("--casos", type=Path, help="arquivo JSON de casos de teste")
-    p.add_argument("--provedor", choices=["regras", "claude"], default="regras")
-    p.add_argument("--modelo", default=os.getenv("CLINIA_MODELO", MODELO_PADRAO))
+    p.add_argument("--provedor", choices=["regras", "ollama", "claude"], default="regras")
+    p.add_argument("--modelo", help=f"padrão: CLINIA_MODELO; senão {OLLAMA_MODELO_PADRAO} (ollama) ou {MODELO_PADRAO} (claude)")
     p.add_argument("--effort", default=os.getenv("CLINIA_EFFORT", "medium"), choices=["low", "medium", "high"])
-    p.add_argument("--prompt", type=Path, default=PROMPT_PADRAO)
+    p.add_argument("--prompt", type=Path, help=f"padrão: {PROMPT_PADRAO_OLLAMA} (ollama) ou {PROMPT_PADRAO} (claude)")
     p.add_argument("--ids", help="só estes ids, separados por vírgula")
     p.add_argument("--limite", type=int, help="só os N primeiros")
     p.add_argument("--saida", type=Path, help="padrão: saidas/AAAA-MM-DD_HHMM/extracoes_<provedor>.json")
@@ -160,8 +162,15 @@ def main(argv: list[str] | None = None) -> int:
     if args.provedor == "regras":
         provedor, versao, cache = ProvedorRegras(), "regras-v1", None
     else:
-        prompt, versao = carregar_prompt(args.prompt)
-        provedor, cache = ProvedorClaude(args.modelo, prompt, args.effort), CacheExtracoes()
+        padrao = PROMPT_PADRAO_OLLAMA if args.provedor == "ollama" else PROMPT_PADRAO
+        prompt, versao = carregar_prompt(args.prompt or padrao)
+        cache = CacheExtracoes()
+        if args.provedor == "ollama":
+            modelo = args.modelo or os.getenv("CLINIA_MODELO_OLLAMA", OLLAMA_MODELO_PADRAO)
+            provedor = ProvedorOllama(modelo, prompt, os.getenv("OLLAMA_URL", "http://localhost:11434"))
+        else:
+            modelo = args.modelo or os.getenv("CLINIA_MODELO", MODELO_PADRAO)
+            provedor = ProvedorClaude(modelo, prompt, args.effort)
 
     resultado, resumo = executar(itens, provedor, versao, cache, args.confirmar, args.offline)
 

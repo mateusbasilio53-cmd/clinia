@@ -37,7 +37,11 @@ python -m ia.entrada.validar
 # 2. extração sem custo (regex), gera saidas/<data>/extracoes_regras.json
 python -m ia.extracao.extrator --provedor regras
 
-# 3. extração pela LLM nos 15 casos de teste: primeiro mostra quantas chamadas pagas fará
+# 3a. extração pela LLM local (grátis; precisa do Ollama aberto e do modelo baixado)
+#     instalar: https://ollama.com  ·  baixar o modelo: ollama pull qwen2.5:3b
+python -m ia.extracao.extrator --provedor ollama --casos prompts/casos_teste_v1.json
+
+# 3b. extração pelo Claude (pago): primeiro mostra quantas chamadas pagas fará
 python -m ia.extracao.extrator --provedor claude --casos prompts/casos_teste_v1.json
 python -m ia.extracao.extrator --provedor claude --casos prompts/casos_teste_v1.json --confirmar
 

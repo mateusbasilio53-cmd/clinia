@@ -7,7 +7,10 @@ Trocar de provedor de LLM = escrever outra classe com o mesmo método `extrair`.
 
 from __future__ import annotations
 
+import json
 import re
+import urllib.error
+import urllib.request
 from typing import Protocol
 
 from ia.extracao.schema import CampoExtraido, RespostaLLM
@@ -19,6 +22,7 @@ class ErroExtracao(Exception):
 
 class Provedor(Protocol):
     nome: str
+    pago: bool  # True = cada chamada custa dinheiro e exige --confirmar
 
     def extrair(self, texto: str) -> tuple[RespostaLLM, str]:
         """Devolve a resposta e o modelo que de fato respondeu."""
@@ -73,6 +77,7 @@ def _campo_por_regras(regras: dict, texto: str) -> CampoExtraido:
 
 class ProvedorRegras:
     nome = "regras-v1"
+    pago = False
 
     def extrair(self, texto: str) -> tuple[RespostaLLM, str]:
         campos = {nome: _campo_por_regras(regras, texto) for nome, regras in _REGRAS.items()}
@@ -90,6 +95,8 @@ _COM_FALLBACK = ("claude-opus", "claude-sonnet", "claude-fable")
 
 
 class ProvedorClaude:
+    pago = True
+
     def __init__(self, modelo: str, prompt_sistema: str, effort: str = "medium"):
         import anthropic
 
@@ -132,3 +139,53 @@ class ProvedorClaude:
         if texto_json is None:
             raise ErroExtracao("resposta sem bloco de texto")
         return RespostaLLM.model_validate_json(texto_json), resposta.model
+
+
+# ---------------------------------------------------------------------------
+# Provedor Ollama (LLM local, grátis; os dados não saem da máquina)
+# ---------------------------------------------------------------------------
+
+OLLAMA_URL_PADRAO = "http://localhost:11434"
+
+
+class ProvedorOllama:
+    pago = False
+
+    def __init__(self, modelo: str, prompt_sistema: str, url: str = OLLAMA_URL_PADRAO, timeout: float = 300):
+        from ia.extracao.schema import schema_resposta_llm
+
+        self.modelo = modelo
+        self.nome = f"ollama/{modelo}"
+        self.prompt_sistema = prompt_sistema
+        self.url = url.rstrip("/")
+        self.timeout = timeout
+        self.schema = schema_resposta_llm()
+
+    def extrair(self, texto: str) -> tuple[RespostaLLM, str]:
+        corpo = {
+            "model": self.modelo,
+            "messages": [
+                {"role": "system", "content": self.prompt_sistema},
+                {"role": "user", "content": f'Anotação médica:\n"""\n{texto}\n"""'},
+            ],
+            "format": self.schema,  # o Ollama restringe a saída a este JSON schema
+            "stream": False,
+            "options": {"temperature": 0},
+        }
+        pedido = urllib.request.Request(
+            f"{self.url}/api/chat",
+            data=json.dumps(corpo).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+        )
+        try:
+            with urllib.request.urlopen(pedido, timeout=self.timeout) as r:
+                resposta = json.loads(r.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            raise ErroExtracao(f"Ollama respondeu {e.code}: {e.read().decode('utf-8', 'replace')[:200]}") from e
+        except (urllib.error.URLError, TimeoutError) as e:
+            raise ErroExtracao(f"Ollama não respondeu em {self.url} (está aberto?)") from e
+
+        conteudo = resposta.get("message", {}).get("content")
+        if not conteudo:
+            raise ErroExtracao("Ollama devolveu resposta vazia")
+        return RespostaLLM.model_validate_json(conteudo), self.nome

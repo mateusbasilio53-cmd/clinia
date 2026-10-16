@@ -112,6 +112,7 @@ def test_regras_evidencia_sempre_verificada_nos_casos():
 
 class ProvedorFalso:
     nome = "falso"
+    pago = True
 
     def __init__(self):
         self.chamadas = 0
@@ -135,6 +136,59 @@ def test_segunda_rodada_usa_cache(tmp_path):
     _, resumo = executar(itens, provedor, "v1", cache)  # sem --confirmar: tudo vem do cache
     assert provedor.chamadas == 2
     assert resumo["chamadas_api"] == 0 and resumo["do_cache"] == 2
+
+
+def test_provedor_gratis_nao_exige_confirmar(tmp_path):
+    provedor = ProvedorFalso()
+    provedor.pago = False
+    executar([("A", "Sem Ca.")], provedor, "v1", CacheExtracoes(tmp_path))
+    assert provedor.chamadas == 1
+
+
+# --- provedor Ollama contra um servidor falso -----------------------------------
+
+@pytest.fixture
+def ollama_falso():
+    import threading
+    from http.server import BaseHTTPRequestHandler, HTTPServer
+
+    recebido = {}
+    resposta, _ = ProvedorRegras().extrair("Sem Ca. Em uso de metformina 850 mg.")
+
+    class Handler(BaseHTTPRequestHandler):
+        def do_POST(self):
+            recebido.update(json.loads(self.rfile.read(int(self.headers["Content-Length"]))))
+            corpo = json.dumps({"message": {"content": resposta.model_dump_json()}}).encode()
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(corpo)
+
+        def log_message(self, *args):
+            pass
+
+    servidor = HTTPServer(("127.0.0.1", 0), Handler)
+    threading.Thread(target=servidor.serve_forever, daemon=True).start()
+    yield f"http://127.0.0.1:{servidor.server_port}", recebido, resposta
+    servidor.shutdown()
+
+
+def test_ollama_envia_schema_e_le_resposta(ollama_falso):
+    from ia.extracao.provedores import ProvedorOllama
+
+    url, recebido, esperada = ollama_falso
+    provedor = ProvedorOllama("modelo-teste", "prompt", url=url)
+    resposta, modelo = provedor.extrair("Sem Ca. Em uso de metformina 850 mg.")
+    assert resposta == esperada and modelo == "ollama/modelo-teste"
+    assert recebido["format"]["additionalProperties"] is False
+    assert recebido["options"]["temperature"] == 0 and recebido["stream"] is False
+
+
+def test_ollama_fora_do_ar_vira_erro_claro():
+    from ia.extracao.provedores import ErroExtracao, ProvedorOllama
+
+    with pytest.raises(ErroExtracao, match="está aberto"):
+        ProvedorOllama("x", "p", url="http://127.0.0.1:9", timeout=2).extrair("texto")
 
 
 def test_offline_sem_cache_falha(tmp_path):

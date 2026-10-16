@@ -1,0 +1,24 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "uso_metformina": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "diagnosticos_mencionados": [
+    "DM2"
+  ],
+  "observacoes_relevantes": "Paciente recém-diagnosticada com DM2 e prescrita metformina, mas ainda não iniciada devido a receio de efeitos colaterais."
+}

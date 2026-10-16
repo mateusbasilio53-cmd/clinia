@@ -1,0 +1,22 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "uso_metformina": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "diagnosticos_mencionados": [],
+  "observacoes_relevantes": "A paciente não está gestante e não usa metformina."
+}
