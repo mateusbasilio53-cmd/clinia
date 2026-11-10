@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import math
+import re
 from collections.abc import Mapping
 from dataclasses import dataclass, field
 
@@ -106,13 +107,20 @@ def _leitura(a: Avaliacao, p: Mapping, campo: str, exclusao: bool) -> None:
         a.revisar.append(f"{rotulo}: uso não mencionado no texto")
 
 
+def _normalizar_diagnostico(texto) -> str:
+    """'diabetes_mellitus_tipo_2' e 'diabetes_tipo2' -> 'diabetes mellitus tipo 2' e 'diabetes tipo 2'."""
+    t = re.sub(r"[_\-]+", " ", str(texto).lower())
+    t = re.sub(r"tipo(?=(2|ii)\b)", "tipo ", t)
+    return re.sub(r"\s+", " ", t)
+
+
 def _diagnostico(a: Avaliacao, p: Mapping, exigido: str) -> None:
     texto = p.get("diagnostico")
     if _vazio(texto) or not str(texto).strip():
         a.revisar.append("Diagnóstico: não informado")
         return
     termos = SINONIMOS_DIAGNOSTICO.get(exigido, (exigido.lower(),))
-    if any(t in str(texto).lower() for t in termos):
+    if any(t in _normalizar_diagnostico(texto) for t in termos):
         a.atendidos.append(f"Diagnóstico {exigido}")
     else:  # texto não reconhecido não prova que o paciente não tem o diagnóstico
         a.revisar.append(f"Diagnóstico: {exigido} não reconhecido em \"{texto}\"")

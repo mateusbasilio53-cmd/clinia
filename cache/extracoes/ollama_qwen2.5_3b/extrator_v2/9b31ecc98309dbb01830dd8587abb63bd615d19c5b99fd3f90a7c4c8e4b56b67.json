@@ -1,0 +1,24 @@
+{
+  "neoplasia_ativa": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "negando gestação atual e nega história de neoplasia",
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "negado",
+    "evidencia": "negando gestação atual",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "em uso de metformina xr 750mg 1x/dia",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2"
+  ],
+  "observacoes_relevantes": null
+}

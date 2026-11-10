@@ -158,6 +158,37 @@
   - A trava da D24 passou a aceitar qualquer palavra que começa com "metf" (pega erros como "metformia"). Antes só aceitava "metformina" exata e mandava para revisão casos certos.
 - **Transparência:** o defeito da trava foi visto ao olhar a prova. Os números da prova não mudaram com a correção.
 
+## D30 — Excluído por número + campo em dúvida → NÃO ELEGÍVEL
+
+- **Data:** 18/10/2026 · **Quem decidiu:** Mateus
+- **Decisão:** se um critério numérico já exclui o paciente (ex.: HbA1c acima do máximo), o resultado é NÃO ELEGÍVEL mesmo que outro campo esteja em dúvida. A dúvida aparece junto em `criterios_limitantes`, com o prefixo "também a revisar:".
+- **Motivo:** o número exclui com certeza; resolver a dúvida não mudaria o resultado. Mandar para REVISAR só faria o coordenador perder tempo.
+- **Alternativa descartada:** qualquer dúvida → REVISAR, inclusive de quem já está excluído.
+- **Impacto:** `ia/regras/criterios.py` (`avaliar`). Testado em `tests/test_regras.py`.
+
+## D31 — Diagnóstico escrito de forma não reconhecida → REVISAR
+
+- **Data:** 18/10/2026 · **Quem decidiu:** Mateus
+- **Decisão:** se a coluna `diagnostico` não bate com nenhuma forma conhecida do diagnóstico exigido, o paciente vai para REVISAR, nunca para NÃO ELEGÍVEL. As formas aceitas ficam em `SINONIMOS_DIAGNOSTICO` (a planilha escreve DM2 de 5 jeitos: "DM tipo II", "Diabetes mellitus tipo 2" etc.).
+- **Motivo:** um texto não reconhecido não prova que o paciente não tem o diagnóstico. Errar para o lado do REVISAR protege a sensibilidade (seção 8 do playbook).
+- **Impacto:** `ia/regras/criterios.py` (`_diagnostico`). Nova grafia encontrada → acrescentar na lista.
+
+## D32 — Rótulo provisório da Base 2 e validação às cegas
+
+- **Data:** 18/10/2026 · **Quem decidiu:** Mateus (opção C)
+- **Decisão:** a Base 2 não tem coluna de elegibilidade. Rótulo provisório = regras aplicadas aos números da planilha + colunas `gab_*` (`ia/dados/rotulos.py`): 12 Elegível, 77 Não elegível, 11 Indefinido (gabarito "incerto"). A equipe da Bárbara valida uma amostra **às cegas** de 40 casos: `py -m ia.saida.amostra_validacao` gera `avaliacao/validacao_clinica/amostra_base2_para_equipe_clinica.xlsx` (enviar) e `chave_amostra.csv` (não enviar: são as nossas respostas).
+- **Motivo:** as colunas `gab_*` foram feitas por IA, não por profissional de saúde; sem validação, o rótulo é só a nossa fórmula (ponto 6.4).
+- **Alternativas descartadas:** (A) usar só a Base 1 no RF, o que perde o texto variado; (B) esperar a equipe clínica rotular as 100, o que pode não caber no prazo.
+- **Impacto:** até a validação voltar, as métricas do RF são exploratórias e **não vão para slide**.
+
+## D33 — Random Forest em `ia/modelo/` usando as peças oficiais
+
+- **Data:** 31/10/2026 · **Quem decidiu:** Mateus
+- **Decisão:** a Camada 2 fica em `ia/modelo/random_forest.py` e usa `ia.dados.juntar`, `ia.regras.criterios.aplicar` e `ia.dados.rotulos`. Features: só o que a CLINIA leu do texto (números, sexo, status e confiança baixa de cada campo); nada de gabarito, rótulo ou resultado das regras. Os casos "Indefinido" ficam fora do treino. `scikit-learn` e `numpy` entram no `requirements.txt`.
+- **Motivo:** o `experimentos/treino_basico.py` tinha uma cópia própria das regras, que já tinha divergido da oficial (não conferia o diagnóstico). O RF precisa treinar em cima da mesma decisão da planilha final.
+- **Primeira medição (exploratória, rótulo provisório):** AUC 0,985 na validação cruzada de 5 dobras (289 pacientes); treinando na Base 1 e testando na Base 2, AUC 0,959; 16% das probabilidades abaixo de 0,1 ou acima de 0,9, ou seja, o RF não está só copiando a regra.
+- **Impacto:** `tests/test_modelo.py` garante a D8 (o RF só ordena; o resultado das regras não muda). O `experimentos/treino_basico.py` fica como histórico.
+
 ---
 
 ## Pendentes
@@ -166,3 +197,4 @@
 - **Rótulos:** são só a regra (fórmula) ou têm julgamento clínico? (ponto crítico 6.4)
 - **A planilha entra no repositório** (em `dados/`)?
 - **Provedor de LLM e orçamento.**
+- **Gestação "não mencionada" depende do sexo e da idade?** Proposta do Mateus (18/10): homem ou mulher fora da idade fértil → atende; mulher de ~15 a 50 anos → REVISAR. Ainda não está no código: hoje "não mencionado" atende para todos.

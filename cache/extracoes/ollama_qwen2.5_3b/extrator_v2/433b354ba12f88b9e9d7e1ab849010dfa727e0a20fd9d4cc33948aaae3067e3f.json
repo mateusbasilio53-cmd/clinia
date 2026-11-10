@@ -1,0 +1,24 @@
+{
+  "neoplasia_ativa": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "negando neoplasia",
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "negado",
+    "evidencia": "nega gestação atual",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "em uso de metformina 1000mg 2x/dia",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2"
+  ],
+  "observacoes_relevantes": null
+}

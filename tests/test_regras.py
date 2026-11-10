@@ -75,7 +75,8 @@ def test_excluido_por_numero_com_duvida_fica_nao_elegivel_com_os_dois_motivos():
 
 
 def test_diagnostico():
-    for escrito in ["DM2", "Diabetes tipo 2", "DM tipo II", "Diabetes mellitus tipo II", "DM2; HAS; IRC"]:
+    for escrito in ["DM2", "Diabetes tipo 2", "DM tipo II", "Diabetes mellitus tipo II", "DM2; HAS; IRC",
+                    "diabetes_mellitus_tipo_2", "diabetes_tipo2", "DM tipo2"]:
         assert avaliar(paciente(diagnostico=escrito)).resultado == ELEGIVEL, escrito
     assert avaliar(paciente(diagnostico="Diabetes tipo 1")).resultado == REVISAR
     assert avaliar(paciente(diagnostico=None)).resultado == REVISAR

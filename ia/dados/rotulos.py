@@ -37,6 +37,11 @@ def rotulo_por_gabarito(pacientes: pd.DataFrame, protocolo: Protocolo = PROTOCOL
 
 def rotulo(pacientes: pd.DataFrame) -> pd.DataFrame:
     """Rótulo de qualquer base: o da equipe clínica se existir; senão, o provisório pelo gabarito."""
+    if "elegivel" in pacientes.columns:  # bases novas (ex.: CLINIA_base_treino_400): 1/0
+        out = pacientes[["id_paciente"]].assign(
+            rotulo=pacientes["elegivel"].map({1: ELEGIVEL_ROT, 0: NAO_ELEGIVEL_ROT}).fillna(INDEFINIDO))
+        origem = pacientes["origem"].astype(str) if "origem" in pacientes.columns else "coluna elegivel"
+        return out.assign(motivo_rotulo="", origem_rotulo=origem)
     if "elegibilidade_calculada" in pacientes.columns:
         out = pacientes[["id_paciente", "elegibilidade_calculada"]].rename(columns={"elegibilidade_calculada": "rotulo"})
         return out.assign(motivo_rotulo="", origem_rotulo="equipe clínica")
