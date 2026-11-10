@@ -1,0 +1,26 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "Suspendeu metformina por conta própria há 3 meses (diarreia)",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "insuficiência renal crônica",
+    "dislipidemia"
+  ],
+  "observacoes_relevantes": "Metformina suspensa por diarreia."
+}

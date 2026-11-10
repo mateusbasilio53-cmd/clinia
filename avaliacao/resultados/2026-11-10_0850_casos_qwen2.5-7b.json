@@ -1,0 +1,63 @@
+{
+  "registro": {
+    "data": "2026-11-10 08:50",
+    "conjunto": "casos",
+    "modelo": "qwen2.5:7b",
+    "prompt": "extrator_v2",
+    "dupla_checagem": true,
+    "pacientes": 15,
+    "segundos": 172.34,
+    "s_por_paciente": 11.5,
+    "acerto_neoplasia_ativa": 0.933,
+    "acerto_gestacao": 1.0,
+    "acerto_uso_metformina": 0.933,
+    "erros_perigosos": 0,
+    "pacientes_revisar": 3,
+    "falhas": 0
+  },
+  "acertos": {
+    "neoplasia_ativa": {
+      "acertos": 14,
+      "total": 15,
+      "acuracia": 0.933,
+      "erros": [
+        {
+          "id": "CT-07",
+          "esperado": "nao_mencionado",
+          "obtido": "negado",
+          "evidencia": "Beta-HCG negativo em 10/10"
+        }
+      ]
+    },
+    "gestacao": {
+      "acertos": 15,
+      "total": 15,
+      "acuracia": 1.0,
+      "erros": []
+    },
+    "uso_metformina": {
+      "acertos": 14,
+      "total": 15,
+      "acuracia": 0.933,
+      "erros": [
+        {
+          "id": "CT-11",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Prescrita metformina 500 mg na última consulta, paciente ainda não iniciou por receio de efeitos colaterais"
+        }
+      ]
+    }
+  },
+  "resumo_execucao": {
+    "pacientes": 15,
+    "chamadas_api": 15,
+    "do_cache": 0,
+    "falhas": [],
+    "campos_confianca_baixa": 2,
+    "evidencias_nao_verificadas": 0,
+    "segundos": 172.34,
+    "dupla_checagem": true,
+    "campos_divergentes": 2
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Gestante de 16 semanas",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "Trocamos metformina por gliclazida há 4 meses",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "obesidade",
+    "gravidez"
+  ],
+  "observacoes_relevantes": "Gestação a confirmar."
+}

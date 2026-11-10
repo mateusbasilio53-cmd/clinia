@@ -1,0 +1,264 @@
+{
+  "registro": {
+    "data": "2026-10-18 15:58",
+    "conjunto": "prova",
+    "modelo": "qwen2.5:7b",
+    "prompt": "extrator_v2",
+    "dupla_checagem": true,
+    "pacientes": 100,
+    "segundos": 781.53,
+    "s_por_paciente": 9.8,
+    "acerto_neoplasia_ativa": 0.95,
+    "acerto_gestacao": 0.94,
+    "acerto_uso_metformina": 0.82,
+    "erros_perigosos": 5,
+    "pacientes_revisar": 31,
+    "falhas": 0
+  },
+  "acertos": {
+    "neoplasia_ativa": {
+      "acertos": 95,
+      "total": 100,
+      "acuracia": 0.95,
+      "erros": [
+        {
+          "id": "PAC-229",
+          "esperado": "incerto",
+          "obtido": "nao_mencionado",
+          "evidencia": null
+        },
+        {
+          "id": "PAC-238",
+          "esperado": "incerto",
+          "obtido": "nao_mencionado",
+          "evidencia": null
+        },
+        {
+          "id": "PAC-244",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Em radioterapia para tumor de cabeça e pescoço"
+        },
+        {
+          "id": "PAC-255",
+          "esperado": "incerto",
+          "obtido": "nao_mencionado",
+          "evidencia": null
+        },
+        {
+          "id": "PAC-286",
+          "esperado": "incerto",
+          "obtido": "nao_mencionado",
+          "evidencia": null
+        }
+      ]
+    },
+    "gestacao": {
+      "acertos": 94,
+      "total": 100,
+      "acuracia": 0.94,
+      "erros": [
+        {
+          "id": "PAC-218",
+          "esperado": "nao_mencionado",
+          "obtido": "negado",
+          "evidencia": "G3P2A1"
+        },
+        {
+          "id": "PAC-247",
+          "esperado": "nao_mencionado",
+          "obtido": "negado",
+          "evidencia": "G2P2 (2 cesáreas)"
+        },
+        {
+          "id": "PAC-248",
+          "esperado": "nao_mencionado",
+          "obtido": "negado",
+          "evidencia": "G1P1, filho de 6 anos"
+        },
+        {
+          "id": "PAC-252",
+          "esperado": "nao_mencionado",
+          "obtido": "negado",
+          "evidencia": "G3P2A1"
+        },
+        {
+          "id": "PAC-295",
+          "esperado": "nao_mencionado",
+          "obtido": "negado",
+          "evidencia": "G1P1, filho de 6 anos"
+        },
+        {
+          "id": "PAC-300",
+          "esperado": "nao_mencionado",
+          "obtido": "negado",
+          "evidencia": "G1P1, filho de 6 anos"
+        }
+      ]
+    },
+    "uso_metformina": {
+      "acertos": 82,
+      "total": 100,
+      "acuracia": 0.82,
+      "erros": [
+        {
+          "id": "PAC-204",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Nunca usou metformina"
+        },
+        {
+          "id": "PAC-205",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Nega uso de metformina"
+        },
+        {
+          "id": "PAC-213",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Trocamos metformina por gliclazida há 4 meses"
+        },
+        {
+          "id": "PAC-218",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Em uso de metformia XR 1g 1x/d"
+        },
+        {
+          "id": "PAC-220",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Recebeu receita de metformina mas ainda não começou a tomar"
+        },
+        {
+          "id": "PAC-225",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Trocamos metformina por gliclazida há 4 meses"
+        },
+        {
+          "id": "PAC-226",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Recebeu receita de metformina mas ainda não começou a tomar"
+        },
+        {
+          "id": "PAC-231",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "MUC: metformia XR 1g 1x/d"
+        },
+        {
+          "id": "PAC-236",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Faz uso de metformna 1g 2x/dia"
+        },
+        {
+          "id": "PAC-242",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Recebeu receita de metformina mas ainda não começou a tomar"
+        },
+        {
+          "id": "PAC-248",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Prescrita metformina 500mg na última consulta; refere que ainda não iniciou"
+        },
+        {
+          "id": "PAC-249",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Trocamos metformina por sitagliptina há 4 meses"
+        },
+        {
+          "id": "PAC-251",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Faz uso de metfromina 500mg 3x/dia"
+        },
+        {
+          "id": "PAC-259",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Prescrita metformina 500mg na última consulta; refere que ainda não iniciou"
+        },
+        {
+          "id": "PAC-269",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "Faz uso de metformia 850 mg de 12/12h"
+        },
+        {
+          "id": "PAC-272",
+          "esperado": "afirmado",
+          "obtido": "incerto",
+          "evidencia": "MUC: metfomina 1g 12/12h"
+        },
+        {
+          "id": "PAC-278",
+          "esperado": "incerto",
+          "obtido": "afirmado",
+          "evidencia": "Consta prescrição de MTF 850mg 12/12h; paciente confusa quanto ao uso, trará as caixas no retorno"
+        },
+        {
+          "id": "PAC-298",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Trocamos metformina por insulina NPH há 4 meses"
+        }
+      ]
+    }
+  },
+  "resumo_execucao": {
+    "pacientes": 100,
+    "chamadas_api": 80,
+    "do_cache": 20,
+    "falhas": [],
+    "campos_confianca_baixa": 26,
+    "evidencias_nao_verificadas": 0,
+    "segundos": 781.53,
+    "dupla_checagem": true,
+    "campos_divergentes": 24
+  },
+  "dados_lidos": {
+    "idade": {
+      "certos": 99,
+      "nao_lidos": 1,
+      "errados": [],
+      "total": 100
+    },
+    "sexo": {
+      "certos": 100,
+      "nao_lidos": 0,
+      "errados": [],
+      "total": 100
+    },
+    "hba1c": {
+      "certos": 98,
+      "nao_lidos": 2,
+      "errados": [],
+      "total": 100
+    },
+    "creatinina": {
+      "certos": 95,
+      "nao_lidos": 5,
+      "errados": [],
+      "total": 100
+    },
+    "glicemia_jejum": {
+      "certos": 98,
+      "nao_lidos": 2,
+      "errados": [],
+      "total": 100
+    },
+    "imc": {
+      "certos": 97,
+      "nao_lidos": 3,
+      "errados": [],
+      "total": 100
+    }
+  }
+}

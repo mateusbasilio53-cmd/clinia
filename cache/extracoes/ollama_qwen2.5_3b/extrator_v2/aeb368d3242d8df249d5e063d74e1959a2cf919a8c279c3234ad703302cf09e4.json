@@ -1,0 +1,26 @@
+{
+  "neoplasia_ativa": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Em radioterapia para tumor de cabeça e pescoço",
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Em uso de metformina XR 1g à noite",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "obesidade",
+    "neoplasia de cabeça e pescoço"
+  ],
+  "observacoes_relevantes": "Neoplasia ativa em radioterapia."
+}

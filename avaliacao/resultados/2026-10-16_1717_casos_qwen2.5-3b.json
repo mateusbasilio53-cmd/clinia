@@ -1,0 +1,76 @@
+{
+  "registro": {
+    "data": "2026-10-16 17:17",
+    "conjunto": "casos",
+    "modelo": "qwen2.5:3b",
+    "prompt": "extrator_v2",
+    "dupla_checagem": true,
+    "pacientes": 15,
+    "segundos": 0.01,
+    "s_por_paciente": "cache",
+    "acerto_neoplasia_ativa": 0.933,
+    "acerto_gestacao": 0.867,
+    "acerto_uso_metformina": 0.933,
+    "erros_perigosos": 0,
+    "pacientes_revisar": 6,
+    "falhas": 0
+  },
+  "acertos": {
+    "neoplasia_ativa": {
+      "acertos": 14,
+      "total": 15,
+      "acuracia": 0.933,
+      "erros": [
+        {
+          "id": "CT-14",
+          "esperado": "nao_mencionado",
+          "obtido": "incerto",
+          "evidencia": "Mãe falecida por Ca de mama"
+        }
+      ]
+    },
+    "gestacao": {
+      "acertos": 13,
+      "total": 15,
+      "acuracia": 0.867,
+      "erros": [
+        {
+          "id": "CT-07",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "beta-HCG negativo em 10/10"
+        },
+        {
+          "id": "CT-08",
+          "esperado": "nao_mencionado",
+          "obtido": "negado",
+          "evidencia": "G2P2"
+        }
+      ]
+    },
+    "uso_metformina": {
+      "acertos": 14,
+      "total": 15,
+      "acuracia": 0.933,
+      "erros": [
+        {
+          "id": "CT-11",
+          "esperado": "negado",
+          "obtido": "incerto",
+          "evidencia": "Prescrita metformina 500 mg na última consulta"
+        }
+      ]
+    }
+  },
+  "resumo_execucao": {
+    "pacientes": 15,
+    "chamadas_api": 0,
+    "do_cache": 15,
+    "falhas": [],
+    "campos_confianca_baixa": 5,
+    "evidencias_nao_verificadas": 0,
+    "segundos": 0.01,
+    "dupla_checagem": true,
+    "campos_divergentes": 4
+  }
+}

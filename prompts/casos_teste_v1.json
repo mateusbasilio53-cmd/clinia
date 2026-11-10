@@ -1,0 +1,92 @@
+[
+  {
+    "id": "CT-01",
+    "descricao": "negação explícita (neoplasia e gestação)",
+    "anotacao_medica": "DM2 em seguimento ambulatorial. 45 anos, sexo F. Nega história de neoplasia. Nega gestação atual, DUM há 15 dias. Em uso de metformina 850 mg 2x/dia.",
+    "esperado": {"neoplasia_ativa": "negado", "gestacao": "negado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-02",
+    "descricao": "negação com abreviação (sem Ca)",
+    "anotacao_medica": "Paciente com DM2 e HAS. 61 anos, sexo M. Sem Ca. Faz uso de metformina 500 mg 12/12h e losartana 50 mg/dia.",
+    "esperado": {"neoplasia_ativa": "negado", "gestacao": "nao_mencionado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-03",
+    "descricao": "história passada, remissão explícita",
+    "anotacao_medica": "DM2 há 10 anos. 58 anos, sexo F. Ca de mama tratado em 2018, em remissão, sem evidência de doença no controle anual. Metformina XR 1 g à noite.",
+    "esperado": {"neoplasia_ativa": "negado", "gestacao": "nao_mencionado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-04",
+    "descricao": "história de neoplasia sem dizer se está ativa",
+    "anotacao_medica": "Retorno para controle de DM2. 66 anos, sexo M. História de Ca de próstata, em seguimento com a urologia. Em uso de metformina 850 mg 2x/dia.",
+    "esperado": {"neoplasia_ativa": "incerto", "gestacao": "nao_mencionado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-05",
+    "descricao": "neoplasia em tratamento ativo (QT)",
+    "anotacao_medica": "DM2 com controle irregular. 54 anos, sexo F. Em QT para Ca de cólon desde agosto. Metformina 500 mg 2x/dia mantida.",
+    "esperado": {"neoplasia_ativa": "afirmado", "gestacao": "nao_mencionado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-06",
+    "descricao": "suspeita de gestação",
+    "anotacao_medica": "DM2 diagnosticado há 3 anos. 33 anos, sexo F. Refere atraso menstrual, suspeita de gestação, aguarda beta-HCG. Em uso de metformina 850 mg 2x/dia.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "incerto", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-07",
+    "descricao": "gestação descartada por exame",
+    "anotacao_medica": "Seguimento de DM2. 29 anos, sexo F. Beta-HCG negativo em 10/10. Metformina 1.000 mg 2x/dia.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "negado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-08",
+    "descricao": "histórico obstétrico (G2P2) não é gestação atual",
+    "anotacao_medica": "DM2 em acompanhamento. 41 anos, sexo F. G2P2, laqueadura tubária em 2015. Usa metformina 500 mg 2x/dia.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "nao_mencionado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-09",
+    "descricao": "gestação confirmada",
+    "anotacao_medica": "DM2 prévio à gestação. 35 anos, sexo F. Gestante de 14 semanas, IG por USG. Metformina mantida pelo obstetra.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "afirmado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-10",
+    "descricao": "medicação suspensa",
+    "anotacao_medica": "DM2 há 6 anos. 50 anos, sexo M. Metformina suspensa há 2 meses por intolerância gastrointestinal. Iniciada sitagliptina 100 mg/dia.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "nao_mencionado", "uso_metformina": "negado"}
+  },
+  {
+    "id": "CT-11",
+    "descricao": "prescrita mas não iniciada",
+    "anotacao_medica": "DM2 recém-diagnosticado. 47 anos, sexo F. Prescrita metformina 500 mg na última consulta, paciente ainda não iniciou por receio de efeitos colaterais.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "nao_mencionado", "uso_metformina": "negado"}
+  },
+  {
+    "id": "CT-12",
+    "descricao": "erro de digitação no nome do remédio",
+    "anotacao_medica": "Controle de DM2. 63 anos, sexo M. Em uso de metfomina 850mg 2x ao dia, refere boa adesão.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "nao_mencionado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-13",
+    "descricao": "abreviação incomum (MTF)",
+    "anotacao_medica": "DM2 há 8 anos. 57 anos, sexo M. Em uso de MTF 1g 12/12h + gliclazida MR 60 mg.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "nao_mencionado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-14",
+    "descricao": "neoplasia de familiar, não do paciente",
+    "anotacao_medica": "DM2 em seguimento. 44 anos, sexo F. Mãe falecida por Ca de mama. Paciente sem queixas no momento. Metformina 850 mg 2x/dia.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "nao_mencionado", "uso_metformina": "afirmado"}
+  },
+  {
+    "id": "CT-15",
+    "descricao": "texto sem menção a nenhum dos campos",
+    "anotacao_medica": "Retorno de rotina. 52 anos, sexo M. HbA1c 8,1%. Orientadas dieta e atividade física. Retorno em 3 meses.",
+    "esperado": {"neoplasia_ativa": "nao_mencionado", "gestacao": "nao_mencionado", "uso_metformina": "nao_mencionado"}
+  }
+]

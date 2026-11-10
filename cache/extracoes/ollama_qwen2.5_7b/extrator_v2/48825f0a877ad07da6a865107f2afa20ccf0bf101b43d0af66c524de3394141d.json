@@ -1,0 +1,26 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "G1P1, filho de 6 anos",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "Sem uso prévio de MTF",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "hipertensão arterial essencial (HAS)",
+    "obesidade"
+  ],
+  "observacoes_relevantes": null
+}

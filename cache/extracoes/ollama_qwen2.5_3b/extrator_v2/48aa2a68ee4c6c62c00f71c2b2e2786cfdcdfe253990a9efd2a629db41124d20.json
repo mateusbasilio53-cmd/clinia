@@ -1,0 +1,27 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "incerto",
+    "evidencia": "tumor no intestino",
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "Metformina trocada por sitagliptina por intolerância",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "hipertensão arterial sistêmica",
+    "obesidade",
+    "hipoglicemia"
+  ],
+  "observacoes_relevantes": "Tumor no intestino operado, não sabe informar detalhes."
+}

@@ -1,0 +1,25 @@
+{
+  "neoplasia_ativa": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "Ca de mama tratado em 2018, em remissão",
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Metformina XR 1 g à noite",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "neoplasia de mama"
+  ],
+  "observacoes_relevantes": "Em remissão após tratamento."
+}

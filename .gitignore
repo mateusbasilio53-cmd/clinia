@@ -1,0 +1,19 @@
+# Segredos (playbook, seção 9)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Saídas geradas pelo pipeline
+saidas/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+~$*

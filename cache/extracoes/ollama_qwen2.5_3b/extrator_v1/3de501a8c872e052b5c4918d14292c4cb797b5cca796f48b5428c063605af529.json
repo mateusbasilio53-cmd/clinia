@@ -1,0 +1,24 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "em uso de metformina 850 mg 2x/dia.",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "Ca de próstata"
+  ],
+  "observacoes_relevantes": "História de câncer de próstata em seguimento com a urologia."
+}

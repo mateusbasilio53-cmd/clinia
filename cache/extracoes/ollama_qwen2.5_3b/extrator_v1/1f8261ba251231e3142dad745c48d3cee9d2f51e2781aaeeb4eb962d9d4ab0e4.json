@@ -1,0 +1,22 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "baixa"
+  },
+  "uso_metformina": {
+    "valor": true,
+    "status": "afirmado",
+    "evidencia": "Em uso de metfomina 850mg 2x ao dia",
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [],
+  "observacoes_relevantes": "Controle de DM2, uso de metformina 850mg 2x ao dia, boa adesão"
+}

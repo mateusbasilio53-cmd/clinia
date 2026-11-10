@@ -1,0 +1,27 @@
+{
+  "neoplasia_ativa": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "Beta-HCG negativo (03/10)",
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "MTF prescrita há 1 mês, não iniciou por dificuldade de acesso ao medicamento",
+    "confianca": "media"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "hipertensão arterial essencial",
+    "dislipidemia",
+    "obesidade"
+  ],
+  "observacoes_relevantes": null
+}

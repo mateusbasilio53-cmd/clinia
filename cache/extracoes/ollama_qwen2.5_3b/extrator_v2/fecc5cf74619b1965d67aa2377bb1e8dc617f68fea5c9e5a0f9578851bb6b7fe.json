@@ -1,0 +1,26 @@
+{
+  "neoplasia_ativa": {
+    "valor": false,
+    "status": "negado",
+    "evidencia": "Nega neoplasias",
+    "confianca": "alta"
+  },
+  "gestacao": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "uso_metformina": {
+    "valor": null,
+    "status": "nao_mencionado",
+    "evidencia": null,
+    "confianca": "alta"
+  },
+  "diagnosticos_mencionados": [
+    "diabetes mellitus tipo 2",
+    "HAS",
+    "dislipidemia"
+  ],
+  "observacoes_relevantes": "Encaminho para nutrição."
+}
